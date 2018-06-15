@@ -972,11 +972,36 @@ set(TESTDUSTSIMULATION_SOURCES
     ../src/PhotonSource.cpp
     ../src/VernerCrossSections.cpp
 )
+
 add_unit_test(NAME testDustSimulation
               SOURCES ${TESTDUSTSIMULATION_SOURCES})
 configure_file(${PROJECT_SOURCE_DIR}/test/test_dustsimulation.param
                ${PROJECT_BINARY_DIR}/rundir/test/test_dustsimulation.param
                COPYONLY)
+
+## Unit test for DustSimulation1 
+set(TESTDUSTSIMULATION1_SOURCES
+    testDustSimulation1.cpp
+
+    ../src/CartesianDensityGrid.cpp
+    ../src/CommandLineOption.cpp
+    ../src/CommandLineParser.cpp
+    ../src/DensityGrid.cpp
+    ../src/DiffuseReemissionHandler.cpp
+    ../src/DustScattering.cpp
+    ../src/DustScattering.hpp
+    ../src/DustSimulation1.cpp
+    ../src/DustSimulation1.hpp
+    ../src/HeliumLymanContinuumSpectrum.cpp
+    ../src/HeliumTwoPhotonContinuumSpectrum.cpp
+    ../src/HydrogenLymanContinuumSpectrum.cpp
+    ../src/ParameterFile.cpp
+    ../src/PhotonSource.cpp
+    ../src/VernerCrossSections.cpp
+)
+
+add_unit_test(NAME testDustSimulation1
+              SOURCES ${TESTDUSTSIMULATION1_SOURCES})
 
 ## Unit test for IonizationSimulation
 set(TESTIONIZATIONSIMULATION_SOURCES

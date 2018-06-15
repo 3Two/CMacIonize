@@ -1,0 +1,476 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8B8BA0C5-839D-3E3D-B50D-24C5FC79AA1E}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>check</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\YW\Documents\GitHub\CMacIonize\src;C:\Users\YW\Documents\GitHub\CMacIonize\0\src;C:\Users\YW\Documents\GitHub\CMacIonize\0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\YW\Documents\GitHub\CMacIonize\src;C:\Users\YW\Documents\GitHub\CMacIonize\0\src;C:\Users\YW\Documents\GitHub\CMacIonize\0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\YW\Documents\GitHub\CMacIonize\src;C:\Users\YW\Documents\GitHub\CMacIonize\0\src;C:\Users\YW\Documents\GitHub\CMacIonize\0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\YW\Documents\GitHub\CMacIonize\src;C:\Users\YW\Documents\GitHub\CMacIonize\0\src;C:\Users\YW\Documents\GitHub\CMacIonize\0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\CMakeFiles\0d5525041d8619845d3c9fa2e3a64f64\check.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"D:\Program Files\CMake\bin\ctest.exe" --output-on-failure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/YW/Documents/GitHub/CMacIonize/0/CMakeFiles/0d5525041d8619845d3c9fa2e3a64f64/check.rule;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Debug\testLineCoolingData.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Debug\testCommandLineParser.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Debug\testCartesianDensityGrid.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Debug\testCoordinateVector.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Debug\testPhotonSource.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Debug\testPhotonSourceSpectrum.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Debug\testVernerCrossSections.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Debug\testParameterFile.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Debug\testVernerRecombinationRates.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Debug\testRandomGenerator.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Debug\testLog.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Debug\testUnitConverter.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Debug\testAsciiFileDensityFunction.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Debug\testOctree.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Debug\testAMRGrid.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Debug\testSILCCPhotonSourceDistribution.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Debug\testIonizationStateCalculator.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Debug\testAMRDensityGrid.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Debug\testSpatialAMRRefinementScheme.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Debug\testOpacityAMRRefinementScheme.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Debug\testIsotropicContinuousPhotonSource.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Debug\testBlockSyntaxDensityFunction.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Debug\testChargeTransferRates.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Debug\testTemperatureCalculator.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Debug\testEmissivityCalculator.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Debug\testUtilities.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Debug\testWorker.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Debug\testMassAMRRefinementScheme.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Debug\testSPHNGSnapshotDensityFunction.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Debug\testDistantStarContinuousPhotonSource.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Debug\testAtomic.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Debug\testRiemannSolver.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Debug\testHydroIntegrator.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Debug\testPhotonPool.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Debug\testAsciiFileDensityGridWriter.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Debug\testOldVoronoiGrid.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Debug\testPointLocations.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Debug\testBinarySearchTree.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Debug\testWMBasicPhotonSourceSpectrum.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Debug\testInterpolatedDensityFunction.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Debug\testFractalDensityFunction.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Debug\testVoronoiDensityGrid.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Debug\testOIAMRRefinementScheme.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Debug\testHilbertKeyGenerator.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Debug\testSpiralGalaxyDensityFunction.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Debug\testSpiralGalaxyContinuousPhotonSource.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Debug\testCCDImage.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Debug\testDustSimulation.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Debug\testDustSimulation1.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Debug\testIonizationSimulation.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Debug\testCMILibrary.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Debug\testCMIFortranLibrary.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Debug\testCMICLibrary.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Debug\testDiffuseReemissionHandler.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Debug\testTimeLine.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Debug\testGradientCalculator.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Debug\testMaskedPhotonSourceSpectrum.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Debug\testSPHArrayInterface.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Debug\testLambertW.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Debug\testBondiProfile.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Debug\testHydroMask.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Debug\testPointMassExternalPotential.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Debug\testMD5Sum.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\YW\Documents\GitHub\CMacIonize\0\test\CMakeFiles\check</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"D:\Program Files\CMake\bin\ctest.exe" --output-on-failure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/YW/Documents/GitHub/CMacIonize/0/CMakeFiles/0d5525041d8619845d3c9fa2e3a64f64/check.rule;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Release\testLineCoolingData.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Release\testCommandLineParser.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Release\testCartesianDensityGrid.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Release\testCoordinateVector.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Release\testPhotonSource.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Release\testPhotonSourceSpectrum.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Release\testVernerCrossSections.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Release\testParameterFile.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Release\testVernerRecombinationRates.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Release\testRandomGenerator.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Release\testLog.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Release\testUnitConverter.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Release\testAsciiFileDensityFunction.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Release\testOctree.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Release\testAMRGrid.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Release\testSILCCPhotonSourceDistribution.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Release\testIonizationStateCalculator.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Release\testAMRDensityGrid.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Release\testSpatialAMRRefinementScheme.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Release\testOpacityAMRRefinementScheme.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Release\testIsotropicContinuousPhotonSource.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Release\testBlockSyntaxDensityFunction.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Release\testChargeTransferRates.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Release\testTemperatureCalculator.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Release\testEmissivityCalculator.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Release\testUtilities.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Release\testWorker.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Release\testMassAMRRefinementScheme.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Release\testSPHNGSnapshotDensityFunction.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Release\testDistantStarContinuousPhotonSource.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Release\testAtomic.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Release\testRiemannSolver.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Release\testHydroIntegrator.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Release\testPhotonPool.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Release\testAsciiFileDensityGridWriter.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Release\testOldVoronoiGrid.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Release\testPointLocations.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Release\testBinarySearchTree.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Release\testWMBasicPhotonSourceSpectrum.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Release\testInterpolatedDensityFunction.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Release\testFractalDensityFunction.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Release\testVoronoiDensityGrid.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Release\testOIAMRRefinementScheme.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Release\testHilbertKeyGenerator.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Release\testSpiralGalaxyDensityFunction.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Release\testSpiralGalaxyContinuousPhotonSource.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Release\testCCDImage.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Release\testDustSimulation.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Release\testDustSimulation1.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Release\testIonizationSimulation.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Release\testCMILibrary.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Release\testCMIFortranLibrary.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Release\testCMICLibrary.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Release\testDiffuseReemissionHandler.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Release\testTimeLine.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Release\testGradientCalculator.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Release\testMaskedPhotonSourceSpectrum.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Release\testSPHArrayInterface.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Release\testLambertW.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Release\testBondiProfile.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Release\testHydroMask.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Release\testPointMassExternalPotential.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Release\testMD5Sum.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\YW\Documents\GitHub\CMacIonize\0\test\CMakeFiles\check</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"D:\Program Files\CMake\bin\ctest.exe" --output-on-failure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/YW/Documents/GitHub/CMacIonize/0/CMakeFiles/0d5525041d8619845d3c9fa2e3a64f64/check.rule;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\MinSizeRel\testLineCoolingData.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\MinSizeRel\testCommandLineParser.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\MinSizeRel\testCartesianDensityGrid.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\MinSizeRel\testCoordinateVector.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\MinSizeRel\testPhotonSource.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\MinSizeRel\testPhotonSourceSpectrum.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\MinSizeRel\testVernerCrossSections.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\MinSizeRel\testParameterFile.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\MinSizeRel\testVernerRecombinationRates.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\MinSizeRel\testRandomGenerator.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\MinSizeRel\testLog.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\MinSizeRel\testUnitConverter.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\MinSizeRel\testAsciiFileDensityFunction.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\MinSizeRel\testOctree.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\MinSizeRel\testAMRGrid.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\MinSizeRel\testSILCCPhotonSourceDistribution.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\MinSizeRel\testIonizationStateCalculator.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\MinSizeRel\testAMRDensityGrid.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\MinSizeRel\testSpatialAMRRefinementScheme.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\MinSizeRel\testOpacityAMRRefinementScheme.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\MinSizeRel\testIsotropicContinuousPhotonSource.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\MinSizeRel\testBlockSyntaxDensityFunction.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\MinSizeRel\testChargeTransferRates.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\MinSizeRel\testTemperatureCalculator.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\MinSizeRel\testEmissivityCalculator.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\MinSizeRel\testUtilities.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\MinSizeRel\testWorker.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\MinSizeRel\testMassAMRRefinementScheme.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\MinSizeRel\testSPHNGSnapshotDensityFunction.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\MinSizeRel\testDistantStarContinuousPhotonSource.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\MinSizeRel\testAtomic.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\MinSizeRel\testRiemannSolver.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\MinSizeRel\testHydroIntegrator.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\MinSizeRel\testPhotonPool.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\MinSizeRel\testAsciiFileDensityGridWriter.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\MinSizeRel\testOldVoronoiGrid.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\MinSizeRel\testPointLocations.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\MinSizeRel\testBinarySearchTree.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\MinSizeRel\testWMBasicPhotonSourceSpectrum.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\MinSizeRel\testInterpolatedDensityFunction.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\MinSizeRel\testFractalDensityFunction.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\MinSizeRel\testVoronoiDensityGrid.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\MinSizeRel\testOIAMRRefinementScheme.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\MinSizeRel\testHilbertKeyGenerator.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\MinSizeRel\testSpiralGalaxyDensityFunction.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\MinSizeRel\testSpiralGalaxyContinuousPhotonSource.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\MinSizeRel\testCCDImage.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\MinSizeRel\testDustSimulation.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\MinSizeRel\testDustSimulation1.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\MinSizeRel\testIonizationSimulation.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\MinSizeRel\testCMILibrary.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\MinSizeRel\testCMIFortranLibrary.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\MinSizeRel\testCMICLibrary.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\MinSizeRel\testDiffuseReemissionHandler.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\MinSizeRel\testTimeLine.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\MinSizeRel\testGradientCalculator.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\MinSizeRel\testMaskedPhotonSourceSpectrum.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\MinSizeRel\testSPHArrayInterface.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\MinSizeRel\testLambertW.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\MinSizeRel\testBondiProfile.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\MinSizeRel\testHydroMask.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\MinSizeRel\testPointMassExternalPotential.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\MinSizeRel\testMD5Sum.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\YW\Documents\GitHub\CMacIonize\0\test\CMakeFiles\check</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"D:\Program Files\CMake\bin\ctest.exe" --output-on-failure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/YW/Documents/GitHub/CMacIonize/0/CMakeFiles/0d5525041d8619845d3c9fa2e3a64f64/check.rule;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\RelWithDebInfo\testLineCoolingData.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\RelWithDebInfo\testCommandLineParser.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\RelWithDebInfo\testCartesianDensityGrid.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\RelWithDebInfo\testCoordinateVector.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\RelWithDebInfo\testPhotonSource.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\RelWithDebInfo\testPhotonSourceSpectrum.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\RelWithDebInfo\testVernerCrossSections.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\RelWithDebInfo\testParameterFile.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\RelWithDebInfo\testVernerRecombinationRates.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\RelWithDebInfo\testRandomGenerator.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\RelWithDebInfo\testLog.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\RelWithDebInfo\testUnitConverter.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\RelWithDebInfo\testAsciiFileDensityFunction.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\RelWithDebInfo\testOctree.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\RelWithDebInfo\testAMRGrid.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\RelWithDebInfo\testSILCCPhotonSourceDistribution.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\RelWithDebInfo\testIonizationStateCalculator.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\RelWithDebInfo\testAMRDensityGrid.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\RelWithDebInfo\testSpatialAMRRefinementScheme.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\RelWithDebInfo\testOpacityAMRRefinementScheme.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\RelWithDebInfo\testIsotropicContinuousPhotonSource.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\RelWithDebInfo\testBlockSyntaxDensityFunction.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\RelWithDebInfo\testChargeTransferRates.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\RelWithDebInfo\testTemperatureCalculator.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\RelWithDebInfo\testEmissivityCalculator.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\RelWithDebInfo\testUtilities.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\RelWithDebInfo\testWorker.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\RelWithDebInfo\testMassAMRRefinementScheme.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\RelWithDebInfo\testSPHNGSnapshotDensityFunction.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\RelWithDebInfo\testDistantStarContinuousPhotonSource.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\RelWithDebInfo\testAtomic.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\RelWithDebInfo\testRiemannSolver.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\RelWithDebInfo\testHydroIntegrator.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\RelWithDebInfo\testPhotonPool.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\RelWithDebInfo\testAsciiFileDensityGridWriter.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\RelWithDebInfo\testOldVoronoiGrid.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\RelWithDebInfo\testPointLocations.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\RelWithDebInfo\testBinarySearchTree.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\RelWithDebInfo\testWMBasicPhotonSourceSpectrum.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\RelWithDebInfo\testInterpolatedDensityFunction.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\RelWithDebInfo\testFractalDensityFunction.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\RelWithDebInfo\testVoronoiDensityGrid.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\RelWithDebInfo\testOIAMRRefinementScheme.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\RelWithDebInfo\testHilbertKeyGenerator.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\RelWithDebInfo\testSpiralGalaxyDensityFunction.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\RelWithDebInfo\testSpiralGalaxyContinuousPhotonSource.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\RelWithDebInfo\testCCDImage.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\RelWithDebInfo\testDustSimulation.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\RelWithDebInfo\testDustSimulation1.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\RelWithDebInfo\testIonizationSimulation.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\RelWithDebInfo\testCMILibrary.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\RelWithDebInfo\testCMIFortranLibrary.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\RelWithDebInfo\testCMICLibrary.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\RelWithDebInfo\testDiffuseReemissionHandler.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\RelWithDebInfo\testTimeLine.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\RelWithDebInfo\testGradientCalculator.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\RelWithDebInfo\testMaskedPhotonSourceSpectrum.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\RelWithDebInfo\testSPHArrayInterface.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\RelWithDebInfo\testLambertW.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\RelWithDebInfo\testBondiProfile.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\RelWithDebInfo\testHydroMask.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\RelWithDebInfo\testPointMassExternalPotential.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\RelWithDebInfo\testMD5Sum.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\YW\Documents\GitHub\CMacIonize\0\test\CMakeFiles\check</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\YW\Documents\GitHub\CMacIonize\test\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/YW/Documents/GitHub/CMacIonize/test/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -HC:/Users/YW/Documents/GitHub/CMacIonize -BC:/Users/YW/Documents/GitHub/CMacIonize/0 --check-stamp-file C:/Users/YW/Documents/GitHub/CMacIonize/0/test/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/YW/Documents/GitHub/CMacIonize/test/CMakeLists.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\CMakeLists.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\linecool_fortran_data.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\linecool_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\linestr_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\h0_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\verner_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\test.param;C:\Users\YW\Documents\GitHub\CMacIonize\test\verner_rec_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\testgrid.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\blocksyntaxtest.yml;C:\Users\YW\Documents\GitHub\CMacIonize\test\KingdonFerland_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\tbal_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\ioneng_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\bjump_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\hiilines_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\SPHNGtest.dat;C:\Users\YW\Documents\GitHub\CMacIonize\test\SPHNGtest_notags.dat;C:\Users\YW\Documents\GitHub\CMacIonize\test\SPHNG_data.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\test_interpolated_density.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\test_dustsimulation.param;C:\Users\YW\Documents\GitHub\CMacIonize\test\test_ionizationsimulation.param;C:\Users\YW\Documents\GitHub\CMacIonize\test\test_CMI_library.param;C:\Users\YW\Documents\GitHub\CMacIonize\test\probset_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\test_lambertw_input.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\YW\Documents\GitHub\CMacIonize\0\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/YW/Documents/GitHub/CMacIonize/test/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -HC:/Users/YW/Documents/GitHub/CMacIonize -BC:/Users/YW/Documents/GitHub/CMacIonize/0 --check-stamp-file C:/Users/YW/Documents/GitHub/CMacIonize/0/test/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/YW/Documents/GitHub/CMacIonize/test/CMakeLists.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\CMakeLists.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\linecool_fortran_data.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\linecool_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\linestr_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\h0_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\verner_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\test.param;C:\Users\YW\Documents\GitHub\CMacIonize\test\verner_rec_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\testgrid.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\blocksyntaxtest.yml;C:\Users\YW\Documents\GitHub\CMacIonize\test\KingdonFerland_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\tbal_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\ioneng_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\bjump_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\hiilines_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\SPHNGtest.dat;C:\Users\YW\Documents\GitHub\CMacIonize\test\SPHNGtest_notags.dat;C:\Users\YW\Documents\GitHub\CMacIonize\test\SPHNG_data.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\test_interpolated_density.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\test_dustsimulation.param;C:\Users\YW\Documents\GitHub\CMacIonize\test\test_ionizationsimulation.param;C:\Users\YW\Documents\GitHub\CMacIonize\test\test_CMI_library.param;C:\Users\YW\Documents\GitHub\CMacIonize\test\probset_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\test_lambertw_input.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\YW\Documents\GitHub\CMacIonize\0\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Users/YW/Documents/GitHub/CMacIonize/test/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -HC:/Users/YW/Documents/GitHub/CMacIonize -BC:/Users/YW/Documents/GitHub/CMacIonize/0 --check-stamp-file C:/Users/YW/Documents/GitHub/CMacIonize/0/test/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/YW/Documents/GitHub/CMacIonize/test/CMakeLists.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\CMakeLists.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\linecool_fortran_data.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\linecool_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\linestr_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\h0_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\verner_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\test.param;C:\Users\YW\Documents\GitHub\CMacIonize\test\verner_rec_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\testgrid.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\blocksyntaxtest.yml;C:\Users\YW\Documents\GitHub\CMacIonize\test\KingdonFerland_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\tbal_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\ioneng_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\bjump_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\hiilines_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\SPHNGtest.dat;C:\Users\YW\Documents\GitHub\CMacIonize\test\SPHNGtest_notags.dat;C:\Users\YW\Documents\GitHub\CMacIonize\test\SPHNG_data.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\test_interpolated_density.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\test_dustsimulation.param;C:\Users\YW\Documents\GitHub\CMacIonize\test\test_ionizationsimulation.param;C:\Users\YW\Documents\GitHub\CMacIonize\test\test_CMI_library.param;C:\Users\YW\Documents\GitHub\CMacIonize\test\probset_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\test_lambertw_input.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\YW\Documents\GitHub\CMacIonize\0\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Users/YW/Documents/GitHub/CMacIonize/test/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -HC:/Users/YW/Documents/GitHub/CMacIonize -BC:/Users/YW/Documents/GitHub/CMacIonize/0 --check-stamp-file C:/Users/YW/Documents/GitHub/CMacIonize/0/test/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/YW/Documents/GitHub/CMacIonize/test/CMakeLists.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\CMakeLists.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\linecool_fortran_data.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\linecool_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\linestr_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\h0_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\verner_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\test.param;C:\Users\YW\Documents\GitHub\CMacIonize\test\verner_rec_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\testgrid.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\blocksyntaxtest.yml;C:\Users\YW\Documents\GitHub\CMacIonize\test\KingdonFerland_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\tbal_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\ioneng_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\bjump_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\hiilines_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\SPHNGtest.dat;C:\Users\YW\Documents\GitHub\CMacIonize\test\SPHNGtest_notags.dat;C:\Users\YW\Documents\GitHub\CMacIonize\test\SPHNG_data.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\test_interpolated_density.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\test_dustsimulation.param;C:\Users\YW\Documents\GitHub\CMacIonize\test\test_ionizationsimulation.param;C:\Users\YW\Documents\GitHub\CMacIonize\test\test_CMI_library.param;C:\Users\YW\Documents\GitHub\CMacIonize\test\probset_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\test_lambertw_input.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\YW\Documents\GitHub\CMacIonize\0\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\test\CMakeFiles\check" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\ZERO_CHECK.vcxproj">
+      <Project>{1EA4B272-4CED-3B66-A859-47ACA5681F19}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\test\testAMRDensityGrid.vcxproj">
+      <Project>{AEB22A19-8019-3145-9E2F-CC90E1C4FCC5}</Project>
+      <Name>testAMRDensityGrid</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\test\testAMRGrid.vcxproj">
+      <Project>{3FF01C63-EAB9-3DC5-B335-F724B5A1331F}</Project>
+      <Name>testAMRGrid</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\test\testAsciiFileDensityFunction.vcxproj">
+      <Project>{F912144E-5C51-3FD3-A768-7AD22A19DBAF}</Project>
+      <Name>testAsciiFileDensityFunction</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\test\testAsciiFileDensityGridWriter.vcxproj">
+      <Project>{F3D773E0-AB21-3EB5-A483-5E39D83870B9}</Project>
+      <Name>testAsciiFileDensityGridWriter</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\test\testAtomic.vcxproj">
+      <Project>{5BE4BEAE-0356-3C3D-8F1B-9B074C2B2FDE}</Project>
+      <Name>testAtomic</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\test\testBinarySearchTree.vcxproj">
+      <Project>{E321BF49-D3D5-3E0C-AA0C-D056796D6E81}</Project>
+      <Name>testBinarySearchTree</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\test\testBlockSyntaxDensityFunction.vcxproj">
+      <Project>{BDF5C074-E385-33C5-AF64-52E509D2ACB7}</Project>
+      <Name>testBlockSyntaxDensityFunction</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\test\testBondiProfile.vcxproj">
+      <Project>{EE943C25-F52C-3845-A831-145206B6B141}</Project>
+      <Name>testBondiProfile</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\test\testCCDImage.vcxproj">
+      <Project>{3E0210D8-5BBD-3D2E-B764-E4F6381D701D}</Project>
+      <Name>testCCDImage</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\test\testCMICLibrary.vcxproj">
+      <Project>{91D35EFD-E27D-31CE-881C-40F23005C0F2}</Project>
+      <Name>testCMICLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\test\testCMILibrary.vcxproj">
+      <Project>{9E6D5ECD-F491-31DF-9DF7-14173507F27F}</Project>
+      <Name>testCMILibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\test\testCartesianDensityGrid.vcxproj">
+      <Project>{8002CE8B-A8C3-3CB1-8772-A56FA9B2F9B7}</Project>
+      <Name>testCartesianDensityGrid</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\test\testChargeTransferRates.vcxproj">
+      <Project>{078EE27C-E383-36B1-B7E3-E1C7D84E6281}</Project>
+      <Name>testChargeTransferRates</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\test\testCommandLineParser.vcxproj">
+      <Project>{CEDE8EF6-5396-35E3-9954-86EA8B187CF1}</Project>
+      <Name>testCommandLineParser</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\test\testCoordinateVector.vcxproj">
+      <Project>{4914A72C-CADF-367C-BC2E-2D6110F6E66C}</Project>
+      <Name>testCoordinateVector</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\test\testDiffuseReemissionHandler.vcxproj">
+      <Project>{C988817C-A6DF-3DE9-92CC-EC7D0E9035E4}</Project>
+      <Name>testDiffuseReemissionHandler</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\test\testDistantStarContinuousPhotonSource.vcxproj">
+      <Project>{E5897769-9ECF-348D-9340-360FE51455FE}</Project>
+      <Name>testDistantStarContinuousPhotonSource</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\test\testDustSimulation.vcxproj">
+      <Project>{22D1B334-EC0D-3848-BCAD-2F952E93BE46}</Project>
+      <Name>testDustSimulation</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\test\testDustSimulation1.vcxproj">
+      <Project>{588C7EEE-14BE-3049-BC24-1C447DB136A7}</Project>
+      <Name>testDustSimulation1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\test\testEmissivityCalculator.vcxproj">
+      <Project>{6DC9BC78-B03C-3BBA-BE9A-00866F97B270}</Project>
+      <Name>testEmissivityCalculator</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\test\testFractalDensityFunction.vcxproj">
+      <Project>{5F5897EA-F108-3819-8130-7FD9A8D5336E}</Project>
+      <Name>testFractalDensityFunction</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\test\testGradientCalculator.vcxproj">
+      <Project>{6D4ECC95-B636-3AB1-A29C-B1F1D5FFCAE1}</Project>
+      <Name>testGradientCalculator</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\test\testHilbertKeyGenerator.vcxproj">
+      <Project>{46786849-FA03-366D-B2A4-A8E46CE5012C}</Project>
+      <Name>testHilbertKeyGenerator</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\test\testHydroIntegrator.vcxproj">
+      <Project>{3AD4A9C3-C0F3-3919-B835-CFA250483146}</Project>
+      <Name>testHydroIntegrator</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\test\testHydroMask.vcxproj">
+      <Project>{731CF835-365B-35D9-9C18-6AB1063421AB}</Project>
+      <Name>testHydroMask</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\test\testInterpolatedDensityFunction.vcxproj">
+      <Project>{659C8F8C-A508-3DA7-A2A9-7ACC2E0A6B64}</Project>
+      <Name>testInterpolatedDensityFunction</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\test\testIonizationSimulation.vcxproj">
+      <Project>{275FC4BB-C326-302B-B701-CD23B84B070C}</Project>
+      <Name>testIonizationSimulation</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\test\testIonizationStateCalculator.vcxproj">
+      <Project>{281B9A36-FC5E-34D5-B880-9D8FE5675114}</Project>
+      <Name>testIonizationStateCalculator</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\test\testIsotropicContinuousPhotonSource.vcxproj">
+      <Project>{60C70519-0DBD-3ECB-852C-FC3EE397211B}</Project>
+      <Name>testIsotropicContinuousPhotonSource</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\test\testLambertW.vcxproj">
+      <Project>{EEABAD49-7622-3B53-8066-B8923402AA0A}</Project>
+      <Name>testLambertW</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\test\testLineCoolingData.vcxproj">
+      <Project>{33453A17-0363-3BB6-9B4D-0B0DAA43ADE5}</Project>
+      <Name>testLineCoolingData</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\test\testLog.vcxproj">
+      <Project>{341970A2-1F66-3D4E-96DD-44ED9965186B}</Project>
+      <Name>testLog</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\test\testMD5Sum.vcxproj">
+      <Project>{3ECFD531-CAC4-318E-AAA8-76A0A22D33C0}</Project>
+      <Name>testMD5Sum</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\test\testMaskedPhotonSourceSpectrum.vcxproj">
+      <Project>{222CEAFB-446B-30FD-9604-1E12765B47E9}</Project>
+      <Name>testMaskedPhotonSourceSpectrum</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\test\testMassAMRRefinementScheme.vcxproj">
+      <Project>{9242DE46-A37A-3E4B-80D3-108D4202381C}</Project>
+      <Name>testMassAMRRefinementScheme</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\test\testOIAMRRefinementScheme.vcxproj">
+      <Project>{787F2C7C-4256-33AA-8933-EFF9DA8E6DCB}</Project>
+      <Name>testOIAMRRefinementScheme</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\test\testOctree.vcxproj">
+      <Project>{A9106D16-E1BB-350F-8339-D8A8AE636B1A}</Project>
+      <Name>testOctree</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\test\testOldVoronoiGrid.vcxproj">
+      <Project>{34914675-FA89-3EE2-B507-DEDF9ADC28D0}</Project>
+      <Name>testOldVoronoiGrid</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\test\testOpacityAMRRefinementScheme.vcxproj">
+      <Project>{C7DCFE45-6AE0-3F6D-A029-04F82706752D}</Project>
+      <Name>testOpacityAMRRefinementScheme</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\test\testParameterFile.vcxproj">
+      <Project>{F8E908F4-6756-33E1-AA0E-455D6A8C3CAD}</Project>
+      <Name>testParameterFile</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\test\testPhotonPool.vcxproj">
+      <Project>{D5B86349-C0B9-3D00-8EA0-138FEC296460}</Project>
+      <Name>testPhotonPool</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\test\testPhotonSource.vcxproj">
+      <Project>{70EC05B7-5F28-33BE-9EC1-231E6CA36D5F}</Project>
+      <Name>testPhotonSource</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\test\testPhotonSourceSpectrum.vcxproj">
+      <Project>{DB619C69-DDD9-32AC-AD3A-65856E371444}</Project>
+      <Name>testPhotonSourceSpectrum</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\test\testPointLocations.vcxproj">
+      <Project>{193C3046-D87A-3C59-A804-E8BD62E99531}</Project>
+      <Name>testPointLocations</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\test\testPointMassExternalPotential.vcxproj">
+      <Project>{61B47D45-ABEA-3F04-BB3A-2059FD4E9AD0}</Project>
+      <Name>testPointMassExternalPotential</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\test\testRandomGenerator.vcxproj">
+      <Project>{ED983961-F09E-3DEF-B8A8-5A1916718496}</Project>
+      <Name>testRandomGenerator</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\test\testRiemannSolver.vcxproj">
+      <Project>{7C22BEBB-437D-3291-9AB2-434CF44BCFA5}</Project>
+      <Name>testRiemannSolver</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\test\testSILCCPhotonSourceDistribution.vcxproj">
+      <Project>{F58C5083-DD2B-3BDB-9CBA-974591A32B16}</Project>
+      <Name>testSILCCPhotonSourceDistribution</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\test\testSPHArrayInterface.vcxproj">
+      <Project>{3999C270-235B-36C0-91E9-866BE8EC8A86}</Project>
+      <Name>testSPHArrayInterface</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\test\testSPHNGSnapshotDensityFunction.vcxproj">
+      <Project>{DC68FEFA-D8BF-3870-B257-86C20B5CFF15}</Project>
+      <Name>testSPHNGSnapshotDensityFunction</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\test\testSpatialAMRRefinementScheme.vcxproj">
+      <Project>{B135D24C-7F02-395D-A934-079DB3464ED9}</Project>
+      <Name>testSpatialAMRRefinementScheme</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\test\testSpiralGalaxyContinuousPhotonSource.vcxproj">
+      <Project>{37963760-9072-39DD-91D6-13163108AC09}</Project>
+      <Name>testSpiralGalaxyContinuousPhotonSource</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\test\testSpiralGalaxyDensityFunction.vcxproj">
+      <Project>{FC543A51-662A-3CF1-8D6A-F98268247E73}</Project>
+      <Name>testSpiralGalaxyDensityFunction</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\test\testTemperatureCalculator.vcxproj">
+      <Project>{E3CF7B1D-5F5C-322E-8B82-1E6A86D00EF3}</Project>
+      <Name>testTemperatureCalculator</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\test\testTimeLine.vcxproj">
+      <Project>{3BD3E611-A207-373E-BC55-7C2D89CDB87A}</Project>
+      <Name>testTimeLine</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\test\testUnitConverter.vcxproj">
+      <Project>{D3DD6562-1F0C-3B53-98C0-02C55540A5AD}</Project>
+      <Name>testUnitConverter</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\test\testUtilities.vcxproj">
+      <Project>{2F267F99-4DDC-3AD9-9091-97203C9F6E0E}</Project>
+      <Name>testUtilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\test\testVernerCrossSections.vcxproj">
+      <Project>{22343D87-D553-39B1-92EA-E43F4BD695F6}</Project>
+      <Name>testVernerCrossSections</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\test\testVernerRecombinationRates.vcxproj">
+      <Project>{226CEB9A-32C3-350B-87F1-94B78A860241}</Project>
+      <Name>testVernerRecombinationRates</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\test\testVoronoiDensityGrid.vcxproj">
+      <Project>{4248E1EF-2425-3CA9-9982-3BECAB07D291}</Project>
+      <Name>testVoronoiDensityGrid</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\test\testWMBasicPhotonSourceSpectrum.vcxproj">
+      <Project>{BFE9CE52-E3E5-367F-9E0F-E6B88C4FDBEF}</Project>
+      <Name>testWMBasicPhotonSourceSpectrum</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\test\testWorker.vcxproj">
+      <Project>{50312DFE-7241-303C-B583-B6F3DE429CEE}</Project>
+      <Name>testWorker</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

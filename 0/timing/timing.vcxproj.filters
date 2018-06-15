@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\CMakeFiles\c8259b254d48e2d0f934e09ca58b14cd\timing.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\YW\Documents\GitHub\CMacIonize\timing\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\timing\CMakeFiles\timing" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{20452ABE-C100-3D2C-93F2-FF3BB4CAB4F6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

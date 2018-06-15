@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\CMakeFiles\db2f16262bc43ffb0036745721f48353\CompilerInfo.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\CMakeFiles\2b8aa5ee2d0f4e90f5f4af5595e1ade6\CompilerInfo.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\YW\Documents\GitHub\CMacIonize\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\CMakeFiles\CompilerInfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{20452ABE-C100-3D2C-93F2-FF3BB4CAB4F6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,17 @@
+# CMake generation dependency list for this directory.
+C:/Users/YW/Documents/GitHub/CMacIonize/src/CMakeLists.txt
+C:/Users/YW/Documents/GitHub/CMacIonize/data/verner_A.dat
+C:/Users/YW/Documents/GitHub/CMacIonize/data/verner_B.dat
+C:/Users/YW/Documents/GitHub/CMacIonize/data/verner_C.dat
+C:/Users/YW/Documents/GitHub/CMacIonize/src/VernerCrossSectionsDataLocation.hpp.in
+C:/Users/YW/Documents/GitHub/CMacIonize/data/verner_rec_data.txt
+C:/Users/YW/Documents/GitHub/CMacIonize/src/VernerRecombinationRatesDataLocation.hpp.in
+C:/Users/YW/Documents/GitHub/CMacIonize/data/He2q.dat
+C:/Users/YW/Documents/GitHub/CMacIonize/src/HeliumTwoPhotonContinuumDataLocation.hpp.in
+C:/Users/YW/Documents/GitHub/CMacIonize/data/fg_uvb_dec11.tar.gz
+C:/Users/YW/Documents/GitHub/CMacIonize/src/FaucherGiguereDataLocation.hpp.in
+C:/Users/YW/Documents/GitHub/CMacIonize/data/wmbasic.tar.gz
+C:/Users/YW/Documents/GitHub/CMacIonize/src/WMBasicDataLocation.hpp.in
+C:/Users/YW/Documents/GitHub/CMacIonize/src/Configuration.hpp.in
+C:/Users/YW/Documents/GitHub/CMacIonize/src/ConfigurationInfo.cpp.in
+C:/Users/YW/Documents/GitHub/CMacIonize/src/ConfigurationInfo.hpp.in

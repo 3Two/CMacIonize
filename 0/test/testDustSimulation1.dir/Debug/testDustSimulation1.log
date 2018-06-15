@@ -1,0 +1,36 @@
+﻿  CartesianDensityGrid.cpp
+c:\users\yw\documents\github\cmacionize\src\Utilities.hpp(85): warning C4244: 'return': conversion from 'double' to 'int_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\Utilities.hpp(836): warning C4244: 'initializing': conversion from 'double' to 'uint_fast32_t', possible loss of data
+C:\Users\YW\Documents\GitHub\CMacIonize\src\CartesianDensityGrid.cpp(149): warning C4244: 'initializing': conversion from 'double' to 'int_fast32_t', possible loss of data
+C:\Users\YW\Documents\GitHub\CMacIonize\src\CartesianDensityGrid.cpp(151): warning C4244: 'initializing': conversion from 'double' to 'int_fast32_t', possible loss of data
+C:\Users\YW\Documents\GitHub\CMacIonize\src\CartesianDensityGrid.cpp(153): warning C4244: 'initializing': conversion from 'double' to 'int_fast32_t', possible loss of data
+  DensityGrid.cpp
+c:\users\yw\documents\github\cmacionize\src\Utilities.hpp(85): warning C4244: 'return': conversion from 'double' to 'int_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\Utilities.hpp(836): warning C4244: 'initializing': conversion from 'double' to 'uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\DensityGridTraversalJobMarket.hpp(111): warning C4244: 'initializing': conversion from 'double' to 'cellsize_t', possible loss of data
+  c:\users\yw\documents\github\cmacionize\src\DensityGridTraversalJobMarket.hpp(94): note: while compiling class template member function 'DensityGridTraversalJob<DensityGrid::DensityGridInitializationFunction> *DensityGridTraversalJobMarket<DensityGrid::DensityGridInitializationFunction>::get_job(int_fast32_t)'
+  c:\users\yw\documents\github\cmacionize\src\Worker.hpp(88): note: see reference to function template instantiation 'DensityGridTraversalJob<DensityGrid::DensityGridInitializationFunction> *DensityGridTraversalJobMarket<DensityGrid::DensityGridInitializationFunction>::get_job(int_fast32_t)' being compiled
+  C:\Users\YW\Documents\GitHub\CMacIonize\src\DensityGrid.cpp(56): note: see reference to class template instantiation 'DensityGridTraversalJobMarket<DensityGrid::DensityGridInitializationFunction>' being compiled
+c:\users\yw\documents\github\cmacionize\src\DensityGridTraversalJobMarket.hpp(112): warning C4244: 'initializing': conversion from 'double' to 'cellsize_t', possible loss of data
+  DiffuseReemissionHandler.cpp
+c:\users\yw\documents\github\cmacionize\src\Utilities.hpp(85): warning C4244: 'return': conversion from 'double' to 'int_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\Utilities.hpp(836): warning C4244: 'initializing': conversion from 'double' to 'uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\RandomGenerator.hpp(230): warning C4244: 'return': conversion from 'double' to 'int_fast32_t', possible loss of data
+  DustSimulation1.cpp
+c:\users\yw\documents\github\cmacionize\src\Utilities.hpp(85): warning C4244: 'return': conversion from 'double' to 'int_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\Utilities.hpp(836): warning C4244: 'initializing': conversion from 'double' to 'uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\CCDImage.hpp(258): warning C4244: 'initializing': conversion from 'double' to 'uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\CCDImage.hpp(258): warning C4244: 'initializing': conversion from 'double' to 'const uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\CCDImage.hpp(259): warning C4244: 'initializing': conversion from 'double' to 'uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\CCDImage.hpp(259): warning C4244: 'initializing': conversion from 'double' to 'const uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\CCDImage.hpp(325): warning C4244: '=': conversion from 'double' to 'uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\CCDImage.hpp(334): warning C4244: '=': conversion from 'double' to 'uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\RandomGenerator.hpp(230): warning C4244: 'return': conversion from 'double' to 'int_fast32_t', possible loss of data
+C:\Users\YW\Documents\GitHub\CMacIonize\src\DustSimulation1.cpp(105): warning C4244: 'argument': conversion from 'double' to 'uint_fast64_t', possible loss of data
+  PhotonSource.cpp
+c:\users\yw\documents\github\cmacionize\src\Utilities.hpp(85): warning C4244: 'return': conversion from 'double' to 'int_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\Utilities.hpp(836): warning C4244: 'initializing': conversion from 'double' to 'uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\RandomGenerator.hpp(230): warning C4244: 'return': conversion from 'double' to 'int_fast32_t', possible loss of data
+  Generating Code...
+  testDustSimulation1.vcxproj -> C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Debug\testDustSimulation1.exe
+  testDustSimulation1.vcxproj -> C:/Users/YW/Documents/GitHub/CMacIonize/0/rundir/test/Debug/testDustSimulation1.pdb (Full PDB)

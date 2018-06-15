@@ -658,7 +658,7 @@ public:
       last_cell = it;
 
       // Helium abundance. Should be a parameter.
-      double tau = get_optical_depth(ds, it.get_ionization_variables(), photon);
+      double tau = get_optical_depth(ds, it.get_ionization_variables(), it.get_dust_variables, photon);
       optical_depth -= tau;
 
       // if the optical depth exceeds or equals the wanted value: exit the loop

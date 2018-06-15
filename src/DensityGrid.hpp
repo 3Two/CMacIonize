@@ -36,12 +36,14 @@
 #include "EmissivityValues.hpp"
 #include "HydroVariables.hpp"
 #include "IonizationVariables.hpp"
+#include "DustVariables.hpp"
 #include "Lock.hpp"
 #include "Log.hpp"
 #include "Photon.hpp"
 #include "Timer.hpp"
 #include "UnitConverter.hpp"
 #include "WorkDistributor.hpp"
+#include <iostream>
 
 #ifdef USE_LOCKFREE
 #include "Atomic.hpp"
@@ -76,7 +78,7 @@ protected:
 
   /*! @brief Ionization calculation variables. */
   std::vector< IonizationVariables > _ionization_variables;
-
+  std::vector< DustVariables > _dust_variables;
   /// hydro
 
   /*! @brief Flag indicating whether hydro is active or not. */
@@ -108,13 +110,14 @@ protected:
    * @return Optical depth.
    */
   inline static double
-  get_optical_depth(double ds, const IonizationVariables &ionization_variables,
+  get_optical_depth(double ds, const IonizationVariables &ionization_variables, const DustVariables &dust_variables,
                     const Photon &photon) {
     return ds * ionization_variables.get_number_density() *
            (photon.get_cross_section(ION_H_n) *
                 ionization_variables.get_ionic_fraction(ION_H_n) +
             photon.get_cross_section_He_corr() *
-                ionization_variables.get_ionic_fraction(ION_He_n));
+                ionization_variables.get_ionic_fraction(ION_He_n))+
+		   ds * photon.get_cross_section(ION_H_n)* dust_variables.get_dust_density();
   }
 
   /**
@@ -125,10 +128,27 @@ protected:
    * @param cell DensityValues of the cell the photon travels in.
    * @param photon Photon.
    */
-  inline void update_integrals(double ds, DensityGrid::iterator &cell,
+  inline void update_integrals(double ds, DensityGrid::iterator &cell, 
                                const Photon &photon) const {
-
+	DustVariables &dust_variables = cell.get_dust_variables();
     IonizationVariables &ionization_variables = cell.get_ionization_variables();
+	if (dust_variables.get_dust_density() > 0.) {
+		CoordinateVector<double> dforce = (1.2, 1.2, 1.2);
+
+		/*(dust_variables.get_dust_density()*ds*photon.get_cross_section(ION_H_n)
+		*(1/cell.get_volume())*photon.get_energy()*(1/3e8)*photon.get_direction());*/
+#ifndef USE_LOCKFREE
+		cell.lock();
+#endif
+		
+		dust_variables.increase_force(dforce);
+		double fffoorce = dust_variables.get_force().x();
+		
+#ifndef USE_LOCKFREE
+		cell.unlock();
+#endif
+
+	}
     if (ionization_variables.get_number_density() > 0.) {
       // we tried speeding things up by using lock-free addition, but it turns
       // out that the overhead caused by doing this is larger than the overhead
@@ -206,7 +226,8 @@ public:
     }
     // we allocate memory for the cells, so that --dry-run can already check the
     // available memory
-    _ionization_variables.resize(numcell);
+	_ionization_variables.resize(numcell); 
+	_dust_variables.resize(numcell);
     _emissivities.resize(numcell, nullptr);
 #ifndef USE_LOCKFREE
     _lock.resize(numcell);
@@ -422,7 +443,7 @@ public:
     }
 
     /**
-     * @brief Reset the mean intensity counters for the cell the iterator is
+     * @brief Reset the mean intensity and radiation force counters for the cell the iterator is
      * currently pointing to.
      */
     inline void reset_mean_intensities() {
@@ -434,6 +455,7 @@ public:
         const HeatingTermName name = static_cast< HeatingTermName >(i);
         _grid->_ionization_variables[_index].set_heating(name, 0.);
       }
+	  _grid->_dust_variables[_index].set_force(0.);
     }
 
     /**
@@ -452,9 +474,12 @@ public:
      * @param ion IonName.
      * @return Mean intensity (in m^3).
      */
-    inline double get_mean_intensity(IonName ion) const {
-      return _grid->_ionization_variables[_index].get_mean_intensity(ion);
-    }
+	inline double get_mean_intensity(IonName ion) const {
+		return _grid->_ionization_variables[_index].get_mean_intensity(ion);
+	}    
+	inline CoordinateVector <double> get_force() const {
+		return _grid->_dust_variables[_index].get_force();
+	}
 
     /**
      * @brief Set the mean intensity for the given ion for the cell the iterator
@@ -467,7 +492,10 @@ public:
       _grid->_ionization_variables[_index].set_mean_intensity(ion,
                                                               mean_intensity);
     }
-
+	inline void set_force(CoordinateVector<double> dforce)  {
+		
+	_grid->_dust_variables[_index].set_force(dforce);
+	}
     /**
      * @brief Get read only access to the ionization variables stored in this
      * cell.
@@ -478,6 +506,11 @@ public:
       return _grid->_ionization_variables[_index];
     }
 
+	inline const DustVariables &get_dust_variables() const {
+		return _grid->_dust_variables[_index];
+	}
+
+
     /**
      * @brief Get read/write access to the ionization variables stored in this
      * cell.
@@ -487,6 +520,9 @@ public:
     inline IonizationVariables &get_ionization_variables() {
       return _grid->_ionization_variables[_index];
     }
+	inline DustVariables &get_dust_variables() {
+		return _grid->_dust_variables[_index];
+	}
 
     /**
      * @brief Get read only access to the hydrodynamical variables stored in
@@ -702,6 +738,10 @@ public:
       IonizationVariables &ionization_variables = it.get_ionization_variables();
       ionization_variables.set_number_density(vals.get_number_density());
       ionization_variables.set_temperature(vals.get_temperature());
+	  DustVariables &dust_variables = it.get_dust_variables();
+	  dust_variables.set_dust_density(vals.get_number_density());
+	  
+
       for (int_fast32_t i = 0; i < NUMBER_OF_IONNAMES; ++i) {
         IonName ion = static_cast< IonName >(i);
         ionization_variables.set_ionic_fraction(ion,
@@ -711,6 +751,7 @@ public:
       if (_hydro) {
         const CoordinateVector<> v = vals.get_velocity();
         it.get_hydro_variables().set_primitives_velocity(v);
+		
       }
     }
   };
@@ -728,6 +769,7 @@ public:
   virtual void reset_grid(DensityFunction &density_function) {
     for (auto it = begin(); it != end(); ++it) {
       it.reset_mean_intensities();
+	  
     }
   }
 

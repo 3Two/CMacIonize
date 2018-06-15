@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\CMacIonize.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\CommandLineOption.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\CommandLineParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\DustScattering.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\DustSimulation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\EmissivityCalculator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\RadiationHydrodynamicsSimulation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\CompilerInfo.cpp.in">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\ConfigurationInfo.cpp.in">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\Abundances.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\AMRRefinementScheme.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\AMRRefinementSchemeFactory.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\AsciiFileDensityFunction.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\AsciiFileDensityGridWriter.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\Box.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\BondiProfileDensityFunction.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\CartesianDensityGrid.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\ChargeTransferRates.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\CMacIonizeSnapshotDensityFunction.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\CMacIonizeVoronoiGeneratorDistribution.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\Configuration.hpp.in">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\ConfigurationInfo.hpp.in">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\ContinuousPhotonSourceFactory.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\CoordinateVector.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\CommandLineOption.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\CommandLineParser.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\CompilerInfo.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\CrossSections.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\CrossSectionsFactory.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\DensityFunction.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\DensityFunctionFactory.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\DensityGrid.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\DensityGridFactory.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\DensityGridTraversalJob.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\DensityGridTraversalJobMarket.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\DensityGridWriter.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\DensityGridWriterFactory.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\DensityMaskFactory.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\DensityValues.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\DiscICDensityFunction.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\DustPhotonShootJob.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\DustPhotonShootJobMarket.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\EmissivityCalculator.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\EmissivityValues.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\Error.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\FaucherGiguerePhotonSourceSpectrum.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\FixedValueCrossSections.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\FixedValueRecombinationRates.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\HydrogenLymanContinuumSpectrum.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\HeliumLymanContinuumSpectrum.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\HeliumTwoPhotonContinuumSpectrum.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\InterpolatedDensityFunction.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\IonizationPhotonShootJob.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\IonizationPhotonShootJobMarket.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\IonizationStateCalculator.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\IonizationVariablesPropertyAccessors.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\LineCoolingData.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\Lock.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\MonochromaticPhotonSourceSpectrum.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\MPICommunicator.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\OperatingSystem.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\ParameterFile.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\PerturbedCartesianVoronoiGeneratorDistribution.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\Photon.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\PhotonSource.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\PhotonSourceDistribution.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\PhotonSourceDistributionFactory.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\PhotonSourceSpectrum.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\PhotonSourceSpectrumFactory.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\PhysicalConstants.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\PlanckPhotonSourceSpectrum.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\RadiationHydrodynamicsSimulation.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\RecombinationRates.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\RecombinationRatesFactory.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\Signals.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\SILCCPhotonSourceDistribution.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\SimulationBox.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\SingleStarPhotonSourceDistribution.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\SpatialAMRRefinementScheme.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\SPHNGSnapshotDensityFunction.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\SPHVoronoiGeneratorDistribution.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\TemperatureCalculator.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\Timer.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\Utilities.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\VernerCrossSections.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\VernerCrossSectionsDataLocation.hpp.in">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\VernerRecombinationRates.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\VernerRecombinationRatesDataLocation.hpp.in">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\VoronoiGeneratorDistributionFactory.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\WMBasicDataLocation.hpp.in">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\WMBasicPhotonSourceSpectrum.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\WorkDistributor.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\WorkEnvironment.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\Worker.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\Windows.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{CA88EDD2-9770-3791-BA41-FD26E5CF8DA8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{A0DA2BCB-F2A0-3802-9E11-46E2756C3FC5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

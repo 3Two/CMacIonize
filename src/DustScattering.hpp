@@ -130,7 +130,7 @@ private:
    */
   inline static double get_albedo_for_band(std::string band) {
     if (band == "V") {
-      return 0.54;
+      return 0.;
     } else if (band == "K") {
       return 0.21;
     } else {

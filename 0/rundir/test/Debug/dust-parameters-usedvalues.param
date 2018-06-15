@@ -1,0 +1,41 @@
+# file written on 15/06/2018, 12:14:32.
+CCDImage:
+  anchor x: value not used # (-12.1 kpc)
+  anchor y: value not used # (-12.1 kpc)
+  filename: value not used # (test_dustsimulation_output)
+  image height: value not used # (200)
+  image width: value not used # (200)
+  sides x: value not used # (24.2 kpc)
+  sides y: value not used # (24.2 kpc)
+  type: value not used # (BinaryArray)
+  view phi: value not used # (0 degrees)
+  view theta: value not used # (89.7 degrees)
+ContinuousPhotonSource:
+  bulge over total ratio: value not used # (0.2)
+  scale height stars: value not used # (0.6 kpc)
+  scale length stars: value not used # (5. kpc)
+DensityFunction:
+  central density: value not used # (1. cm^-3)
+  density: 1e+08 m^-3 # (default value)
+  neutral fraction H: 1e-06 # (default value)
+  scale height ISM: value not used # (0.22 kpc)
+  scale length ISM: value not used # (6.0 kpc)
+  temperature: 8000 K # (default value)
+DensityGrid:
+  number of cells: [25, 25, 25] # ([25, 25, 25])
+  periodicity: value not used # ([false, false, false])
+DustSimulation:
+  number of photons: 50000 # (50000)
+  output folder: . # (.)
+  random seed: 42 # (42)
+PhotonSourceDistribution:
+  luminosity: 4.26e+49 Hz # (default value)
+  position: [0 m, 0 m, 0 m] # (default value)
+SimulationBox:
+  anchor: [-3.7032e+20 m, -3.7032e+20 m, -3.7032e+20 m] # ([-12. kpc, -12. kpc, -12. kpc])
+  periodicity: [false, false, false] # (default value)
+  sides: [7.4064e+20 m, 7.4064e+20 m, 7.4064e+20 m] # ([24. kpc, 24. kpc, 24. kpc])
+dust:
+  band: V # (V)
+hydro:
+  active: value not used # (false)

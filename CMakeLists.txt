@@ -117,17 +117,6 @@ endif(NOT DETECT_POSIX)
 find_package(Git)
 
 # The version number.
-execute_process(COMMAND ${GIT_EXECUTABLE} describe --tags --dirty --always
-                OUTPUT_VARIABLE GIT_BUILD_STRING
-                OUTPUT_STRIP_TRAILING_WHITESPACE
-                WORKING_DIRECTORY ${PROJECT_SOURCE_DIR})
-string(REGEX REPLACE "v([0-9]*).*" "\\1" GIT_VERSION_MAJOR ${GIT_BUILD_STRING})
-string(REGEX REPLACE "v[0-9]*.([0-9]*).*" "\\1" GIT_VERSION_MINOR
-       ${GIT_BUILD_STRING})
-message(STATUS
-        "This is CMacIonize version ${GIT_VERSION_MAJOR}.${GIT_VERSION_MINOR}")
-set(CMACIONIZE_VERSION_MAJOR ${GIT_VERSION_MAJOR})
-set(CMACIONIZE_VERSION_MINOR ${GIT_VERSION_MINOR})
 
 # Enable C++11, since we need this for delegating constructors
 add_compiler_flag("-std=c++11" REQUIRED)

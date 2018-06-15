@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{45145C88-58C7-379C-ABE2-16E55435475B}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>timing</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\YW\Documents\GitHub\CMacIonize\src;C:\Users\YW\Documents\GitHub\CMacIonize\0\src;C:\Users\YW\Documents\GitHub\CMacIonize\0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\YW\Documents\GitHub\CMacIonize\src;C:\Users\YW\Documents\GitHub\CMacIonize\0\src;C:\Users\YW\Documents\GitHub\CMacIonize\0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\YW\Documents\GitHub\CMacIonize\src;C:\Users\YW\Documents\GitHub\CMacIonize\0\src;C:\Users\YW\Documents\GitHub\CMacIonize\0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\YW\Documents\GitHub\CMacIonize\src;C:\Users\YW\Documents\GitHub\CMacIonize\0\src;C:\Users\YW\Documents\GitHub\CMacIonize\0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\CMakeFiles\c8259b254d48e2d0f934e09ca58b14cd\timing.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/YW/Documents/GitHub/CMacIonize/0/CMakeFiles/c8259b254d48e2d0f934e09ca58b14cd/timing.rule;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\timing\Debug\timeVoronoiGrids.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\timing\Debug\timeRiemannSolver.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\timing\Debug\timeNewVoronoiGrid.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\YW\Documents\GitHub\CMacIonize\0\timing\CMakeFiles\timing</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/YW/Documents/GitHub/CMacIonize/0/CMakeFiles/c8259b254d48e2d0f934e09ca58b14cd/timing.rule;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\timing\Release\timeVoronoiGrids.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\timing\Release\timeRiemannSolver.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\timing\Release\timeNewVoronoiGrid.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\YW\Documents\GitHub\CMacIonize\0\timing\CMakeFiles\timing</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/YW/Documents/GitHub/CMacIonize/0/CMakeFiles/c8259b254d48e2d0f934e09ca58b14cd/timing.rule;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\timing\MinSizeRel\timeVoronoiGrids.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\timing\MinSizeRel\timeRiemannSolver.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\timing\MinSizeRel\timeNewVoronoiGrid.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\YW\Documents\GitHub\CMacIonize\0\timing\CMakeFiles\timing</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/YW/Documents/GitHub/CMacIonize/0/CMakeFiles/c8259b254d48e2d0f934e09ca58b14cd/timing.rule;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\timing\RelWithDebInfo\timeVoronoiGrids.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\timing\RelWithDebInfo\timeRiemannSolver.exe;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\timing\RelWithDebInfo\timeNewVoronoiGrid.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\YW\Documents\GitHub\CMacIonize\0\timing\CMakeFiles\timing</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\YW\Documents\GitHub\CMacIonize\timing\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/YW/Documents/GitHub/CMacIonize/timing/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -HC:/Users/YW/Documents/GitHub/CMacIonize -BC:/Users/YW/Documents/GitHub/CMacIonize/0 --check-stamp-file C:/Users/YW/Documents/GitHub/CMacIonize/0/timing/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/YW/Documents/GitHub/CMacIonize/timing/CMakeLists.txt;C:\Users\YW\Documents\GitHub\CMacIonize\timing\CMakeLists.txt;C:\Users\YW\Documents\GitHub\CMacIonize\timing\timeVoronoiGrids_scaling.py;C:\Users\YW\Documents\GitHub\CMacIonize\timing\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\YW\Documents\GitHub\CMacIonize\0\timing\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/YW/Documents/GitHub/CMacIonize/timing/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -HC:/Users/YW/Documents/GitHub/CMacIonize -BC:/Users/YW/Documents/GitHub/CMacIonize/0 --check-stamp-file C:/Users/YW/Documents/GitHub/CMacIonize/0/timing/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/YW/Documents/GitHub/CMacIonize/timing/CMakeLists.txt;C:\Users\YW\Documents\GitHub\CMacIonize\timing\CMakeLists.txt;C:\Users\YW\Documents\GitHub\CMacIonize\timing\timeVoronoiGrids_scaling.py;C:\Users\YW\Documents\GitHub\CMacIonize\timing\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\YW\Documents\GitHub\CMacIonize\0\timing\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Users/YW/Documents/GitHub/CMacIonize/timing/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -HC:/Users/YW/Documents/GitHub/CMacIonize -BC:/Users/YW/Documents/GitHub/CMacIonize/0 --check-stamp-file C:/Users/YW/Documents/GitHub/CMacIonize/0/timing/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/YW/Documents/GitHub/CMacIonize/timing/CMakeLists.txt;C:\Users\YW\Documents\GitHub\CMacIonize\timing\CMakeLists.txt;C:\Users\YW\Documents\GitHub\CMacIonize\timing\timeVoronoiGrids_scaling.py;C:\Users\YW\Documents\GitHub\CMacIonize\timing\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\YW\Documents\GitHub\CMacIonize\0\timing\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Users/YW/Documents/GitHub/CMacIonize/timing/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -HC:/Users/YW/Documents/GitHub/CMacIonize -BC:/Users/YW/Documents/GitHub/CMacIonize/0 --check-stamp-file C:/Users/YW/Documents/GitHub/CMacIonize/0/timing/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/YW/Documents/GitHub/CMacIonize/timing/CMakeLists.txt;C:\Users\YW\Documents\GitHub\CMacIonize\timing\CMakeLists.txt;C:\Users\YW\Documents\GitHub\CMacIonize\timing\timeVoronoiGrids_scaling.py;C:\Users\YW\Documents\GitHub\CMacIonize\timing\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\YW\Documents\GitHub\CMacIonize\0\timing\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\timing\CMakeFiles\timing" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\ZERO_CHECK.vcxproj">
+      <Project>{1EA4B272-4CED-3B66-A859-47ACA5681F19}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\timing\timeNewVoronoiGrid.vcxproj">
+      <Project>{5049404B-197C-384C-A3A0-BDDB5403AD3F}</Project>
+      <Name>timeNewVoronoiGrid</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\timing\timeRiemannSolver.vcxproj">
+      <Project>{F96B3E6F-324F-3FA4-AD49-8E2572BC8CBC}</Project>
+      <Name>timeRiemannSolver</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\timing\timeVoronoiGrids.vcxproj">
+      <Project>{0050463E-A2EE-3B59-9B8A-E97896C4A10B}</Project>
+      <Name>timeVoronoiGrids</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{572235E1-1766-3B98-81D5-19A760C3243D}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>CompilerInfo</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\YW\Documents\GitHub\CMacIonize\src;C:\Users\YW\Documents\GitHub\CMacIonize\0\src;C:\Users\YW\Documents\GitHub\CMacIonize\0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\YW\Documents\GitHub\CMacIonize\src;C:\Users\YW\Documents\GitHub\CMacIonize\0\src;C:\Users\YW\Documents\GitHub\CMacIonize\0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\YW\Documents\GitHub\CMacIonize\src;C:\Users\YW\Documents\GitHub\CMacIonize\0\src;C:\Users\YW\Documents\GitHub\CMacIonize\0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\YW\Documents\GitHub\CMacIonize\src;C:\Users\YW\Documents\GitHub\CMacIonize\0\src;C:\Users\YW\Documents\GitHub\CMacIonize\0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\CMakeFiles\db2f16262bc43ffb0036745721f48353\CompilerInfo.cpp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating CompilerInfo.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd C:\Users\YW\Documents\GitHub\CMacIonize
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"D:\Program Files\CMake\bin\cmake.exe" -DGIT_EXECUTABLE=GIT_EXECUTABLE-NOTFOUND -DCOMPILER_NAME=MSVC -DCOMPILER_VERSION=19.11.25508.2 -DPROJECT_SOURCE_DIR=C:/Users/YW/Documents/GitHub/CMacIonize -DPROJECT_BINARY_DIR=C:/Users/YW/Documents/GitHub/CMacIonize/0 -DHAVE_WINDOWS=True -P C:/Users/YW/Documents/GitHub/CMacIonize/write_compiler_info.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/YW/Documents/GitHub/CMacIonize/0/CMakeFiles/db2f16262bc43ffb0036745721f48353/CompilerInfo.cpp.rule;C:\Users\YW\Documents\GitHub\CMacIonize\.git\HEAD;C:\Users\YW\Documents\GitHub\CMacIonize\src\CompilerInfo.cpp.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\YW\Documents\GitHub\CMacIonize\0\src\CompilerInfo.cpp;C:\Users\YW\Documents\GitHub\CMacIonize\0\dummy_file_that_is_not_created</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating CompilerInfo.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd C:\Users\YW\Documents\GitHub\CMacIonize
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"D:\Program Files\CMake\bin\cmake.exe" -DGIT_EXECUTABLE=GIT_EXECUTABLE-NOTFOUND -DCOMPILER_NAME=MSVC -DCOMPILER_VERSION=19.11.25508.2 -DPROJECT_SOURCE_DIR=C:/Users/YW/Documents/GitHub/CMacIonize -DPROJECT_BINARY_DIR=C:/Users/YW/Documents/GitHub/CMacIonize/0 -DHAVE_WINDOWS=True -P C:/Users/YW/Documents/GitHub/CMacIonize/write_compiler_info.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/YW/Documents/GitHub/CMacIonize/0/CMakeFiles/db2f16262bc43ffb0036745721f48353/CompilerInfo.cpp.rule;C:\Users\YW\Documents\GitHub\CMacIonize\.git\HEAD;C:\Users\YW\Documents\GitHub\CMacIonize\src\CompilerInfo.cpp.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\YW\Documents\GitHub\CMacIonize\0\src\CompilerInfo.cpp;C:\Users\YW\Documents\GitHub\CMacIonize\0\dummy_file_that_is_not_created</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating CompilerInfo.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+cd C:\Users\YW\Documents\GitHub\CMacIonize
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"D:\Program Files\CMake\bin\cmake.exe" -DGIT_EXECUTABLE=GIT_EXECUTABLE-NOTFOUND -DCOMPILER_NAME=MSVC -DCOMPILER_VERSION=19.11.25508.2 -DPROJECT_SOURCE_DIR=C:/Users/YW/Documents/GitHub/CMacIonize -DPROJECT_BINARY_DIR=C:/Users/YW/Documents/GitHub/CMacIonize/0 -DHAVE_WINDOWS=True -P C:/Users/YW/Documents/GitHub/CMacIonize/write_compiler_info.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/YW/Documents/GitHub/CMacIonize/0/CMakeFiles/db2f16262bc43ffb0036745721f48353/CompilerInfo.cpp.rule;C:\Users\YW\Documents\GitHub\CMacIonize\.git\HEAD;C:\Users\YW\Documents\GitHub\CMacIonize\src\CompilerInfo.cpp.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\YW\Documents\GitHub\CMacIonize\0\src\CompilerInfo.cpp;C:\Users\YW\Documents\GitHub\CMacIonize\0\dummy_file_that_is_not_created</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating CompilerInfo.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+cd C:\Users\YW\Documents\GitHub\CMacIonize
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"D:\Program Files\CMake\bin\cmake.exe" -DGIT_EXECUTABLE=GIT_EXECUTABLE-NOTFOUND -DCOMPILER_NAME=MSVC -DCOMPILER_VERSION=19.11.25508.2 -DPROJECT_SOURCE_DIR=C:/Users/YW/Documents/GitHub/CMacIonize -DPROJECT_BINARY_DIR=C:/Users/YW/Documents/GitHub/CMacIonize/0 -DHAVE_WINDOWS=True -P C:/Users/YW/Documents/GitHub/CMacIonize/write_compiler_info.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/YW/Documents/GitHub/CMacIonize/0/CMakeFiles/db2f16262bc43ffb0036745721f48353/CompilerInfo.cpp.rule;C:\Users\YW\Documents\GitHub\CMacIonize\.git\HEAD;C:\Users\YW\Documents\GitHub\CMacIonize\src\CompilerInfo.cpp.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\YW\Documents\GitHub\CMacIonize\0\src\CompilerInfo.cpp;C:\Users\YW\Documents\GitHub\CMacIonize\0\dummy_file_that_is_not_created</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\CMakeFiles\2b8aa5ee2d0f4e90f5f4af5595e1ade6\CompilerInfo.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/YW/Documents/GitHub/CMacIonize/0/CMakeFiles/2b8aa5ee2d0f4e90f5f4af5595e1ade6/CompilerInfo.rule;C:\Users\YW\Documents\GitHub\CMacIonize\0\src\CompilerInfo.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\YW\Documents\GitHub\CMacIonize\0\CMakeFiles\CompilerInfo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/YW/Documents/GitHub/CMacIonize/0/CMakeFiles/2b8aa5ee2d0f4e90f5f4af5595e1ade6/CompilerInfo.rule;C:\Users\YW\Documents\GitHub\CMacIonize\0\src\CompilerInfo.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\YW\Documents\GitHub\CMacIonize\0\CMakeFiles\CompilerInfo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/YW/Documents/GitHub/CMacIonize/0/CMakeFiles/2b8aa5ee2d0f4e90f5f4af5595e1ade6/CompilerInfo.rule;C:\Users\YW\Documents\GitHub\CMacIonize\0\src\CompilerInfo.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\YW\Documents\GitHub\CMacIonize\0\CMakeFiles\CompilerInfo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/YW/Documents/GitHub/CMacIonize/0/CMakeFiles/2b8aa5ee2d0f4e90f5f4af5595e1ade6/CompilerInfo.rule;C:\Users\YW\Documents\GitHub\CMacIonize\0\src\CompilerInfo.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\YW\Documents\GitHub\CMacIonize\0\CMakeFiles\CompilerInfo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\YW\Documents\GitHub\CMacIonize\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/YW/Documents/GitHub/CMacIonize/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -HC:/Users/YW/Documents/GitHub/CMacIonize -BC:/Users/YW/Documents/GitHub/CMacIonize/0 --check-stamp-file C:/Users/YW/Documents/GitHub/CMacIonize/0/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/YW/Documents/GitHub/CMacIonize/CMakeLists.txt;C:\Users\YW\Documents\GitHub\CMacIonize\CMakeLists.txt;C:\Users\YW\Documents\GitHub\CMacIonize\0\CMakeFiles\3.11.3\CMakeSystem.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\YW\Documents\GitHub\CMacIonize\0\CMakeFiles\3.11.3\CMakeCCompiler.cmake;C:\Users\YW\Documents\GitHub\CMacIonize\0\CMakeFiles\3.11.3\CMakeCXXCompiler.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\CMakeGenericSystem.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\Platform\Windows.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\Platform\WindowsPaths.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\CMakeCInformation.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\Platform\Windows-MSVC.cmake;C:\Users\YW\Documents\GitHub\CMacIonize\0\CMakeFiles\3.11.3\CMakeRCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\CMakeRCInformation.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\CMakeCXXInformation.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\YW\Documents\GitHub\CMacIonize\0\mintest.cpp;C:\Users\YW\Documents\GitHub\CMacIonize\0\mintest.cpp;C:\Users\YW\Documents\GitHub\CMacIonize\0\mintest.cpp;C:\Users\YW\Documents\GitHub\CMacIonize\0\posixtest.cpp;D:\Program Files\CMake\share\cmake-3.11\Modules\FindGit.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\FindPackageMessage.cmake;C:\Users\YW\Documents\GitHub\CMacIonize\0\mintest.cpp;C:\Users\YW\Documents\GitHub\CMacIonize\0\atomictest.cpp;C:\Users\YW\Documents\GitHub\CMacIonize\0\mintest.cpp;D:\Program Files\CMake\share\cmake-3.11\Modules\FindHDF5.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\SelectLibraryConfigurations.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\FindPackageMessage.cmake;C:\Users\YW\Documents\GitHub\CMacIonize\0\CMakeFiles\hdf5\cmake_hdf5_test.c;D:\Program Files\CMake\share\cmake-3.11\Modules\ProcessorCount.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\FindOpenMP.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\CMakeParseImplicitLinkInfo.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\FindPackageMessage.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\FindPackageMessage.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\FindMPI.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\FindPackageMessage.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\FindMPI\test_mpi.c;D:\Program Files\CMake\share\cmake-3.11\Modules\FindMPI\test_mpi.c;C:\Users\YW\Documents\GitHub\CMacIonize\0\CMakeFiles\FindMPI\test_mpi.cpp;D:\Program Files\CMake\share\cmake-3.11\Modules\FindBoost.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\FindBoost.cmake;C:\Users\YW\Documents\GitHub\CMacIonize\0\CMakeFiles\3.11.3\CMakeFortranCompiler.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\CMakeFortranInformation.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\Compiler\Intel-Fortran.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\Compiler\Intel.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\Platform\Windows-Intel-Fortran.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\Platform\Windows-Intel.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\bondi.param;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\bondi.yml;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\bondi.py;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\bondi.txt;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\dusty_galaxy.param;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\dusty_galaxy.py;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\dusty_galaxy.txt;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\lexingtonHII20.param;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\lexingtonHII20.yml;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\lexingtonHII20.py;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\lexingtonHII20.txt;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\lexingtonHII40.param;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\lexingtonHII40.yml;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\lexingtonHII40.py;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\lexingtonHII40.txt;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\starbench.param;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\starbench.yml;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\starbench.py;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\starbench.txt;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\starbench_voronoi.param;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\starbench_voronoi.yml;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\starbench_voronoi.py;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\starbench_voronoi.txt;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\stromgren.param;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\stromgren.py;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\stromgren.txt;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\stromgren_diffuse.param;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\stromgren_diffuse.py;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\stromgren_diffuse.txt;D:\Program Files\CMake\share\cmake-3.11\Modules\FindDoxygen.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\FindPackageMessage.cmake;C:\Users\YW\Documents\GitHub\CMacIonize\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\YW\Documents\GitHub\CMacIonize\0\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/YW/Documents/GitHub/CMacIonize/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -HC:/Users/YW/Documents/GitHub/CMacIonize -BC:/Users/YW/Documents/GitHub/CMacIonize/0 --check-stamp-file C:/Users/YW/Documents/GitHub/CMacIonize/0/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/YW/Documents/GitHub/CMacIonize/CMakeLists.txt;C:\Users\YW\Documents\GitHub\CMacIonize\CMakeLists.txt;C:\Users\YW\Documents\GitHub\CMacIonize\0\CMakeFiles\3.11.3\CMakeSystem.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\YW\Documents\GitHub\CMacIonize\0\CMakeFiles\3.11.3\CMakeCCompiler.cmake;C:\Users\YW\Documents\GitHub\CMacIonize\0\CMakeFiles\3.11.3\CMakeCXXCompiler.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\CMakeGenericSystem.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\Platform\Windows.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\Platform\WindowsPaths.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\CMakeCInformation.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\Platform\Windows-MSVC.cmake;C:\Users\YW\Documents\GitHub\CMacIonize\0\CMakeFiles\3.11.3\CMakeRCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\CMakeRCInformation.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\CMakeCXXInformation.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\YW\Documents\GitHub\CMacIonize\0\mintest.cpp;C:\Users\YW\Documents\GitHub\CMacIonize\0\mintest.cpp;C:\Users\YW\Documents\GitHub\CMacIonize\0\mintest.cpp;C:\Users\YW\Documents\GitHub\CMacIonize\0\posixtest.cpp;D:\Program Files\CMake\share\cmake-3.11\Modules\FindGit.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\FindPackageMessage.cmake;C:\Users\YW\Documents\GitHub\CMacIonize\0\mintest.cpp;C:\Users\YW\Documents\GitHub\CMacIonize\0\atomictest.cpp;C:\Users\YW\Documents\GitHub\CMacIonize\0\mintest.cpp;D:\Program Files\CMake\share\cmake-3.11\Modules\FindHDF5.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\SelectLibraryConfigurations.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\FindPackageMessage.cmake;C:\Users\YW\Documents\GitHub\CMacIonize\0\CMakeFiles\hdf5\cmake_hdf5_test.c;D:\Program Files\CMake\share\cmake-3.11\Modules\ProcessorCount.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\FindOpenMP.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\CMakeParseImplicitLinkInfo.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\FindPackageMessage.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\FindPackageMessage.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\FindMPI.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\FindPackageMessage.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\FindMPI\test_mpi.c;D:\Program Files\CMake\share\cmake-3.11\Modules\FindMPI\test_mpi.c;C:\Users\YW\Documents\GitHub\CMacIonize\0\CMakeFiles\FindMPI\test_mpi.cpp;D:\Program Files\CMake\share\cmake-3.11\Modules\FindBoost.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\FindBoost.cmake;C:\Users\YW\Documents\GitHub\CMacIonize\0\CMakeFiles\3.11.3\CMakeFortranCompiler.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\CMakeFortranInformation.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\Compiler\Intel-Fortran.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\Compiler\Intel.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\Platform\Windows-Intel-Fortran.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\Platform\Windows-Intel.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\bondi.param;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\bondi.yml;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\bondi.py;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\bondi.txt;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\dusty_galaxy.param;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\dusty_galaxy.py;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\dusty_galaxy.txt;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\lexingtonHII20.param;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\lexingtonHII20.yml;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\lexingtonHII20.py;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\lexingtonHII20.txt;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\lexingtonHII40.param;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\lexingtonHII40.yml;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\lexingtonHII40.py;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\lexingtonHII40.txt;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\starbench.param;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\starbench.yml;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\starbench.py;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\starbench.txt;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\starbench_voronoi.param;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\starbench_voronoi.yml;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\starbench_voronoi.py;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\starbench_voronoi.txt;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\stromgren.param;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\stromgren.py;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\stromgren.txt;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\stromgren_diffuse.param;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\stromgren_diffuse.py;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\stromgren_diffuse.txt;D:\Program Files\CMake\share\cmake-3.11\Modules\FindDoxygen.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\FindPackageMessage.cmake;C:\Users\YW\Documents\GitHub\CMacIonize\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\YW\Documents\GitHub\CMacIonize\0\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Users/YW/Documents/GitHub/CMacIonize/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -HC:/Users/YW/Documents/GitHub/CMacIonize -BC:/Users/YW/Documents/GitHub/CMacIonize/0 --check-stamp-file C:/Users/YW/Documents/GitHub/CMacIonize/0/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/YW/Documents/GitHub/CMacIonize/CMakeLists.txt;C:\Users\YW\Documents\GitHub\CMacIonize\CMakeLists.txt;C:\Users\YW\Documents\GitHub\CMacIonize\0\CMakeFiles\3.11.3\CMakeSystem.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\YW\Documents\GitHub\CMacIonize\0\CMakeFiles\3.11.3\CMakeCCompiler.cmake;C:\Users\YW\Documents\GitHub\CMacIonize\0\CMakeFiles\3.11.3\CMakeCXXCompiler.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\CMakeGenericSystem.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\Platform\Windows.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\Platform\WindowsPaths.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\CMakeCInformation.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\Platform\Windows-MSVC.cmake;C:\Users\YW\Documents\GitHub\CMacIonize\0\CMakeFiles\3.11.3\CMakeRCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\CMakeRCInformation.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\CMakeCXXInformation.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\YW\Documents\GitHub\CMacIonize\0\mintest.cpp;C:\Users\YW\Documents\GitHub\CMacIonize\0\mintest.cpp;C:\Users\YW\Documents\GitHub\CMacIonize\0\mintest.cpp;C:\Users\YW\Documents\GitHub\CMacIonize\0\posixtest.cpp;D:\Program Files\CMake\share\cmake-3.11\Modules\FindGit.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\FindPackageMessage.cmake;C:\Users\YW\Documents\GitHub\CMacIonize\0\mintest.cpp;C:\Users\YW\Documents\GitHub\CMacIonize\0\atomictest.cpp;C:\Users\YW\Documents\GitHub\CMacIonize\0\mintest.cpp;D:\Program Files\CMake\share\cmake-3.11\Modules\FindHDF5.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\SelectLibraryConfigurations.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\FindPackageMessage.cmake;C:\Users\YW\Documents\GitHub\CMacIonize\0\CMakeFiles\hdf5\cmake_hdf5_test.c;D:\Program Files\CMake\share\cmake-3.11\Modules\ProcessorCount.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\FindOpenMP.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\CMakeParseImplicitLinkInfo.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\FindPackageMessage.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\FindPackageMessage.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\FindMPI.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\FindPackageMessage.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\FindMPI\test_mpi.c;D:\Program Files\CMake\share\cmake-3.11\Modules\FindMPI\test_mpi.c;C:\Users\YW\Documents\GitHub\CMacIonize\0\CMakeFiles\FindMPI\test_mpi.cpp;D:\Program Files\CMake\share\cmake-3.11\Modules\FindBoost.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\FindBoost.cmake;C:\Users\YW\Documents\GitHub\CMacIonize\0\CMakeFiles\3.11.3\CMakeFortranCompiler.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\CMakeFortranInformation.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\Compiler\Intel-Fortran.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\Compiler\Intel.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\Platform\Windows-Intel-Fortran.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\Platform\Windows-Intel.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\bondi.param;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\bondi.yml;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\bondi.py;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\bondi.txt;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\dusty_galaxy.param;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\dusty_galaxy.py;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\dusty_galaxy.txt;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\lexingtonHII20.param;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\lexingtonHII20.yml;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\lexingtonHII20.py;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\lexingtonHII20.txt;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\lexingtonHII40.param;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\lexingtonHII40.yml;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\lexingtonHII40.py;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\lexingtonHII40.txt;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\starbench.param;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\starbench.yml;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\starbench.py;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\starbench.txt;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\starbench_voronoi.param;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\starbench_voronoi.yml;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\starbench_voronoi.py;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\starbench_voronoi.txt;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\stromgren.param;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\stromgren.py;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\stromgren.txt;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\stromgren_diffuse.param;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\stromgren_diffuse.py;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\stromgren_diffuse.txt;D:\Program Files\CMake\share\cmake-3.11\Modules\FindDoxygen.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\FindPackageMessage.cmake;C:\Users\YW\Documents\GitHub\CMacIonize\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\YW\Documents\GitHub\CMacIonize\0\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Users/YW/Documents/GitHub/CMacIonize/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -HC:/Users/YW/Documents/GitHub/CMacIonize -BC:/Users/YW/Documents/GitHub/CMacIonize/0 --check-stamp-file C:/Users/YW/Documents/GitHub/CMacIonize/0/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/YW/Documents/GitHub/CMacIonize/CMakeLists.txt;C:\Users\YW\Documents\GitHub\CMacIonize\CMakeLists.txt;C:\Users\YW\Documents\GitHub\CMacIonize\0\CMakeFiles\3.11.3\CMakeSystem.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\YW\Documents\GitHub\CMacIonize\0\CMakeFiles\3.11.3\CMakeCCompiler.cmake;C:\Users\YW\Documents\GitHub\CMacIonize\0\CMakeFiles\3.11.3\CMakeCXXCompiler.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\CMakeGenericSystem.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\Platform\Windows.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\Platform\WindowsPaths.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\CMakeCInformation.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\Platform\Windows-MSVC.cmake;C:\Users\YW\Documents\GitHub\CMacIonize\0\CMakeFiles\3.11.3\CMakeRCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\CMakeRCInformation.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\CMakeCXXInformation.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\YW\Documents\GitHub\CMacIonize\0\mintest.cpp;C:\Users\YW\Documents\GitHub\CMacIonize\0\mintest.cpp;C:\Users\YW\Documents\GitHub\CMacIonize\0\mintest.cpp;C:\Users\YW\Documents\GitHub\CMacIonize\0\posixtest.cpp;D:\Program Files\CMake\share\cmake-3.11\Modules\FindGit.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\FindPackageMessage.cmake;C:\Users\YW\Documents\GitHub\CMacIonize\0\mintest.cpp;C:\Users\YW\Documents\GitHub\CMacIonize\0\atomictest.cpp;C:\Users\YW\Documents\GitHub\CMacIonize\0\mintest.cpp;D:\Program Files\CMake\share\cmake-3.11\Modules\FindHDF5.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\SelectLibraryConfigurations.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\FindPackageMessage.cmake;C:\Users\YW\Documents\GitHub\CMacIonize\0\CMakeFiles\hdf5\cmake_hdf5_test.c;D:\Program Files\CMake\share\cmake-3.11\Modules\ProcessorCount.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\FindOpenMP.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\CMakeParseImplicitLinkInfo.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\FindPackageMessage.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\FindPackageMessage.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\FindMPI.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\FindPackageMessage.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\FindMPI\test_mpi.c;D:\Program Files\CMake\share\cmake-3.11\Modules\FindMPI\test_mpi.c;C:\Users\YW\Documents\GitHub\CMacIonize\0\CMakeFiles\FindMPI\test_mpi.cpp;D:\Program Files\CMake\share\cmake-3.11\Modules\FindBoost.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\FindBoost.cmake;C:\Users\YW\Documents\GitHub\CMacIonize\0\CMakeFiles\3.11.3\CMakeFortranCompiler.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\CMakeFortranInformation.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\Compiler\Intel-Fortran.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\Compiler\Intel.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\Platform\Windows-Intel-Fortran.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\Platform\Windows-Intel.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\bondi.param;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\bondi.yml;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\bondi.py;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\bondi.txt;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\dusty_galaxy.param;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\dusty_galaxy.py;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\dusty_galaxy.txt;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\lexingtonHII20.param;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\lexingtonHII20.yml;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\lexingtonHII20.py;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\lexingtonHII20.txt;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\lexingtonHII40.param;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\lexingtonHII40.yml;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\lexingtonHII40.py;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\lexingtonHII40.txt;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\starbench.param;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\starbench.yml;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\starbench.py;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\starbench.txt;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\starbench_voronoi.param;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\starbench_voronoi.yml;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\starbench_voronoi.py;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\starbench_voronoi.txt;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\stromgren.param;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\stromgren.py;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\stromgren.txt;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\stromgren_diffuse.param;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\stromgren_diffuse.py;C:\Users\YW\Documents\GitHub\CMacIonize\benchmarks\stromgren_diffuse.txt;D:\Program Files\CMake\share\cmake-3.11\Modules\FindDoxygen.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake\share\cmake-3.11\Modules\FindPackageMessage.cmake;C:\Users\YW\Documents\GitHub\CMacIonize\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\YW\Documents\GitHub\CMacIonize\0\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\CMakeFiles\CompilerInfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\ZERO_CHECK.vcxproj">
+      <Project>{1EA4B272-4CED-3B66-A859-47ACA5681F19}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

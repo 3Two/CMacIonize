@@ -1,0 +1,433 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E491453F-414D-31A2-8CFE-9C38A3D6FFC2}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>CMacIonize</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CMacIonize.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CMacIonize</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CMacIonize.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CMacIonize</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CMacIonize.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CMacIonize</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CMacIonize.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CMacIonize</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\YW\Documents\GitHub\CMacIonize\src;C:\Users\YW\Documents\GitHub\CMacIonize\0\src;C:\Users\YW\Documents\GitHub\CMacIonize\0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <CppLanguageStandard>c++11</CppLanguageStandard>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_USE_MATH_DEFINES;NOMINMAX;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USE_MATH_DEFINES;NOMINMAX;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\YW\Documents\GitHub\CMacIonize\src;C:\Users\YW\Documents\GitHub\CMacIonize\0\src;C:\Users\YW\Documents\GitHub\CMacIonize\0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\YW\Documents\GitHub\CMacIonize\src;C:\Users\YW\Documents\GitHub\CMacIonize\0\src;C:\Users\YW\Documents\GitHub\CMacIonize\0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\lib\Debug\IonizationSimulation.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/YW/Documents/GitHub/CMacIonize/0/rundir/Debug/CMacIonize.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/YW/Documents/GitHub/CMacIonize/0/rundir/Debug/CMacIonize.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\YW\Documents\GitHub\CMacIonize\src;C:\Users\YW\Documents\GitHub\CMacIonize\0\src;C:\Users\YW\Documents\GitHub\CMacIonize\0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <CppLanguageStandard>c++11</CppLanguageStandard>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_USE_MATH_DEFINES;NOMINMAX;_CRT_SECURE_NO_WARNINGS;NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_USE_MATH_DEFINES;NOMINMAX;_CRT_SECURE_NO_WARNINGS;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\YW\Documents\GitHub\CMacIonize\src;C:\Users\YW\Documents\GitHub\CMacIonize\0\src;C:\Users\YW\Documents\GitHub\CMacIonize\0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\YW\Documents\GitHub\CMacIonize\src;C:\Users\YW\Documents\GitHub\CMacIonize\0\src;C:\Users\YW\Documents\GitHub\CMacIonize\0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\lib\Release\IonizationSimulation.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/YW/Documents/GitHub/CMacIonize/0/rundir/Release/CMacIonize.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/YW/Documents/GitHub/CMacIonize/0/rundir/Release/CMacIonize.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\YW\Documents\GitHub\CMacIonize\src;C:\Users\YW\Documents\GitHub\CMacIonize\0\src;C:\Users\YW\Documents\GitHub\CMacIonize\0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <CppLanguageStandard>c++11</CppLanguageStandard>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_USE_MATH_DEFINES;NOMINMAX;_CRT_SECURE_NO_WARNINGS;NDEBUG;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_USE_MATH_DEFINES;NOMINMAX;_CRT_SECURE_NO_WARNINGS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\YW\Documents\GitHub\CMacIonize\src;C:\Users\YW\Documents\GitHub\CMacIonize\0\src;C:\Users\YW\Documents\GitHub\CMacIonize\0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\YW\Documents\GitHub\CMacIonize\src;C:\Users\YW\Documents\GitHub\CMacIonize\0\src;C:\Users\YW\Documents\GitHub\CMacIonize\0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\lib\MinSizeRel\IonizationSimulation.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/YW/Documents/GitHub/CMacIonize/0/rundir/MinSizeRel/CMacIonize.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/YW/Documents/GitHub/CMacIonize/0/rundir/MinSizeRel/CMacIonize.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\YW\Documents\GitHub\CMacIonize\src;C:\Users\YW\Documents\GitHub\CMacIonize\0\src;C:\Users\YW\Documents\GitHub\CMacIonize\0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <CppLanguageStandard>c++11</CppLanguageStandard>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_USE_MATH_DEFINES;NOMINMAX;_CRT_SECURE_NO_WARNINGS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_USE_MATH_DEFINES;NOMINMAX;_CRT_SECURE_NO_WARNINGS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\YW\Documents\GitHub\CMacIonize\src;C:\Users\YW\Documents\GitHub\CMacIonize\0\src;C:\Users\YW\Documents\GitHub\CMacIonize\0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\YW\Documents\GitHub\CMacIonize\src;C:\Users\YW\Documents\GitHub\CMacIonize\0\src;C:\Users\YW\Documents\GitHub\CMacIonize\0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\lib\RelWithDebInfo\IonizationSimulation.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/YW/Documents/GitHub/CMacIonize/0/rundir/RelWithDebInfo/CMacIonize.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/YW/Documents/GitHub/CMacIonize/0/rundir/RelWithDebInfo/CMacIonize.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/YW/Documents/GitHub/CMacIonize/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -HC:/Users/YW/Documents/GitHub/CMacIonize -BC:/Users/YW/Documents/GitHub/CMacIonize/0 --check-stamp-file C:/Users/YW/Documents/GitHub/CMacIonize/0/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/YW/Documents/GitHub/CMacIonize/src/CMakeLists.txt;C:\Users\YW\Documents\GitHub\CMacIonize\src\CMakeLists.txt;C:\Users\YW\Documents\GitHub\CMacIonize\data\verner_A.dat;C:\Users\YW\Documents\GitHub\CMacIonize\data\verner_B.dat;C:\Users\YW\Documents\GitHub\CMacIonize\data\verner_C.dat;C:\Users\YW\Documents\GitHub\CMacIonize\src\VernerCrossSectionsDataLocation.hpp.in;C:\Users\YW\Documents\GitHub\CMacIonize\data\verner_rec_data.txt;C:\Users\YW\Documents\GitHub\CMacIonize\src\VernerRecombinationRatesDataLocation.hpp.in;C:\Users\YW\Documents\GitHub\CMacIonize\data\He2q.dat;C:\Users\YW\Documents\GitHub\CMacIonize\src\HeliumTwoPhotonContinuumDataLocation.hpp.in;C:\Users\YW\Documents\GitHub\CMacIonize\data\fg_uvb_dec11.tar.gz;C:\Users\YW\Documents\GitHub\CMacIonize\src\FaucherGiguereDataLocation.hpp.in;C:\Users\YW\Documents\GitHub\CMacIonize\data\wmbasic.tar.gz;C:\Users\YW\Documents\GitHub\CMacIonize\src\WMBasicDataLocation.hpp.in;C:\Users\YW\Documents\GitHub\CMacIonize\src\Configuration.hpp.in;C:\Users\YW\Documents\GitHub\CMacIonize\src\ConfigurationInfo.cpp.in;C:\Users\YW\Documents\GitHub\CMacIonize\src\ConfigurationInfo.hpp.in;C:\Users\YW\Documents\GitHub\CMacIonize\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\YW\Documents\GitHub\CMacIonize\0\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/YW/Documents/GitHub/CMacIonize/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -HC:/Users/YW/Documents/GitHub/CMacIonize -BC:/Users/YW/Documents/GitHub/CMacIonize/0 --check-stamp-file C:/Users/YW/Documents/GitHub/CMacIonize/0/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/YW/Documents/GitHub/CMacIonize/src/CMakeLists.txt;C:\Users\YW\Documents\GitHub\CMacIonize\src\CMakeLists.txt;C:\Users\YW\Documents\GitHub\CMacIonize\data\verner_A.dat;C:\Users\YW\Documents\GitHub\CMacIonize\data\verner_B.dat;C:\Users\YW\Documents\GitHub\CMacIonize\data\verner_C.dat;C:\Users\YW\Documents\GitHub\CMacIonize\src\VernerCrossSectionsDataLocation.hpp.in;C:\Users\YW\Documents\GitHub\CMacIonize\data\verner_rec_data.txt;C:\Users\YW\Documents\GitHub\CMacIonize\src\VernerRecombinationRatesDataLocation.hpp.in;C:\Users\YW\Documents\GitHub\CMacIonize\data\He2q.dat;C:\Users\YW\Documents\GitHub\CMacIonize\src\HeliumTwoPhotonContinuumDataLocation.hpp.in;C:\Users\YW\Documents\GitHub\CMacIonize\data\fg_uvb_dec11.tar.gz;C:\Users\YW\Documents\GitHub\CMacIonize\src\FaucherGiguereDataLocation.hpp.in;C:\Users\YW\Documents\GitHub\CMacIonize\data\wmbasic.tar.gz;C:\Users\YW\Documents\GitHub\CMacIonize\src\WMBasicDataLocation.hpp.in;C:\Users\YW\Documents\GitHub\CMacIonize\src\Configuration.hpp.in;C:\Users\YW\Documents\GitHub\CMacIonize\src\ConfigurationInfo.cpp.in;C:\Users\YW\Documents\GitHub\CMacIonize\src\ConfigurationInfo.hpp.in;C:\Users\YW\Documents\GitHub\CMacIonize\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\YW\Documents\GitHub\CMacIonize\0\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Users/YW/Documents/GitHub/CMacIonize/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -HC:/Users/YW/Documents/GitHub/CMacIonize -BC:/Users/YW/Documents/GitHub/CMacIonize/0 --check-stamp-file C:/Users/YW/Documents/GitHub/CMacIonize/0/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/YW/Documents/GitHub/CMacIonize/src/CMakeLists.txt;C:\Users\YW\Documents\GitHub\CMacIonize\src\CMakeLists.txt;C:\Users\YW\Documents\GitHub\CMacIonize\data\verner_A.dat;C:\Users\YW\Documents\GitHub\CMacIonize\data\verner_B.dat;C:\Users\YW\Documents\GitHub\CMacIonize\data\verner_C.dat;C:\Users\YW\Documents\GitHub\CMacIonize\src\VernerCrossSectionsDataLocation.hpp.in;C:\Users\YW\Documents\GitHub\CMacIonize\data\verner_rec_data.txt;C:\Users\YW\Documents\GitHub\CMacIonize\src\VernerRecombinationRatesDataLocation.hpp.in;C:\Users\YW\Documents\GitHub\CMacIonize\data\He2q.dat;C:\Users\YW\Documents\GitHub\CMacIonize\src\HeliumTwoPhotonContinuumDataLocation.hpp.in;C:\Users\YW\Documents\GitHub\CMacIonize\data\fg_uvb_dec11.tar.gz;C:\Users\YW\Documents\GitHub\CMacIonize\src\FaucherGiguereDataLocation.hpp.in;C:\Users\YW\Documents\GitHub\CMacIonize\data\wmbasic.tar.gz;C:\Users\YW\Documents\GitHub\CMacIonize\src\WMBasicDataLocation.hpp.in;C:\Users\YW\Documents\GitHub\CMacIonize\src\Configuration.hpp.in;C:\Users\YW\Documents\GitHub\CMacIonize\src\ConfigurationInfo.cpp.in;C:\Users\YW\Documents\GitHub\CMacIonize\src\ConfigurationInfo.hpp.in;C:\Users\YW\Documents\GitHub\CMacIonize\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\YW\Documents\GitHub\CMacIonize\0\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Users/YW/Documents/GitHub/CMacIonize/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -HC:/Users/YW/Documents/GitHub/CMacIonize -BC:/Users/YW/Documents/GitHub/CMacIonize/0 --check-stamp-file C:/Users/YW/Documents/GitHub/CMacIonize/0/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/YW/Documents/GitHub/CMacIonize/src/CMakeLists.txt;C:\Users\YW\Documents\GitHub\CMacIonize\src\CMakeLists.txt;C:\Users\YW\Documents\GitHub\CMacIonize\data\verner_A.dat;C:\Users\YW\Documents\GitHub\CMacIonize\data\verner_B.dat;C:\Users\YW\Documents\GitHub\CMacIonize\data\verner_C.dat;C:\Users\YW\Documents\GitHub\CMacIonize\src\VernerCrossSectionsDataLocation.hpp.in;C:\Users\YW\Documents\GitHub\CMacIonize\data\verner_rec_data.txt;C:\Users\YW\Documents\GitHub\CMacIonize\src\VernerRecombinationRatesDataLocation.hpp.in;C:\Users\YW\Documents\GitHub\CMacIonize\data\He2q.dat;C:\Users\YW\Documents\GitHub\CMacIonize\src\HeliumTwoPhotonContinuumDataLocation.hpp.in;C:\Users\YW\Documents\GitHub\CMacIonize\data\fg_uvb_dec11.tar.gz;C:\Users\YW\Documents\GitHub\CMacIonize\src\FaucherGiguereDataLocation.hpp.in;C:\Users\YW\Documents\GitHub\CMacIonize\data\wmbasic.tar.gz;C:\Users\YW\Documents\GitHub\CMacIonize\src\WMBasicDataLocation.hpp.in;C:\Users\YW\Documents\GitHub\CMacIonize\src\Configuration.hpp.in;C:\Users\YW\Documents\GitHub\CMacIonize\src\ConfigurationInfo.cpp.in;C:\Users\YW\Documents\GitHub\CMacIonize\src\ConfigurationInfo.hpp.in;C:\Users\YW\Documents\GitHub\CMacIonize\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\YW\Documents\GitHub\CMacIonize\0\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\CMacIonize.cpp" />
+    <ClCompile Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\CommandLineOption.cpp" />
+    <ClCompile Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\CommandLineParser.cpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\CompilerInfo.cpp.in" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\ConfigurationInfo.cpp.in" />
+    <ClCompile Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\DustScattering.cpp" />
+    <ClCompile Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\DustSimulation.cpp" />
+    <ClCompile Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\EmissivityCalculator.cpp" />
+    <ClCompile Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\RadiationHydrodynamicsSimulation.cpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\Abundances.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\AMRRefinementScheme.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\AMRRefinementSchemeFactory.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\AsciiFileDensityFunction.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\AsciiFileDensityGridWriter.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\Box.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\BondiProfileDensityFunction.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\CartesianDensityGrid.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\ChargeTransferRates.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\CMacIonizeSnapshotDensityFunction.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\CMacIonizeVoronoiGeneratorDistribution.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\Configuration.hpp.in" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\ConfigurationInfo.hpp.in" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\ContinuousPhotonSourceFactory.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\CoordinateVector.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\CommandLineOption.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\CommandLineParser.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\CompilerInfo.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\CrossSections.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\CrossSectionsFactory.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\DensityFunction.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\DensityFunctionFactory.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\DensityGrid.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\DensityGridFactory.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\DensityGridTraversalJob.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\DensityGridTraversalJobMarket.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\DensityGridWriter.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\DensityGridWriterFactory.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\DensityMaskFactory.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\DensityValues.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\DiscICDensityFunction.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\DustPhotonShootJob.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\DustPhotonShootJobMarket.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\EmissivityCalculator.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\EmissivityValues.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\Error.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\FaucherGiguerePhotonSourceSpectrum.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\FixedValueCrossSections.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\FixedValueRecombinationRates.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\HydrogenLymanContinuumSpectrum.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\HeliumLymanContinuumSpectrum.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\HeliumTwoPhotonContinuumSpectrum.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\InterpolatedDensityFunction.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\IonizationPhotonShootJob.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\IonizationPhotonShootJobMarket.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\IonizationStateCalculator.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\IonizationVariablesPropertyAccessors.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\LineCoolingData.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\Lock.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\MonochromaticPhotonSourceSpectrum.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\MPICommunicator.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\OperatingSystem.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\ParameterFile.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\PerturbedCartesianVoronoiGeneratorDistribution.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\Photon.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\PhotonSource.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\PhotonSourceDistribution.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\PhotonSourceDistributionFactory.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\PhotonSourceSpectrum.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\PhotonSourceSpectrumFactory.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\PhysicalConstants.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\PlanckPhotonSourceSpectrum.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\RadiationHydrodynamicsSimulation.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\RecombinationRates.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\RecombinationRatesFactory.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\Signals.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\SILCCPhotonSourceDistribution.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\SimulationBox.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\SingleStarPhotonSourceDistribution.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\SpatialAMRRefinementScheme.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\SPHNGSnapshotDensityFunction.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\SPHVoronoiGeneratorDistribution.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\TemperatureCalculator.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\Timer.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\Utilities.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\VernerCrossSections.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\VernerCrossSectionsDataLocation.hpp.in" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\VernerRecombinationRates.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\VernerRecombinationRatesDataLocation.hpp.in" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\VoronoiGeneratorDistributionFactory.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\WMBasicDataLocation.hpp.in" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\WMBasicPhotonSourceSpectrum.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\WorkDistributor.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\WorkEnvironment.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\Worker.hpp" />
+    <ClInclude Include="C:\Users\YW\Documents\GitHub\CMacIonize\src\Windows.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\ZERO_CHECK.vcxproj">
+      <Project>{1EA4B272-4CED-3B66-A859-47ACA5681F19}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\CompilerInfo.vcxproj">
+      <Project>{572235E1-1766-3B98-81D5-19A760C3243D}</Project>
+      <Name>CompilerInfo</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\src\IonizationSimulation.vcxproj">
+      <Project>{0C0239B4-09CD-318F-B9D0-3348FDAEB7ED}</Project>
+      <Name>IonizationSimulation</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

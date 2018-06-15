@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4A23E52B-66FD-3C1F-A439-D0D6D37A2EB9}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>check_testVernerRecombinationRates</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\YW\Documents\GitHub\CMacIonize\src;C:\Users\YW\Documents\GitHub\CMacIonize\0\src;C:\Users\YW\Documents\GitHub\CMacIonize\0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\YW\Documents\GitHub\CMacIonize\src;C:\Users\YW\Documents\GitHub\CMacIonize\0\src;C:\Users\YW\Documents\GitHub\CMacIonize\0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\YW\Documents\GitHub\CMacIonize\src;C:\Users\YW\Documents\GitHub\CMacIonize\0\src;C:\Users\YW\Documents\GitHub\CMacIonize\0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\YW\Documents\GitHub\CMacIonize\src;C:\Users\YW\Documents\GitHub\CMacIonize\0\src;C:\Users\YW\Documents\GitHub\CMacIonize\0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\CMakeFiles\0d5525041d8619845d3c9fa2e3a64f64\check_testVernerRecombinationRates.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"D:\Program Files\CMake\bin\ctest.exe" --output-on-failure -R testVernerRecombinationRates
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/YW/Documents/GitHub/CMacIonize/0/CMakeFiles/0d5525041d8619845d3c9fa2e3a64f64/check_testVernerRecombinationRates.rule;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Debug\testVernerRecombinationRates.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\YW\Documents\GitHub\CMacIonize\0\test\CMakeFiles\check_testVernerRecombinationRates</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"D:\Program Files\CMake\bin\ctest.exe" --output-on-failure -R testVernerRecombinationRates
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/YW/Documents/GitHub/CMacIonize/0/CMakeFiles/0d5525041d8619845d3c9fa2e3a64f64/check_testVernerRecombinationRates.rule;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\Release\testVernerRecombinationRates.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\YW\Documents\GitHub\CMacIonize\0\test\CMakeFiles\check_testVernerRecombinationRates</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"D:\Program Files\CMake\bin\ctest.exe" --output-on-failure -R testVernerRecombinationRates
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/YW/Documents/GitHub/CMacIonize/0/CMakeFiles/0d5525041d8619845d3c9fa2e3a64f64/check_testVernerRecombinationRates.rule;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\MinSizeRel\testVernerRecombinationRates.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\YW\Documents\GitHub\CMacIonize\0\test\CMakeFiles\check_testVernerRecombinationRates</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"D:\Program Files\CMake\bin\ctest.exe" --output-on-failure -R testVernerRecombinationRates
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/YW/Documents/GitHub/CMacIonize/0/CMakeFiles/0d5525041d8619845d3c9fa2e3a64f64/check_testVernerRecombinationRates.rule;C:\Users\YW\Documents\GitHub\CMacIonize\0\rundir\test\RelWithDebInfo\testVernerRecombinationRates.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\YW\Documents\GitHub\CMacIonize\0\test\CMakeFiles\check_testVernerRecombinationRates</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\YW\Documents\GitHub\CMacIonize\test\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/YW/Documents/GitHub/CMacIonize/test/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -HC:/Users/YW/Documents/GitHub/CMacIonize -BC:/Users/YW/Documents/GitHub/CMacIonize/0 --check-stamp-file C:/Users/YW/Documents/GitHub/CMacIonize/0/test/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/YW/Documents/GitHub/CMacIonize/test/CMakeLists.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\CMakeLists.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\linecool_fortran_data.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\linecool_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\linestr_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\h0_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\verner_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\test.param;C:\Users\YW\Documents\GitHub\CMacIonize\test\verner_rec_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\testgrid.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\blocksyntaxtest.yml;C:\Users\YW\Documents\GitHub\CMacIonize\test\KingdonFerland_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\tbal_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\ioneng_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\bjump_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\hiilines_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\SPHNGtest.dat;C:\Users\YW\Documents\GitHub\CMacIonize\test\SPHNGtest_notags.dat;C:\Users\YW\Documents\GitHub\CMacIonize\test\SPHNG_data.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\test_interpolated_density.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\test_dustsimulation.param;C:\Users\YW\Documents\GitHub\CMacIonize\test\test_ionizationsimulation.param;C:\Users\YW\Documents\GitHub\CMacIonize\test\test_CMI_library.param;C:\Users\YW\Documents\GitHub\CMacIonize\test\probset_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\test_lambertw_input.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\YW\Documents\GitHub\CMacIonize\0\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/YW/Documents/GitHub/CMacIonize/test/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -HC:/Users/YW/Documents/GitHub/CMacIonize -BC:/Users/YW/Documents/GitHub/CMacIonize/0 --check-stamp-file C:/Users/YW/Documents/GitHub/CMacIonize/0/test/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/YW/Documents/GitHub/CMacIonize/test/CMakeLists.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\CMakeLists.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\linecool_fortran_data.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\linecool_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\linestr_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\h0_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\verner_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\test.param;C:\Users\YW\Documents\GitHub\CMacIonize\test\verner_rec_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\testgrid.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\blocksyntaxtest.yml;C:\Users\YW\Documents\GitHub\CMacIonize\test\KingdonFerland_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\tbal_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\ioneng_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\bjump_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\hiilines_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\SPHNGtest.dat;C:\Users\YW\Documents\GitHub\CMacIonize\test\SPHNGtest_notags.dat;C:\Users\YW\Documents\GitHub\CMacIonize\test\SPHNG_data.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\test_interpolated_density.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\test_dustsimulation.param;C:\Users\YW\Documents\GitHub\CMacIonize\test\test_ionizationsimulation.param;C:\Users\YW\Documents\GitHub\CMacIonize\test\test_CMI_library.param;C:\Users\YW\Documents\GitHub\CMacIonize\test\probset_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\test_lambertw_input.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\YW\Documents\GitHub\CMacIonize\0\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Users/YW/Documents/GitHub/CMacIonize/test/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -HC:/Users/YW/Documents/GitHub/CMacIonize -BC:/Users/YW/Documents/GitHub/CMacIonize/0 --check-stamp-file C:/Users/YW/Documents/GitHub/CMacIonize/0/test/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/YW/Documents/GitHub/CMacIonize/test/CMakeLists.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\CMakeLists.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\linecool_fortran_data.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\linecool_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\linestr_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\h0_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\verner_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\test.param;C:\Users\YW\Documents\GitHub\CMacIonize\test\verner_rec_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\testgrid.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\blocksyntaxtest.yml;C:\Users\YW\Documents\GitHub\CMacIonize\test\KingdonFerland_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\tbal_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\ioneng_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\bjump_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\hiilines_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\SPHNGtest.dat;C:\Users\YW\Documents\GitHub\CMacIonize\test\SPHNGtest_notags.dat;C:\Users\YW\Documents\GitHub\CMacIonize\test\SPHNG_data.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\test_interpolated_density.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\test_dustsimulation.param;C:\Users\YW\Documents\GitHub\CMacIonize\test\test_ionizationsimulation.param;C:\Users\YW\Documents\GitHub\CMacIonize\test\test_CMI_library.param;C:\Users\YW\Documents\GitHub\CMacIonize\test\probset_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\test_lambertw_input.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\YW\Documents\GitHub\CMacIonize\0\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Users/YW/Documents/GitHub/CMacIonize/test/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -HC:/Users/YW/Documents/GitHub/CMacIonize -BC:/Users/YW/Documents/GitHub/CMacIonize/0 --check-stamp-file C:/Users/YW/Documents/GitHub/CMacIonize/0/test/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/YW/Documents/GitHub/CMacIonize/test/CMakeLists.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\CMakeLists.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\linecool_fortran_data.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\linecool_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\linestr_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\h0_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\verner_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\test.param;C:\Users\YW\Documents\GitHub\CMacIonize\test\verner_rec_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\testgrid.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\blocksyntaxtest.yml;C:\Users\YW\Documents\GitHub\CMacIonize\test\KingdonFerland_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\tbal_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\ioneng_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\bjump_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\hiilines_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\SPHNGtest.dat;C:\Users\YW\Documents\GitHub\CMacIonize\test\SPHNGtest_notags.dat;C:\Users\YW\Documents\GitHub\CMacIonize\test\SPHNG_data.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\test_interpolated_density.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\test_dustsimulation.param;C:\Users\YW\Documents\GitHub\CMacIonize\test\test_ionizationsimulation.param;C:\Users\YW\Documents\GitHub\CMacIonize\test\test_CMI_library.param;C:\Users\YW\Documents\GitHub\CMacIonize\test\probset_testdata.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\test_lambertw_input.txt;C:\Users\YW\Documents\GitHub\CMacIonize\test\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\YW\Documents\GitHub\CMacIonize\0\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\test\CMakeFiles\check_testVernerRecombinationRates" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\ZERO_CHECK.vcxproj">
+      <Project>{1EA4B272-4CED-3B66-A859-47ACA5681F19}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\YW\Documents\GitHub\CMacIonize\0\test\testVernerRecombinationRates.vcxproj">
+      <Project>{226CEB9A-32C3-350B-87F1-94B78A860241}</Project>
+      <Name>testVernerRecombinationRates</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
