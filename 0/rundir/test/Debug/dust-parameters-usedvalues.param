@@ -1,4 +1,4 @@
-# file written on 15/06/2018, 12:14:32.
+# file written on 19/06/2018, 00:03:51.
 CCDImage:
   anchor x: value not used # (-12.1 kpc)
   anchor y: value not used # (-12.1 kpc)
@@ -18,8 +18,8 @@ DensityFunction:
   central density: value not used # (1. cm^-3)
   density: 1e+08 m^-3 # (default value)
   neutral fraction H: 1e-06 # (default value)
-  scale height ISM: value not used # (0.22 kpc)
-  scale length ISM: value not used # (6.0 kpc)
+  scale height ISM: value not used # (0.000022 kpc)
+  scale length ISM: value not used # (0.0006 kpc)
   temperature: 8000 K # (default value)
 DensityGrid:
   number of cells: [25, 25, 25] # ([25, 25, 25])
@@ -32,9 +32,9 @@ PhotonSourceDistribution:
   luminosity: 4.26e+49 Hz # (default value)
   position: [0 m, 0 m, 0 m] # (default value)
 SimulationBox:
-  anchor: [-3.7032e+20 m, -3.7032e+20 m, -3.7032e+20 m] # ([-12. kpc, -12. kpc, -12. kpc])
+  anchor: [-1.543e+15 m, -1.543e+15 m, -1.543e+15 m] # ([-0.05 pc, -0.05 pc, -0.05 pc])
   periodicity: [false, false, false] # (default value)
-  sides: [7.4064e+20 m, 7.4064e+20 m, 7.4064e+20 m] # ([24. kpc, 24. kpc, 24. kpc])
+  sides: [3.086e+15 m, 3.086e+15 m, 3.086e+15 m] # ([0.1 pc, 0.1 pc, 0.1 pc])
 dust:
   band: V # (V)
 hydro:

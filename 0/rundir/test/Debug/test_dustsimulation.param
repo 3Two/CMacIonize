@@ -14,15 +14,15 @@ ContinuousPhotonSource:
   scale height stars: 0.6 kpc
   scale length stars: 5. kpc
 DensityFunction:
-  scale height ISM: 0.22 kpc
+  scale height ISM: 0.000022 kpc
   central density: 1. cm^-3
-  scale length ISM: 6.0 kpc
+  scale length ISM: 0.0006 kpc
 DensityGrid:
   number of cells: [25, 25, 25]
   periodicity: [false, false, false]
 SimulationBox:
-  anchor: [-12. kpc, -12. kpc, -12. kpc]
-  sides: [24. kpc, 24. kpc, 24. kpc]
+  anchor: [-0.05 pc, -0.05 pc, -0.05 pc]
+  sides: [0.1 pc, 0.1 pc, 0.1 pc]
 dust:
   band: V
 hydro:

@@ -160,14 +160,13 @@ int DustSimulation::do_simulation(CommandLineParser &parser, bool write_output,
   dust_workdistributor.do_in_parallel(dustphotonshootjobs);
   worktimer.stop();
   std::ofstream file("Dustoutput.txt");
-  file << "#postionx \t positiony \t positionz \t dust density \t forcex \t forcey \t forcez" << std::endl;
+  file << "# r \t netforce" << std::endl;
   for (auto it = grid.begin(); it != grid.end(); ++it) {
 	  CoordinateVector<double> position = it.get_cell_midpoint();
 	  DustVariables dustvariables = it.get_dust_variables();
-	  double fffoorce = it.get_dust_variables().get_force().x();
-	  std::cout << fffoorce << std::endl;
+	  
 
-	  file << position.x() << "\t" << position.y() << "\t" << position.z() << "\t" << dustvariables.get_dust_density() << "\t" << dustvariables.get_force().x() << "\t" << dustvariables.get_force().y() << "\t" << dustvariables.get_force().z() << std::endl;
+	  file << position.norm() <<   "\t" << dustvariables.get_force().norm()  << std::endl;
   }
   
 

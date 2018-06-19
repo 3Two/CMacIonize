@@ -108,11 +108,9 @@ public:
       //photon.set_direction(direction);
       //photon.set_direction_parameters(sint, cost, phi, sinp, cosp);
       // overwrite cross section: we want it to be the dust attenuation
-      photon.set_cross_section(ION_H_n, _dust_scattering.get_kappa());
+      photon.set_cross_section(ION_H_n, 3240);
 	  photon.set_weight(1.);
 
-
-      const double tau_max = _density_grid.integrate_optical_depth(photon);
       double tau = -std::log(_random_generator.get_uniform_random_double());
       DensityGrid::iterator it = _density_grid.interact(photon, tau);
 

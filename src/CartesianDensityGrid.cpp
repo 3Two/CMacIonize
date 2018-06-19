@@ -348,6 +348,7 @@ double CartesianDensityGrid::integrate_optical_depth(const Photon &photon) {
     // Helium abundance. Should be a parameter.
     optical_depth +=
         get_optical_depth(ds, it.get_ionization_variables(),it.get_dust_variables(), photon);
+	
 
     photon_origin = next_wall;
     index += next_index;
@@ -399,6 +400,7 @@ DensityGrid::iterator CartesianDensityGrid::interact(Photon &photon,
 
     // Helium abundance. Should be a parameter.
     double tau = get_optical_depth(ds, it.get_ionization_variables(), it.get_dust_variables(), photon);
+	
     optical_depth -= tau;
 
     // if the optical depth exceeds or equals the wanted value: exit the loop
@@ -425,7 +427,7 @@ DensityGrid::iterator CartesianDensityGrid::interact(Photon &photon,
     // ds is now the actual distance travelled in the cell
     // update contributions to mean intensity integrals
     update_integrals(ds, it, photon);
-
+	
     S += ds;
   }
 
