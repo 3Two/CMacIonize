@@ -28,6 +28,6 @@ dust:
 hydro:
   active: false
 DustSimulation:
-  number of photons: 50000
+  number of photons: 10e5
   output folder: .
   random seed: 42

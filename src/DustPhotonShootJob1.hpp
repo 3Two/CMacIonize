@@ -108,20 +108,19 @@ public:
       //photon.set_direction(direction);
       //photon.set_direction_parameters(sint, cost, phi, sinp, cosp);
       // overwrite cross section: we want it to be the dust attenuation
-      photon.set_cross_section(ION_H_n, 3240);
-	  photon.set_weight(1.);
-
+      photon.set_cross_section(ION_H_n, 0);
+	  photon.set_opacity(324.);
+	  photon.set_weight(1./ _numphoton);
       double tau = -std::log(_random_generator.get_uniform_random_double());
       DensityGrid::iterator it = _density_grid.interact(photon, tau);
 
-  //    while (it != _density_grid.end()) {
+      while (it != _density_grid.end()) {
 
-  //      // after every scattering event, the accumulated albedo is reduced
- 
-  //     /* _dust_scattering.scatter(photon, _random_generator);*/
-  //      tau = -std::log(_random_generator.get_uniform_random_double());
-  //      it = _density_grid.interact(photon, tau);
-  //    }
+        // after every scattering event, the accumulated albedo is reduced
+        _dust_scattering.scatter(photon, _random_generator);
+        tau = -std::log(_random_generator.get_uniform_random_double());
+        it = _density_grid.interact(photon, tau);
+      }
   }
   }
 

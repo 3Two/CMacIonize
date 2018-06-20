@@ -95,7 +95,7 @@ private:
    */
   inline static double get_hgg_for_band(std::string band) {
     if (band == "V") {
-      return 0.44;
+      return 0.9;
     } else if (band == "K") {
       return 0.02;
     } else {
@@ -130,7 +130,7 @@ private:
    */
   inline static double get_albedo_for_band(std::string band) {
     if (band == "V") {
-      return 0.;
+      return 1.;
     } else if (band == "K") {
       return 0.21;
     } else {

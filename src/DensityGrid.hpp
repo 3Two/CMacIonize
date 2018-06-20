@@ -113,12 +113,12 @@ protected:
   get_optical_depth(double ds, const IonizationVariables &ionization_variables, const DustVariables &dust_variables,
                     const Photon &photon) {
     return 
-		/*ds * ionization_variables.get_number_density() **/
-			   //(photon.get_cross_section(ION_H_n) *
-      //          ionization_variables.get_ionic_fraction(ION_H_n) +
-      //      photon.get_cross_section_He_corr() *
-      //          ionization_variables.get_ionic_fraction(ION_He_n))+
-		   ds * photon.get_cross_section(ION_H_n)* dust_variables.get_dust_density();
+		ds * ionization_variables.get_number_density() *
+			   (photon.get_cross_section(ION_H_n) *
+                ionization_variables.get_ionic_fraction(ION_H_n) +
+            photon.get_cross_section_He_corr() *
+                ionization_variables.get_ionic_fraction(ION_He_n))+
+		   ds * photon.get_opacity()* dust_variables.get_dust_density();
   }
 
   /**
@@ -135,12 +135,12 @@ protected:
     IonizationVariables &ionization_variables = cell.get_ionization_variables();
 	if (dust_variables.get_dust_density() > 0.) {
 		
-		double dforcex=((dust_variables.get_dust_density()*ds*photon.get_cross_section(ION_H_n)
-			*(1 / cell.get_volume())*(2.82e16)*(1./50000.)*(1. / 3e8)*(photon.get_direction().x()/photon.get_direction().norm())));
-		double dforcey = ((dust_variables.get_dust_density()*ds*photon.get_cross_section(ION_H_n)
-			*(1 / cell.get_volume())*(2.82e16)*(1./50000.)*(1. / 3e8)*(photon.get_direction().y() / photon.get_direction().norm())));
-		double dforcez = ((dust_variables.get_dust_density()*ds*photon.get_cross_section(ION_H_n)
-			*(1 / cell.get_volume())*(2.82e16)*(1. / 50000.)*(1. / 3e8)*(photon.get_direction().z() / photon.get_direction().norm())));
+		double dforcex=((dust_variables.get_dust_density()*ds*photon.get_opacity()
+			*(1 / cell.get_volume())*(2.82e16)*(photon.get_weight())*(1. / 3e8)*(photon.get_direction().x()/photon.get_direction().norm())));
+		double dforcey = ((dust_variables.get_dust_density()*ds*photon.get_opacity()
+			*(1 / cell.get_volume())*(2.82e16)*(photon.get_weight())*(1. / 3e8)*(photon.get_direction().y() / photon.get_direction().norm())));
+		double dforcez = ((dust_variables.get_dust_density()*ds*photon.get_opacity()
+			*(1 / cell.get_volume())*(2.82e16)*(photon.get_weight())*(1. / 3e8)*(photon.get_direction().z() / photon.get_direction().norm())));
 		CoordinateVector <>dforce(dforcex, dforcey, dforcez);
 		
 
@@ -744,7 +744,8 @@ public:
 
       DensityValues vals = _function(it);
       IonizationVariables &ionization_variables = it.get_ionization_variables();
-      ionization_variables.set_number_density(vals.get_number_density());
+      ionization_variables.set_number_density(0.);
+	  //vals.get_number_density()
       ionization_variables.set_temperature(vals.get_temperature());
 	  DustVariables &dust_variables = it.get_dust_variables();
 	  dust_variables.set_dust_density(1e-16);

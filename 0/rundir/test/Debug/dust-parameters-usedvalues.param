@@ -1,4 +1,4 @@
-# file written on 19/06/2018, 00:03:51.
+# file written on 20/06/2018, 12:53:42.
 CCDImage:
   anchor x: value not used # (-12.1 kpc)
   anchor y: value not used # (-12.1 kpc)
@@ -25,7 +25,7 @@ DensityGrid:
   number of cells: [25, 25, 25] # ([25, 25, 25])
   periodicity: value not used # ([false, false, false])
 DustSimulation:
-  number of photons: 50000 # (50000)
+  number of photons: 1000000 # (10e5)
   output folder: . # (.)
   random seed: 42 # (42)
 PhotonSourceDistribution:
