@@ -109,19 +109,43 @@ public:
       //photon.set_direction_parameters(sint, cost, phi, sinp, cosp);
       // overwrite cross section: we want it to be the dust attenuation
       photon.set_cross_section(ION_H_n, 0);
-	  photon.set_opacity(324.);
-	  photon.set_weight(1./ _numphoton);
+	  photon.set_opacity(0.0324);
+	  photon.set_weight(1./ 500000.);
       double tau = -std::log(_random_generator.get_uniform_random_double());
       DensityGrid::iterator it = _density_grid.interact(photon, tau);
-
-      while (it != _density_grid.end()) {
-
-        // after every scattering event, the accumulated albedo is reduced
-        _dust_scattering.scatter(photon, _random_generator);
+	  
+	  while (it != _density_grid.end()) {
+		  
+	 double phi_new = 2 * M_PI*_random_generator.get_uniform_random_double();
+		  double cos_phi_new = std::cos(phi_new);
+		  double sin_phi_new = std::sin(phi_new);
+		  CoordinateVector<> direction_new;
+		  double ggg = 0.9;
+		  double theta_new = std::acos((1/2*ggg)*(1+std::pow(ggg,2.)-
+			  std::pow((1- std::pow(ggg, 2.))/
+				  std::pow(1-ggg+2*ggg*_random_generator.get_uniform_random_double(),1.5),2)));
+		  double TTT = std::sqrt(1 - std::pow((photon.get_direction().z()),2));
+		  direction_new[0] = std::sin(theta_new) * (photon.get_direction().x()*photon.get_direction().z()*cos_phi_new- photon.get_direction().y()*sin_phi_new)/TTT+
+			  photon.get_direction().x()*std::cos(theta_new);
+		  direction_new[1] = std::sin(theta_new) * (photon.get_direction().y()*photon.get_direction().z()*cos_phi_new + photon.get_direction().x()*sin_phi_new) / TTT +
+			  photon.get_direction().y()*std::cos(theta_new);
+		  direction_new[2] = -std::sin(theta_new) *cos_phi_new * TTT+photon.get_direction().z()*std::cos(theta_new);
+	/* double theta_new = std::acos(2 * _random_generator.get_uniform_random_double() - 1.);
+		  direction_new[0] = std::sin(theta_new) * cos_phi_new;
+		  direction_new[1] = std::sin(theta_new) * sin_phi_new;
+		  direction_new[2] = std::cos(theta_new);*/
+		photon.set_direction(direction_new);
+		//  
+		  /*std::cout << "scatter!"<< std::endl;*/
+        //_dust_scattering.scatter(photon, _random_generator);
         tau = -std::log(_random_generator.get_uniform_random_double());
         it = _density_grid.interact(photon, tau);
       }
+
+	 ///* std::cout << "out!" << std::endl;*/
+	
   }
+	
   }
 
   /**

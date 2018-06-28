@@ -1,0 +1,57 @@
+﻿  Building Custom Rule C:/Users/YW/Documents/GitHub/CMacIonize/src/CMakeLists.txt
+  CMake does not need to re-run because C:/Users/YW/Documents/GitHub/CMacIonize/0/src/CMakeFiles/generate.stamp is up-to-date.
+  CMacIonize.cpp
+c:\users\yw\documents\github\cmacionize\src\Utilities.hpp(85): warning C4244: 'return': conversion from 'double' to 'int_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\Utilities.hpp(836): warning C4244: 'initializing': conversion from 'double' to 'uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\RandomGenerator.hpp(230): warning C4244: 'return': conversion from 'double' to 'int_fast32_t', possible loss of data
+  CommandLineOption.cpp
+c:\users\yw\documents\github\cmacionize\src\Utilities.hpp(85): warning C4244: 'return': conversion from 'double' to 'int_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\Utilities.hpp(836): warning C4244: 'initializing': conversion from 'double' to 'uint_fast32_t', possible loss of data
+  CommandLineParser.cpp
+c:\users\yw\documents\github\cmacionize\src\Utilities.hpp(85): warning C4244: 'return': conversion from 'double' to 'int_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\Utilities.hpp(836): warning C4244: 'initializing': conversion from 'double' to 'uint_fast32_t', possible loss of data
+  DustScattering.cpp
+c:\users\yw\documents\github\cmacionize\src\Utilities.hpp(85): warning C4244: 'return': conversion from 'double' to 'int_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\Utilities.hpp(836): warning C4244: 'initializing': conversion from 'double' to 'uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\RandomGenerator.hpp(230): warning C4244: 'return': conversion from 'double' to 'int_fast32_t', possible loss of data
+  DustSimulation.cpp
+c:\users\yw\documents\github\cmacionize\src\Utilities.hpp(85): warning C4244: 'return': conversion from 'double' to 'int_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\Utilities.hpp(836): warning C4244: 'initializing': conversion from 'double' to 'uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\CCDImage.hpp(258): warning C4244: 'initializing': conversion from 'double' to 'uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\CCDImage.hpp(258): warning C4244: 'initializing': conversion from 'double' to 'const uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\CCDImage.hpp(259): warning C4244: 'initializing': conversion from 'double' to 'uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\CCDImage.hpp(259): warning C4244: 'initializing': conversion from 'double' to 'const uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\CCDImage.hpp(325): warning C4244: '=': conversion from 'double' to 'uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\CCDImage.hpp(334): warning C4244: '=': conversion from 'double' to 'uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\RandomGenerator.hpp(230): warning C4244: 'return': conversion from 'double' to 'int_fast32_t', possible loss of data
+C:\Users\YW\Documents\GitHub\CMacIonize\src\DustSimulation.cpp(105): warning C4244: 'argument': conversion from 'double' to 'uint_fast64_t', possible loss of data
+  EmissivityCalculator.cpp
+c:\users\yw\documents\github\cmacionize\src\Utilities.hpp(85): warning C4244: 'return': conversion from 'double' to 'int_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\Utilities.hpp(836): warning C4244: 'initializing': conversion from 'double' to 'uint_fast32_t', possible loss of data
+  RadiationHydrodynamicsSimulation.cpp
+c:\users\yw\documents\github\cmacionize\src\Utilities.hpp(85): warning C4244: 'return': conversion from 'double' to 'int_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\Utilities.hpp(836): warning C4244: 'initializing': conversion from 'double' to 'uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\RandomGenerator.hpp(230): warning C4244: 'return': conversion from 'double' to 'int_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\AMRDensityGrid.hpp(661): error C3867: 'DensityGrid::iterator::get_dust_variables': non-standard syntax; use '&' to create a pointer to member
+c:\users\yw\documents\github\cmacionize\src\FractalDensityMask.hpp(141): warning C4244: 'initializing': conversion from 'double' to 'uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\FractalDensityMask.hpp(141): warning C4244: 'initializing': conversion from 'double' to 'const uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\FractalDensityMask.hpp(142): warning C4244: 'initializing': conversion from 'double' to 'uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\FractalDensityMask.hpp(142): warning C4244: 'initializing': conversion from 'double' to 'const uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\FractalDensityMask.hpp(143): warning C4244: 'initializing': conversion from 'double' to 'uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\FractalDensityMask.hpp(143): warning C4244: 'initializing': conversion from 'double' to 'const uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\FractalDensityMask.hpp(326): warning C4244: 'initializing': conversion from 'double' to 'const uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\FractalDensityMask.hpp(385): warning C4244: 'argument': conversion from 'double' to 'uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\FractalDensityMask.hpp(438): warning C4244: 'initializing': conversion from 'double' to 'uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\FractalDensityMask.hpp(438): warning C4244: 'initializing': conversion from 'double' to 'const uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\FractalDensityMask.hpp(440): warning C4244: 'initializing': conversion from 'double' to 'uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\FractalDensityMask.hpp(440): warning C4244: 'initializing': conversion from 'double' to 'const uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\FractalDensityMask.hpp(442): warning C4244: 'initializing': conversion from 'double' to 'uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\FractalDensityMask.hpp(442): warning C4244: 'initializing': conversion from 'double' to 'const uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\FractalDensityMask.hpp(455): warning C4244: 'initializing': conversion from 'double' to 'uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\FractalDensityMask.hpp(455): warning C4244: 'initializing': conversion from 'double' to 'const uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\FractalDensityMask.hpp(457): warning C4244: 'initializing': conversion from 'double' to 'uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\FractalDensityMask.hpp(457): warning C4244: 'initializing': conversion from 'double' to 'const uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\FractalDensityMask.hpp(459): warning C4244: 'initializing': conversion from 'double' to 'uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\FractalDensityMask.hpp(459): warning C4244: 'initializing': conversion from 'double' to 'const uint_fast32_t', possible loss of data
+C:\Users\YW\Documents\GitHub\CMacIonize\src\RadiationHydrodynamicsSimulation.cpp(260): warning C4244: 'argument': conversion from 'double' to 'uint_fast64_t', possible loss of data
+  Generating Code...

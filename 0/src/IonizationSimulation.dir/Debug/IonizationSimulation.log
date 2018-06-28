@@ -1,0 +1,256 @@
+﻿  Building Custom Rule C:/Users/YW/Documents/GitHub/CMacIonize/src/CMakeLists.txt
+  CMake does not need to re-run because C:/Users/YW/Documents/GitHub/CMacIonize/0/src/CMakeFiles/generate.stamp is up-to-date.
+  AsciiFileDensityFunction.cpp
+c:\users\yw\documents\github\cmacionize\src\Utilities.hpp(85): warning C4244: 'return': conversion from 'double' to 'int_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\Utilities.hpp(836): warning C4244: 'initializing': conversion from 'double' to 'uint_fast32_t', possible loss of data
+C:\Users\YW\Documents\GitHub\CMacIonize\src\AsciiFileDensityFunction.cpp(82): warning C4244: '=': conversion from 'double' to 'uint_fast32_t', possible loss of data
+C:\Users\YW\Documents\GitHub\CMacIonize\src\AsciiFileDensityFunction.cpp(83): warning C4244: '=': conversion from 'double' to 'uint_fast32_t', possible loss of data
+C:\Users\YW\Documents\GitHub\CMacIonize\src\AsciiFileDensityFunction.cpp(84): warning C4244: '=': conversion from 'double' to 'uint_fast32_t', possible loss of data
+C:\Users\YW\Documents\GitHub\CMacIonize\src\AsciiFileDensityFunction.cpp(175): warning C4244: '=': conversion from 'double' to 'uint_fast32_t', possible loss of data
+C:\Users\YW\Documents\GitHub\CMacIonize\src\AsciiFileDensityFunction.cpp(177): warning C4244: '=': conversion from 'double' to 'uint_fast32_t', possible loss of data
+C:\Users\YW\Documents\GitHub\CMacIonize\src\AsciiFileDensityFunction.cpp(179): warning C4244: '=': conversion from 'double' to 'uint_fast32_t', possible loss of data
+  AsciiFileDensityGridWriter.cpp
+c:\users\yw\documents\github\cmacionize\src\Utilities.hpp(85): warning C4244: 'return': conversion from 'double' to 'int_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\Utilities.hpp(836): warning C4244: 'initializing': conversion from 'double' to 'uint_fast32_t', possible loss of data
+  CartesianDensityGrid.cpp
+c:\users\yw\documents\github\cmacionize\src\Utilities.hpp(85): warning C4244: 'return': conversion from 'double' to 'int_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\Utilities.hpp(836): warning C4244: 'initializing': conversion from 'double' to 'uint_fast32_t', possible loss of data
+C:\Users\YW\Documents\GitHub\CMacIonize\src\CartesianDensityGrid.cpp(149): warning C4244: 'initializing': conversion from 'double' to 'int_fast32_t', possible loss of data
+C:\Users\YW\Documents\GitHub\CMacIonize\src\CartesianDensityGrid.cpp(151): warning C4244: 'initializing': conversion from 'double' to 'int_fast32_t', possible loss of data
+C:\Users\YW\Documents\GitHub\CMacIonize\src\CartesianDensityGrid.cpp(153): warning C4244: 'initializing': conversion from 'double' to 'int_fast32_t', possible loss of data
+  ChargeTransferRates.cpp
+  DensityGrid.cpp
+c:\users\yw\documents\github\cmacionize\src\Utilities.hpp(85): warning C4244: 'return': conversion from 'double' to 'int_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\Utilities.hpp(836): warning C4244: 'initializing': conversion from 'double' to 'uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\DensityGridTraversalJobMarket.hpp(111): warning C4244: 'initializing': conversion from 'double' to 'cellsize_t', possible loss of data
+  c:\users\yw\documents\github\cmacionize\src\DensityGridTraversalJobMarket.hpp(94): note: while compiling class template member function 'DensityGridTraversalJob<DensityGrid::DensityGridInitializationFunction> *DensityGridTraversalJobMarket<DensityGrid::DensityGridInitializationFunction>::get_job(int_fast32_t)'
+  c:\users\yw\documents\github\cmacionize\src\Worker.hpp(88): note: see reference to function template instantiation 'DensityGridTraversalJob<DensityGrid::DensityGridInitializationFunction> *DensityGridTraversalJobMarket<DensityGrid::DensityGridInitializationFunction>::get_job(int_fast32_t)' being compiled
+  C:\Users\YW\Documents\GitHub\CMacIonize\src\DensityGrid.cpp(56): note: see reference to class template instantiation 'DensityGridTraversalJobMarket<DensityGrid::DensityGridInitializationFunction>' being compiled
+c:\users\yw\documents\github\cmacionize\src\DensityGridTraversalJobMarket.hpp(112): warning C4244: 'initializing': conversion from 'double' to 'cellsize_t', possible loss of data
+  DiffuseReemissionHandler.cpp
+c:\users\yw\documents\github\cmacionize\src\Utilities.hpp(85): warning C4244: 'return': conversion from 'double' to 'int_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\Utilities.hpp(836): warning C4244: 'initializing': conversion from 'double' to 'uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\RandomGenerator.hpp(230): warning C4244: 'return': conversion from 'double' to 'int_fast32_t', possible loss of data
+  FaucherGiguerePhotonSourceSpectrum.cpp
+c:\users\yw\documents\github\cmacionize\src\Utilities.hpp(85): warning C4244: 'return': conversion from 'double' to 'int_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\Utilities.hpp(836): warning C4244: 'initializing': conversion from 'double' to 'uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\RandomGenerator.hpp(230): warning C4244: 'return': conversion from 'double' to 'int_fast32_t', possible loss of data
+C:\Users\YW\Documents\GitHub\CMacIonize\src\FaucherGiguerePhotonSourceSpectrum.cpp(68): warning C4244: 'initializing': conversion from 'double' to 'unsigned int', possible loss of data
+C:\Users\YW\Documents\GitHub\CMacIonize\src\FaucherGiguerePhotonSourceSpectrum.cpp(68): warning C4244: 'initializing': conversion from 'double' to 'const unsigned int', possible loss of data
+C:\Users\YW\Documents\GitHub\CMacIonize\src\FaucherGiguerePhotonSourceSpectrum.cpp(197): warning C4244: 'initializing': conversion from 'double' to 'uint_fast32_t', possible loss of data
+  HeliumLymanContinuumSpectrum.cpp
+c:\users\yw\documents\github\cmacionize\src\RandomGenerator.hpp(230): warning C4244: 'return': conversion from 'double' to 'int_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\Utilities.hpp(85): warning C4244: 'return': conversion from 'double' to 'int_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\Utilities.hpp(836): warning C4244: 'initializing': conversion from 'double' to 'uint_fast32_t', possible loss of data
+  HeliumTwoPhotonContinuumSpectrum.cpp
+c:\users\yw\documents\github\cmacionize\src\RandomGenerator.hpp(230): warning C4244: 'return': conversion from 'double' to 'int_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\Utilities.hpp(85): warning C4244: 'return': conversion from 'double' to 'int_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\Utilities.hpp(836): warning C4244: 'initializing': conversion from 'double' to 'uint_fast32_t', possible loss of data
+  HydrogenLymanContinuumSpectrum.cpp
+c:\users\yw\documents\github\cmacionize\src\RandomGenerator.hpp(230): warning C4244: 'return': conversion from 'double' to 'int_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\Utilities.hpp(85): warning C4244: 'return': conversion from 'double' to 'int_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\Utilities.hpp(836): warning C4244: 'initializing': conversion from 'double' to 'uint_fast32_t', possible loss of data
+  InterpolatedDensityFunction.cpp
+c:\users\yw\documents\github\cmacionize\src\Utilities.hpp(85): warning C4244: 'return': conversion from 'double' to 'int_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\Utilities.hpp(836): warning C4244: 'initializing': conversion from 'double' to 'uint_fast32_t', possible loss of data
+  IonizationSimulation.cpp
+c:\users\yw\documents\github\cmacionize\src\Utilities.hpp(85): warning C4244: 'return': conversion from 'double' to 'int_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\Utilities.hpp(836): warning C4244: 'initializing': conversion from 'double' to 'uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\RandomGenerator.hpp(230): warning C4244: 'return': conversion from 'double' to 'int_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\AMRDensityGrid.hpp(661): error C3867: 'DensityGrid::iterator::get_dust_variables': non-standard syntax; use '&' to create a pointer to member
+c:\users\yw\documents\github\cmacionize\src\FractalDensityMask.hpp(141): warning C4244: 'initializing': conversion from 'double' to 'uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\FractalDensityMask.hpp(141): warning C4244: 'initializing': conversion from 'double' to 'const uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\FractalDensityMask.hpp(142): warning C4244: 'initializing': conversion from 'double' to 'uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\FractalDensityMask.hpp(142): warning C4244: 'initializing': conversion from 'double' to 'const uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\FractalDensityMask.hpp(143): warning C4244: 'initializing': conversion from 'double' to 'uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\FractalDensityMask.hpp(143): warning C4244: 'initializing': conversion from 'double' to 'const uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\FractalDensityMask.hpp(326): warning C4244: 'initializing': conversion from 'double' to 'const uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\FractalDensityMask.hpp(385): warning C4244: 'argument': conversion from 'double' to 'uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\FractalDensityMask.hpp(438): warning C4244: 'initializing': conversion from 'double' to 'uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\FractalDensityMask.hpp(438): warning C4244: 'initializing': conversion from 'double' to 'const uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\FractalDensityMask.hpp(440): warning C4244: 'initializing': conversion from 'double' to 'uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\FractalDensityMask.hpp(440): warning C4244: 'initializing': conversion from 'double' to 'const uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\FractalDensityMask.hpp(442): warning C4244: 'initializing': conversion from 'double' to 'uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\FractalDensityMask.hpp(442): warning C4244: 'initializing': conversion from 'double' to 'const uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\FractalDensityMask.hpp(455): warning C4244: 'initializing': conversion from 'double' to 'uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\FractalDensityMask.hpp(455): warning C4244: 'initializing': conversion from 'double' to 'const uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\FractalDensityMask.hpp(457): warning C4244: 'initializing': conversion from 'double' to 'uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\FractalDensityMask.hpp(457): warning C4244: 'initializing': conversion from 'double' to 'const uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\FractalDensityMask.hpp(459): warning C4244: 'initializing': conversion from 'double' to 'uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\FractalDensityMask.hpp(459): warning C4244: 'initializing': conversion from 'double' to 'const uint_fast32_t', possible loss of data
+C:\Users\YW\Documents\GitHub\CMacIonize\src\IonizationSimulation.cpp(110): warning C4244: 'argument': conversion from 'double' to 'uint_fast64_t', possible loss of data
+C:\Users\YW\Documents\GitHub\CMacIonize\src\IonizationSimulation.cpp(350): warning C4244: 'argument': conversion from 'uint_fast64_t' to 'uint_fast32_t', possible loss of data
+  IonizationStateCalculator.cpp
+c:\users\yw\documents\github\cmacionize\src\Utilities.hpp(85): warning C4244: 'return': conversion from 'double' to 'int_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\Utilities.hpp(836): warning C4244: 'initializing': conversion from 'double' to 'uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\DensityGridTraversalJobMarket.hpp(111): warning C4244: 'initializing': conversion from 'double' to 'cellsize_t', possible loss of data
+  c:\users\yw\documents\github\cmacionize\src\DensityGridTraversalJobMarket.hpp(94): note: while compiling class template member function 'DensityGridTraversalJob<IonizationStateCalculator::IonizationStateCalculatorFunction> *DensityGridTraversalJobMarket<IonizationStateCalculator::IonizationStateCalculatorFunction>::get_job(int_fast32_t)'
+  c:\users\yw\documents\github\cmacionize\src\Worker.hpp(88): note: see reference to function template instantiation 'DensityGridTraversalJob<IonizationStateCalculator::IonizationStateCalculatorFunction> *DensityGridTraversalJobMarket<IonizationStateCalculator::IonizationStateCalculatorFunction>::get_job(int_fast32_t)' being compiled
+  C:\Users\YW\Documents\GitHub\CMacIonize\src\IonizationStateCalculator.cpp(404): note: see reference to class template instantiation 'DensityGridTraversalJobMarket<IonizationStateCalculator::IonizationStateCalculatorFunction>' being compiled
+c:\users\yw\documents\github\cmacionize\src\DensityGridTraversalJobMarket.hpp(112): warning C4244: 'initializing': conversion from 'double' to 'cellsize_t', possible loss of data
+  LineCoolingData.cpp
+  MaskedPhotonSourceSpectrum.cpp
+c:\users\yw\documents\github\cmacionize\src\Utilities.hpp(85): warning C4244: 'return': conversion from 'double' to 'int_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\Utilities.hpp(836): warning C4244: 'initializing': conversion from 'double' to 'uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\RandomGenerator.hpp(230): warning C4244: 'return': conversion from 'double' to 'int_fast32_t', possible loss of data
+C:\Users\YW\Documents\GitHub\CMacIonize\src\MaskedPhotonSourceSpectrum.cpp(65): warning C4244: 'initializing': conversion from 'double' to 'uint_fast16_t', possible loss of data
+C:\Users\YW\Documents\GitHub\CMacIonize\src\MaskedPhotonSourceSpectrum.cpp(65): warning C4244: 'initializing': conversion from 'double' to 'const uint_fast16_t', possible loss of data
+C:\Users\YW\Documents\GitHub\CMacIonize\src\MaskedPhotonSourceSpectrum.cpp(112): warning C4244: 'argument': conversion from 'double' to 'uint_fast16_t', possible loss of data
+  NewVoronoiCellConstructor.cpp
+C:\Users\YW\Documents\GitHub\CMacIonize\src\NewVoronoiCellConstructor.cpp(252): warning C4018: '<': signed/unsigned mismatch
+C:\Users\YW\Documents\GitHub\CMacIonize\src\NewVoronoiCellConstructor.cpp(983): warning C4018: '<': signed/unsigned mismatch
+  NewVoronoiGrid.cpp
+c:\users\yw\documents\github\cmacionize\src\PointLocations.hpp(101): warning C4244: 'initializing': conversion from 'double' to 'uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\PointLocations.hpp(101): warning C4244: 'initializing': conversion from 'double' to 'const uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\PointLocations.hpp(126): warning C4244: 'initializing': conversion from 'double' to 'uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\PointLocations.hpp(126): warning C4244: 'initializing': conversion from 'double' to 'const uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\PointLocations.hpp(128): warning C4244: 'initializing': conversion from 'double' to 'uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\PointLocations.hpp(128): warning C4244: 'initializing': conversion from 'double' to 'const uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\PointLocations.hpp(130): warning C4244: 'initializing': conversion from 'double' to 'uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\PointLocations.hpp(130): warning C4244: 'initializing': conversion from 'double' to 'const uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\PointLocations.hpp(199): warning C4146: unary minus operator applied to unsigned type, result still unsigned
+c:\users\yw\documents\github\cmacionize\src\PointLocations.hpp(200): warning C4146: unary minus operator applied to unsigned type, result still unsigned
+c:\users\yw\documents\github\cmacionize\src\PointLocations.hpp(201): warning C4146: unary minus operator applied to unsigned type, result still unsigned
+c:\users\yw\documents\github\cmacionize\src\PointLocations.hpp(491): warning C4146: unary minus operator applied to unsigned type, result still unsigned
+c:\users\yw\documents\github\cmacionize\src\PointLocations.hpp(492): warning C4146: unary minus operator applied to unsigned type, result still unsigned
+c:\users\yw\documents\github\cmacionize\src\PointLocations.hpp(493): warning C4146: unary minus operator applied to unsigned type, result still unsigned
+c:\users\yw\documents\github\cmacionize\src\PointLocations.hpp(537): warning C4244: '=': conversion from 'double' to 'uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\PointLocations.hpp(539): warning C4244: '=': conversion from 'double' to 'uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\PointLocations.hpp(541): warning C4244: '=': conversion from 'double' to 'uint_fast32_t', possible loss of data
+  OldVoronoiCell.cpp
+C:\Users\YW\Documents\GitHub\CMacIonize\src\OldVoronoiCell.cpp(539): warning C4267: 'argument': conversion from 'size_t' to 'uint_fast8_t', possible loss of data
+C:\Users\YW\Documents\GitHub\CMacIonize\src\OldVoronoiCell.cpp(668): warning C4146: unary minus operator applied to unsigned type, result still unsigned
+C:\Users\YW\Documents\GitHub\CMacIonize\src\OldVoronoiCell.cpp(781): warning C4146: unary minus operator applied to unsigned type, result still unsigned
+C:\Users\YW\Documents\GitHub\CMacIonize\src\OldVoronoiCell.cpp(913): warning C4146: unary minus operator applied to unsigned type, result still unsigned
+C:\Users\YW\Documents\GitHub\CMacIonize\src\OldVoronoiCell.cpp(1087): warning C4267: 'argument': conversion from 'size_t' to 'uint_fast8_t', possible loss of data
+C:\Users\YW\Documents\GitHub\CMacIonize\src\OldVoronoiCell.cpp(1150): warning C4146: unary minus operator applied to unsigned type, result still unsigned
+C:\Users\YW\Documents\GitHub\CMacIonize\src\OldVoronoiCell.cpp(1272): warning C4146: unary minus operator applied to unsigned type, result still unsigned
+C:\Users\YW\Documents\GitHub\CMacIonize\src\OldVoronoiCell.cpp(1431): warning C4267: 'argument': conversion from 'size_t' to 'uint_fast8_t', possible loss of data
+C:\Users\YW\Documents\GitHub\CMacIonize\src\OldVoronoiCell.cpp(1436): warning C4267: 'argument': conversion from 'size_t' to 'uint_fast8_t', possible loss of data
+C:\Users\YW\Documents\GitHub\CMacIonize\src\OldVoronoiCell.cpp(1441): warning C4267: 'argument': conversion from 'size_t' to 'uint_fast8_t', possible loss of data
+C:\Users\YW\Documents\GitHub\CMacIonize\src\OldVoronoiCell.cpp(1454): warning C4267: 'argument': conversion from 'size_t' to 'uint_fast8_t', possible loss of data
+C:\Users\YW\Documents\GitHub\CMacIonize\src\OldVoronoiCell.cpp(1543): warning C4267: 'argument': conversion from 'size_t' to 'uint_fast8_t', possible loss of data
+C:\Users\YW\Documents\GitHub\CMacIonize\src\OldVoronoiCell.cpp(1547): warning C4267: 'argument': conversion from 'size_t' to 'uint_fast8_t', possible loss of data
+C:\Users\YW\Documents\GitHub\CMacIonize\src\OldVoronoiCell.cpp(1549): warning C4267: 'argument': conversion from 'size_t' to 'uint_fast8_t', possible loss of data
+C:\Users\YW\Documents\GitHub\CMacIonize\src\OldVoronoiCell.cpp(1631): warning C4267: 'argument': conversion from 'size_t' to 'uint_fast8_t', possible loss of data
+C:\Users\YW\Documents\GitHub\CMacIonize\src\OldVoronoiCell.cpp(1635): warning C4267: 'argument': conversion from 'size_t' to 'uint_fast8_t', possible loss of data
+C:\Users\YW\Documents\GitHub\CMacIonize\src\OldVoronoiCell.cpp(1713): warning C4267: 'argument': conversion from 'size_t' to 'uint_fast8_t', possible loss of data
+C:\Users\YW\Documents\GitHub\CMacIonize\src\OldVoronoiCell.cpp(1714): warning C4267: 'argument': conversion from 'size_t' to 'uint_fast8_t', possible loss of data
+C:\Users\YW\Documents\GitHub\CMacIonize\src\OldVoronoiCell.cpp(1715): warning C4267: 'argument': conversion from 'size_t' to 'uint_fast8_t', possible loss of data
+C:\Users\YW\Documents\GitHub\CMacIonize\src\OldVoronoiCell.cpp(1716): warning C4267: 'argument': conversion from 'size_t' to 'uint_fast8_t', possible loss of data
+C:\Users\YW\Documents\GitHub\CMacIonize\src\OldVoronoiCell.cpp(1717): warning C4267: 'argument': conversion from 'size_t' to 'uint_fast8_t', possible loss of data
+C:\Users\YW\Documents\GitHub\CMacIonize\src\OldVoronoiCell.cpp(1718): warning C4267: 'argument': conversion from 'size_t' to 'uint_fast8_t', possible loss of data
+C:\Users\YW\Documents\GitHub\CMacIonize\src\OldVoronoiCell.cpp(1727): warning C4267: 'argument': conversion from 'size_t' to 'uint_fast8_t', possible loss of data
+C:\Users\YW\Documents\GitHub\CMacIonize\src\OldVoronoiCell.cpp(1728): warning C4267: 'argument': conversion from 'size_t' to 'uint_fast8_t', possible loss of data
+C:\Users\YW\Documents\GitHub\CMacIonize\src\OldVoronoiCell.cpp(1729): warning C4267: 'argument': conversion from 'size_t' to 'uint_fast8_t', possible loss of data
+C:\Users\YW\Documents\GitHub\CMacIonize\src\OldVoronoiCell.cpp(1730): warning C4267: 'argument': conversion from 'size_t' to 'uint_fast8_t', possible loss of data
+C:\Users\YW\Documents\GitHub\CMacIonize\src\OldVoronoiCell.cpp(1731): warning C4267: 'argument': conversion from 'size_t' to 'uint_fast8_t', possible loss of data
+C:\Users\YW\Documents\GitHub\CMacIonize\src\OldVoronoiCell.cpp(1732): warning C4267: 'argument': conversion from 'size_t' to 'uint_fast8_t', possible loss of data
+C:\Users\YW\Documents\GitHub\CMacIonize\src\OldVoronoiCell.cpp(1754): warning C4267: 'argument': conversion from 'size_t' to 'uint_fast8_t', possible loss of data
+C:\Users\YW\Documents\GitHub\CMacIonize\src\OldVoronoiCell.cpp(1755): warning C4267: 'argument': conversion from 'size_t' to 'uint_fast8_t', possible loss of data
+C:\Users\YW\Documents\GitHub\CMacIonize\src\OldVoronoiCell.cpp(1756): warning C4267: 'argument': conversion from 'size_t' to 'uint_fast8_t', possible loss of data
+C:\Users\YW\Documents\GitHub\CMacIonize\src\OldVoronoiCell.cpp(1757): warning C4267: 'argument': conversion from 'size_t' to 'uint_fast8_t', possible loss of data
+C:\Users\YW\Documents\GitHub\CMacIonize\src\OldVoronoiCell.cpp(1758): warning C4267: 'argument': conversion from 'size_t' to 'uint_fast8_t', possible loss of data
+C:\Users\YW\Documents\GitHub\CMacIonize\src\OldVoronoiCell.cpp(1759): warning C4267: 'argument': conversion from 'size_t' to 'uint_fast8_t', possible loss of data
+  OldVoronoiGrid.cpp
+c:\users\yw\documents\github\cmacionize\src\PointLocations.hpp(101): warning C4244: 'initializing': conversion from 'double' to 'uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\PointLocations.hpp(101): warning C4244: 'initializing': conversion from 'double' to 'const uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\PointLocations.hpp(126): warning C4244: 'initializing': conversion from 'double' to 'uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\PointLocations.hpp(126): warning C4244: 'initializing': conversion from 'double' to 'const uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\PointLocations.hpp(128): warning C4244: 'initializing': conversion from 'double' to 'uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\PointLocations.hpp(128): warning C4244: 'initializing': conversion from 'double' to 'const uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\PointLocations.hpp(130): warning C4244: 'initializing': conversion from 'double' to 'uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\PointLocations.hpp(130): warning C4244: 'initializing': conversion from 'double' to 'const uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\PointLocations.hpp(199): warning C4146: unary minus operator applied to unsigned type, result still unsigned
+c:\users\yw\documents\github\cmacionize\src\PointLocations.hpp(200): warning C4146: unary minus operator applied to unsigned type, result still unsigned
+c:\users\yw\documents\github\cmacionize\src\PointLocations.hpp(201): warning C4146: unary minus operator applied to unsigned type, result still unsigned
+c:\users\yw\documents\github\cmacionize\src\PointLocations.hpp(491): warning C4146: unary minus operator applied to unsigned type, result still unsigned
+c:\users\yw\documents\github\cmacionize\src\PointLocations.hpp(492): warning C4146: unary minus operator applied to unsigned type, result still unsigned
+c:\users\yw\documents\github\cmacionize\src\PointLocations.hpp(493): warning C4146: unary minus operator applied to unsigned type, result still unsigned
+c:\users\yw\documents\github\cmacionize\src\PointLocations.hpp(537): warning C4244: '=': conversion from 'double' to 'uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\PointLocations.hpp(539): warning C4244: '=': conversion from 'double' to 'uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\PointLocations.hpp(541): warning C4244: '=': conversion from 'double' to 'uint_fast32_t', possible loss of data
+  ParameterFile.cpp
+c:\users\yw\documents\github\cmacionize\src\Utilities.hpp(85): warning C4244: 'return': conversion from 'double' to 'int_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\Utilities.hpp(836): warning C4244: 'initializing': conversion from 'double' to 'uint_fast32_t', possible loss of data
+  Generating Code...
+  Compiling...
+  PhotonSource.cpp
+c:\users\yw\documents\github\cmacionize\src\Utilities.hpp(85): warning C4244: 'return': conversion from 'double' to 'int_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\Utilities.hpp(836): warning C4244: 'initializing': conversion from 'double' to 'uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\RandomGenerator.hpp(230): warning C4244: 'return': conversion from 'double' to 'int_fast32_t', possible loss of data
+  PlanckPhotonSourceSpectrum.cpp
+c:\users\yw\documents\github\cmacionize\src\Utilities.hpp(85): warning C4244: 'return': conversion from 'double' to 'int_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\Utilities.hpp(836): warning C4244: 'initializing': conversion from 'double' to 'uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\RandomGenerator.hpp(230): warning C4244: 'return': conversion from 'double' to 'int_fast32_t', possible loss of data
+  SPHNGSnapshotDensityFunction.cpp
+c:\users\yw\documents\github\cmacionize\src\Utilities.hpp(85): warning C4244: 'return': conversion from 'double' to 'int_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\Utilities.hpp(836): warning C4244: 'initializing': conversion from 'double' to 'uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\OctreeNode.hpp(102): warning C4244: '=': conversion from 'double' to 'uint_fast8_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\OctreeNode.hpp(103): warning C4244: '=': conversion from 'double' to 'uint_fast8_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\OctreeNode.hpp(104): warning C4244: '=': conversion from 'double' to 'uint_fast8_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\OctreeNode.hpp(129): warning C4244: '=': conversion from 'double' to 'uint_fast8_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\OctreeNode.hpp(130): warning C4244: '=': conversion from 'double' to 'uint_fast8_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\OctreeNode.hpp(131): warning C4244: '=': conversion from 'double' to 'uint_fast8_t', possible loss of data
+C:\Users\YW\Documents\GitHub\CMacIonize\src\SPHNGSnapshotDensityFunction.cpp(230): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+C:\Users\YW\Documents\GitHub\CMacIonize\src\SPHNGSnapshotDensityFunction.cpp(252): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+C:\Users\YW\Documents\GitHub\CMacIonize\src\SPHNGSnapshotDensityFunction.cpp(268): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+C:\Users\YW\Documents\GitHub\CMacIonize\src\SPHNGSnapshotDensityFunction.cpp(274): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+C:\Users\YW\Documents\GitHub\CMacIonize\src\SPHNGSnapshotDensityFunction.cpp(280): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+C:\Users\YW\Documents\GitHub\CMacIonize\src\SPHNGSnapshotDensityFunction.cpp(286): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+C:\Users\YW\Documents\GitHub\CMacIonize\src\SPHNGSnapshotDensityFunction.cpp(292): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+C:\Users\YW\Documents\GitHub\CMacIonize\src\SPHNGSnapshotDensityFunction.cpp(469): warning C4244: 'initializing': conversion from 'double' to 'uint_fast32_t', possible loss of data
+  TemperatureCalculator.cpp
+c:\users\yw\documents\github\cmacionize\src\Utilities.hpp(85): warning C4244: 'return': conversion from 'double' to 'int_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\Utilities.hpp(836): warning C4244: 'initializing': conversion from 'double' to 'uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\DensityGridTraversalJobMarket.hpp(111): warning C4244: 'initializing': conversion from 'double' to 'cellsize_t', possible loss of data
+  c:\users\yw\documents\github\cmacionize\src\DensityGridTraversalJobMarket.hpp(94): note: while compiling class template member function 'DensityGridTraversalJob<TemperatureCalculator::TemperatureCalculatorFunction> *DensityGridTraversalJobMarket<TemperatureCalculator::TemperatureCalculatorFunction>::get_job(int_fast32_t)'
+  c:\users\yw\documents\github\cmacionize\src\Worker.hpp(88): note: see reference to function template instantiation 'DensityGridTraversalJob<TemperatureCalculator::TemperatureCalculatorFunction> *DensityGridTraversalJobMarket<TemperatureCalculator::TemperatureCalculatorFunction>::get_job(int_fast32_t)' being compiled
+  C:\Users\YW\Documents\GitHub\CMacIonize\src\TemperatureCalculator.cpp(828): note: see reference to class template instantiation 'DensityGridTraversalJobMarket<TemperatureCalculator::TemperatureCalculatorFunction>' being compiled
+c:\users\yw\documents\github\cmacionize\src\DensityGridTraversalJobMarket.hpp(112): warning C4244: 'initializing': conversion from 'double' to 'cellsize_t', possible loss of data
+  VernerCrossSections.cpp
+C:\Users\YW\Documents\GitHub\CMacIonize\src\VernerCrossSections.cpp(188): warning C4244: 'initializing': conversion from 'const double' to 'uint_fast32_t', possible loss of data
+C:\Users\YW\Documents\GitHub\CMacIonize\src\VernerCrossSections.cpp(200): warning C4244: 'initializing': conversion from 'const double' to 'uint_fast32_t', possible loss of data
+C:\Users\YW\Documents\GitHub\CMacIonize\src\VernerCrossSections.cpp(200): warning C4244: 'initializing': conversion from 'const double' to 'const uint_fast32_t', possible loss of data
+  VernerRecombinationRates.cpp
+  VoronoiDensityGrid.cpp
+c:\users\yw\documents\github\cmacionize\src\Utilities.hpp(85): warning C4244: 'return': conversion from 'double' to 'int_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\Utilities.hpp(836): warning C4244: 'initializing': conversion from 'double' to 'uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\RandomGenerator.hpp(230): warning C4244: 'return': conversion from 'double' to 'int_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\PerturbedCartesianVoronoiGeneratorDistribution.hpp(69): warning C4244: 'argument': conversion from 'double' to 'int_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\PointLocations.hpp(101): warning C4244: 'initializing': conversion from 'double' to 'uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\PointLocations.hpp(101): warning C4244: 'initializing': conversion from 'double' to 'const uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\PointLocations.hpp(126): warning C4244: 'initializing': conversion from 'double' to 'uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\PointLocations.hpp(126): warning C4244: 'initializing': conversion from 'double' to 'const uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\PointLocations.hpp(128): warning C4244: 'initializing': conversion from 'double' to 'uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\PointLocations.hpp(128): warning C4244: 'initializing': conversion from 'double' to 'const uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\PointLocations.hpp(130): warning C4244: 'initializing': conversion from 'double' to 'uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\PointLocations.hpp(130): warning C4244: 'initializing': conversion from 'double' to 'const uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\PointLocations.hpp(199): warning C4146: unary minus operator applied to unsigned type, result still unsigned
+c:\users\yw\documents\github\cmacionize\src\PointLocations.hpp(200): warning C4146: unary minus operator applied to unsigned type, result still unsigned
+c:\users\yw\documents\github\cmacionize\src\PointLocations.hpp(201): warning C4146: unary minus operator applied to unsigned type, result still unsigned
+c:\users\yw\documents\github\cmacionize\src\PointLocations.hpp(491): warning C4146: unary minus operator applied to unsigned type, result still unsigned
+c:\users\yw\documents\github\cmacionize\src\PointLocations.hpp(492): warning C4146: unary minus operator applied to unsigned type, result still unsigned
+c:\users\yw\documents\github\cmacionize\src\PointLocations.hpp(493): warning C4146: unary minus operator applied to unsigned type, result still unsigned
+c:\users\yw\documents\github\cmacionize\src\PointLocations.hpp(537): warning C4244: '=': conversion from 'double' to 'uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\PointLocations.hpp(539): warning C4244: '=': conversion from 'double' to 'uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\PointLocations.hpp(541): warning C4244: '=': conversion from 'double' to 'uint_fast32_t', possible loss of data
+C:\Users\YW\Documents\GitHub\CMacIonize\src\VoronoiDensityGrid.cpp(511): error C2660: 'DensityGrid::get_optical_depth': function does not take 3 arguments
+C:\Users\YW\Documents\GitHub\CMacIonize\src\VoronoiDensityGrid.cpp(510): error C2789: 'tau': an object of const-qualified type must be initialized
+  C:\Users\YW\Documents\GitHub\CMacIonize\src\VoronoiDensityGrid.cpp(510): note: see declaration of 'tau'
+  WMBasicPhotonSourceSpectrum.cpp
+c:\users\yw\documents\github\cmacionize\src\Utilities.hpp(85): warning C4244: 'return': conversion from 'double' to 'int_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\Utilities.hpp(836): warning C4244: 'initializing': conversion from 'double' to 'uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\RandomGenerator.hpp(230): warning C4244: 'return': conversion from 'double' to 'int_fast32_t', possible loss of data
+  CompilerInfo.cpp
+c:\users\yw\documents\github\cmacionize\src\Utilities.hpp(85): warning C4244: 'return': conversion from 'double' to 'int_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\Utilities.hpp(836): warning C4244: 'initializing': conversion from 'double' to 'uint_fast32_t', possible loss of data
+C:\Users\YW\Documents\GitHub\CMacIonize\0\src\CompilerInfo.cpp(60): error C2001: newline in constant
+C:\Users\YW\Documents\GitHub\CMacIonize\0\src\CompilerInfo.cpp(61): error C2146: syntax error: missing ';' before identifier 'Microsoft'
+C:\Users\YW\Documents\GitHub\CMacIonize\0\src\CompilerInfo.cpp(61): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\YW\Documents\GitHub\CMacIonize\0\src\CompilerInfo.cpp(61): error C2146: syntax error: missing ';' before identifier 'Windows'
+C:\Users\YW\Documents\GitHub\CMacIonize\0\src\CompilerInfo.cpp(61): error C2001: newline in constant
+C:\Users\YW\Documents\GitHub\CMacIonize\0\src\CompilerInfo.cpp(62): error C2001: newline in constant
+C:\Users\YW\Documents\GitHub\CMacIonize\0\src\CompilerInfo.cpp(63): error C2001: newline in constant
+  ConfigurationInfo.cpp
+  Generating Code...

@@ -1,0 +1,24 @@
+﻿  Building Custom Rule C:/Users/YW/Documents/GitHub/CMacIonize/src/CMakeLists.txt
+  CMake does not need to re-run because C:/Users/YW/Documents/GitHub/CMacIonize/0/src/CMakeFiles/generate.stamp is up-to-date.
+  CMILibrary.cpp
+c:\users\yw\documents\github\cmacionize\src\Utilities.hpp(85): warning C4244: 'return': conversion from 'double' to 'int_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\Utilities.hpp(836): warning C4244: 'initializing': conversion from 'double' to 'uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\RandomGenerator.hpp(230): warning C4244: 'return': conversion from 'double' to 'int_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\OctreeNode.hpp(102): warning C4244: '=': conversion from 'double' to 'uint_fast8_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\OctreeNode.hpp(103): warning C4244: '=': conversion from 'double' to 'uint_fast8_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\OctreeNode.hpp(104): warning C4244: '=': conversion from 'double' to 'uint_fast8_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\OctreeNode.hpp(129): warning C4244: '=': conversion from 'double' to 'uint_fast8_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\OctreeNode.hpp(130): warning C4244: '=': conversion from 'double' to 'uint_fast8_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\OctreeNode.hpp(131): warning C4244: '=': conversion from 'double' to 'uint_fast8_t', possible loss of data
+  SPHArrayInterface.cpp
+c:\users\yw\documents\github\cmacionize\src\Utilities.hpp(85): warning C4244: 'return': conversion from 'double' to 'int_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\Utilities.hpp(836): warning C4244: 'initializing': conversion from 'double' to 'uint_fast32_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\OctreeNode.hpp(102): warning C4244: '=': conversion from 'double' to 'uint_fast8_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\OctreeNode.hpp(103): warning C4244: '=': conversion from 'double' to 'uint_fast8_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\OctreeNode.hpp(104): warning C4244: '=': conversion from 'double' to 'uint_fast8_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\OctreeNode.hpp(129): warning C4244: '=': conversion from 'double' to 'uint_fast8_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\OctreeNode.hpp(130): warning C4244: '=': conversion from 'double' to 'uint_fast8_t', possible loss of data
+c:\users\yw\documents\github\cmacionize\src\OctreeNode.hpp(131): warning C4244: '=': conversion from 'double' to 'uint_fast8_t', possible loss of data
+C:\Users\YW\Documents\GitHub\CMacIonize\src\SPHArrayInterface.cpp(310): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  Generating Code...
+  CMILibrary.vcxproj -> C:\Users\YW\Documents\GitHub\CMacIonize\0\lib\Debug\CMILibrary.lib
