@@ -185,4 +185,6 @@ int DustSimulation::do_simulation(CommandLineParser &parser, bool write_output,
   }
 
   return 0;
+
 }
+

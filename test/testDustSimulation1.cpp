@@ -102,7 +102,7 @@ int main(int argc, char **argv) {
   int test_argc;
   char **test_argv;
   generate_arguments(test_argc, test_argv,
-                     "--params test_dustsimulation.param");
+                     "--params test_dustsimulation.param --threads 4");
 
   CommandLineParser parser("testDustSimulation");
   parser.add_required_option< std::string >(

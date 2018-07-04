@@ -42,6 +42,9 @@ private:
   /*! @brief Single temperature value for the entire box (in K). */
   const double _temperature;
 
+  /*! @brief Single temperature value for the entire box (in K). */
+  double _dustdensity;
+
   /*! @brief Initial hydrogen neutral fraction for the entire box. */
   const double _neutral_fraction_H;
 
@@ -55,16 +58,16 @@ public:
    * entire box.
    * @param log Log to write logging information to.
    */
-  HomogeneousDensityFunction(double density = 1., double temperature = 8000.,
+	HomogeneousDensityFunction(double density = 1., double temperature = 8000., double dustdensity = 1e-16,
                              double neutral_fraction_H = 1.e-6,
                              Log *log = nullptr)
-      : _density(density), _temperature(temperature),
+      : _density(density), _temperature(temperature), _dustdensity(dustdensity),
         _neutral_fraction_H(neutral_fraction_H) {
 
     if (log) {
       log->write_status(
           "Created HomogeneousDensityFunction with constant density ", _density,
-          " m^-3 and constant temperature ", _temperature, " K.");
+          " m^-3 and constant temperature ", _temperature, " K.","and dust density", _dustdensity, "unit");
     }
   }
 
@@ -86,6 +89,8 @@ public:
                 "DensityFunction:density", "100. cm^-3"),
             params.get_physical_value< QUANTITY_TEMPERATURE >(
                 "DensityFunction:temperature", "8000. K"),
+		    params.get_value< double >(
+			  "DensityFunction:dustdensity", 1e-16),
             params.get_value< double >("DensityFunction:neutral fraction H",
                                        1.e-6),
             log) {}
@@ -100,6 +105,7 @@ public:
     DensityValues values;
     values.set_number_density(_density);
     values.set_temperature(_temperature);
+	values.set_dustdensity(_dustdensity);
     values.set_ionic_fraction(ION_H_n, _neutral_fraction_H);
     values.set_ionic_fraction(ION_He_n, 1.e-6);
     return values;

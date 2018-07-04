@@ -46,6 +46,10 @@ private:
   /*! @brief Temperature (in K). */
   double _temperature;
 
+  /*! @brief Dust Density */
+  double _dustdensity;
+
+
   /*! @brief Fluid velocity (in m s^-1). */
   CoordinateVector<> _velocity;
 
@@ -63,7 +67,7 @@ public:
    * @brief Empty constructor.
    */
   inline DensityValues()
-      : _number_density(0.), _temperature(0.), _cosmic_ray_energy(0.),
+      : _number_density(0.), _temperature(0.), _dustdensity(0.), _cosmic_ray_energy(0.),
         _cosmic_ray_factor(-1.) {
     for (int_fast32_t i = 0; i < NUMBER_OF_IONNAMES; ++i) {
       _ionic_fraction[i] = 0.;
@@ -96,6 +100,15 @@ public:
    */
   inline void set_temperature(double temperature) {
     _temperature = temperature;
+  }
+
+  /**
+  * @brief Set the Dust Density.
+  *
+  * @param Dust Density.
+  */
+  inline void set_dustdensity(double dustdensity) {
+	  _dustdensity = dustdensity;
   }
 
   /**
@@ -157,6 +170,14 @@ public:
    * @return Temperature (in K).
    */
   inline double get_temperature() const { return _temperature; }
+
+
+  /**
+  * @brief Get the Dust density.
+  *
+  * @return Dustdensity.
+  */
+  inline double get_dustdensity() const { return _dustdensity; }
 
   /**
    * @brief Get the fluid velocity.
