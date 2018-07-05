@@ -42,6 +42,15 @@
 class DustVariables {
 private:
 	double _DustDensity;
+	/*! @brief Albedo */
+	double _albedo;
+
+	/*! @brief hg phase function parameter */
+	double _gval;
+
+	/*! @brief opacity */
+	double _opacity;
+
 	CoordinateVector<double> _Force;
 
 public:
@@ -49,7 +58,7 @@ public:
    * @brief (Empty) constructor.
    */
   inline DustVariables()
-	  : _DustDensity(0.), _Force(0.,0.,0.)  {
+	  :  _DustDensity(0.), _albedo(0.),_gval(0.), _opacity(0.),_Force(0.,0.,0.)  {
   }
 
   /**
@@ -79,6 +88,54 @@ public:
 	  _Force = _force;
   }
 
+  /**
+  * @brief Set the albedo.
+  *
+  * @param albedo.
+  */
+  inline void set_albedo(double albedo) {
+	  _albedo = albedo;
+  }
+
+  /**
+  * @brief Set the g parameter.
+  *
+  * @param g parameter.
+  */
+  inline void set_gval(double gval) {
+	  _gval = gval;
+  }
+
+
+  /**
+  * @brief Set the opacity.
+  *
+  * @param opacity
+  */
+  inline void set_opacity(double opacity) {
+	  _opacity = opacity;
+  }
+  /**
+  * @brief Get the albedo.
+  *
+  * @return albedo.
+  */
+  inline double get_albedo() const { return _albedo; }
+
+  /**
+  * @brief Get the g parameter.
+  *
+  * @return g parameter.
+  */
+  inline double get_gval() const { return _gval; }
+
+
+  /**
+  * @brief Get the opacity.
+  *
+  * @return opacity.
+  */
+  inline double get_opacity() const { return _opacity; }
   /**
    * @brief Add the given increment to the mean intensity integral for the ion
    * with the given name.

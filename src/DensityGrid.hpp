@@ -110,7 +110,7 @@ protected:
    * @return Optical depth.
    */
   inline static double
-  get_optical_depth(double ds, const IonizationVariables &ionization_variables, const DustVariables &dust_variables,
+  get_optical_depth(double ds, const IonizationVariables &ionization_variables, DustVariables &dustvar,
                     const Photon &photon) {
     return 
 		ds * ionization_variables.get_number_density() *
@@ -118,7 +118,7 @@ protected:
                 ionization_variables.get_ionic_fraction(ION_H_n) +
             photon.get_cross_section_He_corr() *
                 ionization_variables.get_ionic_fraction(ION_He_n))+
-		   ds * photon.get_opacity()* dust_variables.get_dust_density();
+		   ds * dustvar.get_opacity()* dustvar.get_opacity();
   }
 
   /**
@@ -133,13 +133,14 @@ protected:
                                const Photon &photon) const {
 	DustVariables &dust_variables = cell.get_dust_variables();
     IonizationVariables &ionization_variables = cell.get_ionization_variables();
+	
 	if (dust_variables.get_dust_density() > 0.) {
 		
-		double dforcex=((dust_variables.get_dust_density()*ds*photon.get_opacity()
+		double dforcex=((dust_variables.get_dust_density()*ds*dust_variables.get_opacity()
 			*(1 / cell.get_volume())*(2.82e16)*(photon.get_weight())*(1. / 3e8)*(photon.get_direction().x()/photon.get_direction().norm())));
-		double dforcey = ((dust_variables.get_dust_density()*ds*photon.get_opacity()
+		double dforcey = ((dust_variables.get_dust_density()*ds*dust_variables.get_opacity()
 			*(1 / cell.get_volume())*(2.82e16)*(photon.get_weight())*(1. / 3e8)*(photon.get_direction().y() / photon.get_direction().norm())));
-		double dforcez = ((dust_variables.get_dust_density()*ds*photon.get_opacity()
+		double dforcez = ((dust_variables.get_dust_density()*ds*dust_variables.get_opacity()
 			*(1 / cell.get_volume())*(2.82e16)*(photon.get_weight())*(1. / 3e8)*(photon.get_direction().z() / photon.get_direction().norm())));
 		CoordinateVector <>dforce(dforcex, dforcey, dforcez);
 		
@@ -741,15 +742,19 @@ public:
      * @param it DensityGrid::iterator pointing to a single cell in the grid.
      */
     inline void operator()(iterator it) {
-
+		////!!!//
       DensityValues vals = _function(it);
       IonizationVariables &ionization_variables = it.get_ionization_variables();
-      ionization_variables.set_number_density(0.);
+      ionization_variables.set_number_density(vals.get_number_density());
 	  //vals.get_number_density()
       ionization_variables.set_temperature(vals.get_temperature());
 	  DustVariables &dust_variables = it.get_dust_variables();
-	  dust_variables.set_dust_density(1e-16);
-	  
+	  dust_variables.set_albedo(vals.get_albedo());
+	  dust_variables.set_gval(vals.get_gval());
+	  dust_variables.set_opacity(vals.get_opacity());
+	  dust_variables.set_dust_density(vals.get_dustdensity());
+
+
 
       for (int_fast32_t i = 0; i < NUMBER_OF_IONNAMES; ++i) {
         IonName ion = static_cast< IonName >(i);

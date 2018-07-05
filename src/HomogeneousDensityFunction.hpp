@@ -42,8 +42,17 @@ private:
   /*! @brief Single temperature value for the entire box (in K). */
   const double _temperature;
 
-  /*! @brief Single temperature value for the entire box (in K). */
+  /*! @brief Dust density */
   double _dustdensity;
+
+  /*! @brief Albedo for dust scattering */
+  double _albedo;
+
+  /*! @brief h-g parameter for dust scattering*/
+  double _gval;
+
+  /*! @brief opacity for dust scattering*/
+  double _opacity;
 
   /*! @brief Initial hydrogen neutral fraction for the entire box. */
   const double _neutral_fraction_H;
@@ -59,9 +68,10 @@ public:
    * @param log Log to write logging information to.
    */
 	HomogeneousDensityFunction(double density = 1., double temperature = 8000., double dustdensity = 1e-16,
+		                     double albedo = 0., double gval = 0.9, double opacity = 3.24,
                              double neutral_fraction_H = 1.e-6,
                              Log *log = nullptr)
-      : _density(density), _temperature(temperature), _dustdensity(dustdensity),
+      : _density(density), _temperature(temperature), _dustdensity(dustdensity), _albedo(albedo), _gval(gval), _opacity(opacity),
         _neutral_fraction_H(neutral_fraction_H) {
 
     if (log) {
@@ -91,6 +101,12 @@ public:
                 "DensityFunction:temperature", "8000. K"),
 		    params.get_value< double >(
 			  "DensityFunction:dustdensity", 1e-16),
+		    params.get_value< double >(
+			  "DensityFunction:albedo", 0.),
+		    params.get_value< double >(
+			  "DensityFunction:gval", 0.9),
+		  params.get_value< double >(
+			  "DensityFunction:opacity", 3.24),
             params.get_value< double >("DensityFunction:neutral fraction H",
                                        1.e-6),
             log) {}
@@ -106,6 +122,9 @@ public:
     values.set_number_density(_density);
     values.set_temperature(_temperature);
 	values.set_dustdensity(_dustdensity);
+	values.set_albedo(_albedo);
+	values.set_gval(_gval);
+	values.set_opacity(_opacity);
     values.set_ionic_fraction(ION_H_n, _neutral_fraction_H);
     values.set_ionic_fraction(ION_He_n, 1.e-6);
     return values;

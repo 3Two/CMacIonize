@@ -68,9 +68,6 @@ private:
   /*! @brief Ionization cross sections (in m^2). */
   double _cross_sections[NUMBER_OF_IONNAMES];
 
-  /*! @brief Dust opacity  */
-  double _opacity;
-
   /*! @brief Abundance corrected helium cross section (in m^2). */
   double _cross_section_He_corr;
 
@@ -102,7 +99,7 @@ public:
         _inverse_direction(1. / direction.x(), 1. / direction.y(),
                            1. / direction.z()),
         _energy(energy), _cross_section_He_corr(0.), _type(PHOTONTYPE_PRIMARY),
-        _weight(1.),_opacity(0.) {
+        _weight(1.) {
 
     for (int_fast32_t i = 0; i < NUMBER_OF_IONNAMES; ++i) {
       _cross_sections[i] = 0.;
@@ -151,9 +148,6 @@ public:
    */
   inline double get_cross_section(IonName ion) const {
     return _cross_sections[ion];
-  }
-  inline double get_opacity() const {
-	  return _opacity;
   }
 
   /**
@@ -208,9 +202,6 @@ public:
    */
   inline void set_cross_section(IonName ion, double cross_section) {
     _cross_sections[ion] = cross_section;
-  }
-  inline void set_opacity(double opacity) {
-	  _opacity = opacity;
   }
 
   /**

@@ -99,6 +99,7 @@ private:
   /*! @brief Cross sections for photoionization. */
   const CrossSections &_cross_sections;
 
+
   /*! @brief ReemissionHandler for diffuse reemission. */
   DiffuseReemissionHandler *_reemission_handler;
 
@@ -144,6 +145,7 @@ public:
   }
 
   Photon get_random_photon(RandomGenerator &random_generator) const;
+  void scatter(Photon &photon,double gval, RandomGenerator &random_generator) const;
 
   double get_total_luminosity() const;
 

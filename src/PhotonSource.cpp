@@ -1,3 +1,4 @@
+#include "PhotonSource.hpp"
 /*******************************************************************************
  * This file is part of CMacIonize
  * Copyright (C) 2016 Bert Vandenbroucke (bert.vandenbroucke@gmail.com)
@@ -244,6 +245,29 @@ PhotonSource::get_random_photon(RandomGenerator &random_generator) const {
 
   return photon;
 }
+
+void PhotonSource::scatter(Photon &photon, double gval, RandomGenerator & random_generator) const
+{
+	
+	      double phi_new = 2 * M_PI*random_generator.get_uniform_random_double();
+		  double cos_phi_new = std::cos(phi_new);
+		  double sin_phi_new = std::sin(phi_new);
+		  CoordinateVector<> direction_new;
+		  double theta_new = std::acos((1/2*gval)*(1+std::pow(gval,2.)-
+			  std::pow((1- std::pow(gval, 2.))/
+				  std::pow(1-gval+2* gval*random_generator.get_uniform_random_double(),1.5),2)));
+		  double TTT = std::sqrt(1 - std::pow((photon.get_direction().z()),2));
+		  direction_new[0] = std::sin(theta_new) * (photon.get_direction().x()*photon.get_direction().z()*cos_phi_new- photon.get_direction().y()*sin_phi_new)/TTT+
+			  photon.get_direction().x()*std::cos(theta_new);
+		  direction_new[1] = std::sin(theta_new) * (photon.get_direction().y()*photon.get_direction().z()*cos_phi_new + photon.get_direction().x()*sin_phi_new) / TTT +
+			  photon.get_direction().y()*std::cos(theta_new);
+		  direction_new[2] = -std::sin(theta_new) *cos_phi_new * TTT+photon.get_direction().z()*std::cos(theta_new);
+
+	photon.set_direction(direction_new);
+	
+}
+
+
 
 /**
  * @brief Get the total luminosity of all sources together.

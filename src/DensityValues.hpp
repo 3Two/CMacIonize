@@ -49,6 +49,15 @@ private:
   /*! @brief Dust Density */
   double _dustdensity;
 
+  /*! @brief Albedo */
+  double _albedo;
+
+  /*! @brief hg phase function parameter */
+  double _gval;
+
+  /*! @brief opacity */
+  double _opacity;
+
 
   /*! @brief Fluid velocity (in m s^-1). */
   CoordinateVector<> _velocity;
@@ -67,7 +76,7 @@ public:
    * @brief Empty constructor.
    */
   inline DensityValues()
-      : _number_density(0.), _temperature(0.), _dustdensity(0.), _cosmic_ray_energy(0.),
+      : _number_density(0.), _temperature(0.), _dustdensity(0.), _albedo(0.), _gval(0.), _opacity(0.), _cosmic_ray_energy(0.),
         _cosmic_ray_factor(-1.) {
     for (int_fast32_t i = 0; i < NUMBER_OF_IONNAMES; ++i) {
       _ionic_fraction[i] = 0.;
@@ -109,6 +118,34 @@ public:
   */
   inline void set_dustdensity(double dustdensity) {
 	  _dustdensity = dustdensity;
+  }
+
+  /**
+  * @brief Set the albedo.
+  *
+  * @param albedo.
+  */
+  inline void set_albedo(double albedo) {
+	  _albedo = albedo;
+  }
+
+  /**
+  * @brief Set the g parameter.
+  *
+  * @param g parameter.
+  */
+  inline void set_gval(double gval) {
+	  _gval = gval;
+  }
+
+
+  /**
+  * @brief Set the opacity.
+  *
+  * @param opacity
+  */
+  inline void set_opacity(double opacity) {
+	  _opacity = opacity;
   }
 
   /**
@@ -178,6 +215,28 @@ public:
   * @return Dustdensity.
   */
   inline double get_dustdensity() const { return _dustdensity; }
+
+  /**
+  * @brief Get the albedo.
+  *
+  * @return albedo.
+  */
+  inline double get_albedo() const { return _albedo; }
+
+  /**
+  * @brief Get the g parameter.
+  *
+  * @return g parameter.
+  */
+  inline double get_gval() const { return _gval; }
+
+
+  /**
+  * @brief Get the opacity.
+  *
+  * @return opacity.
+  */
+  inline double get_opacity() const { return _opacity; }
 
   /**
    * @brief Get the fluid velocity.
