@@ -149,12 +149,12 @@ int DustSimulation::do_simulation(CommandLineParser &parser, bool write_output,
                       " for photon shooting.");
   }
   DustPhotonShootJobMarket1 dustphotonshootjobs(
-      source, dust_scattering, random_seed, grid, 0, 100, worksize);
+      source, dust_scattering, random_seed, grid, 0,0., 100, worksize);
 
   if (log) {
     log->write_status("Start shooting ", numphoton, " photons...");
   }
-
+  dustphotonshootjobs.set_photonweight(1./numphoton);
   dustphotonshootjobs.set_numphoton(numphoton);
   worktimer.start();
   dust_workdistributor.do_in_parallel(dustphotonshootjobs);

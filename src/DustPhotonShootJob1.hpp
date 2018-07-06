@@ -53,6 +53,8 @@ private:
   /*! @brief Number of photons to propagate through the DensityGrid. */
   uint_fast64_t _numphoton;
 
+  double _photonweight;
+
 public:
   /**
    * @brief Constructor.
@@ -69,7 +71,7 @@ public:
                             const DustScattering &dust_scattering,
                             int_fast32_t random_seed, DensityGrid &density_grid)
       : _photon_source(photon_source), _dust_scattering(dust_scattering),
-        _random_generator(random_seed), _density_grid(density_grid), _numphoton(0) {}
+        _random_generator(random_seed), _density_grid(density_grid), _numphoton(0), _photonweight(0.) {}
 
   /**
    * @brief Set the number of photons for the next execution of the job.
@@ -77,6 +79,8 @@ public:
    * @param numphoton New number of photons.
    */
   inline void set_numphoton(uint_fast64_t numphoton) { _numphoton = numphoton; }
+
+  inline void set_photonweight(double photonweight) { _photonweight = photonweight; }
 
 
 
@@ -110,10 +114,12 @@ public:
       // overwrite cross section: we want it to be the dust attenuation
       photon.set_cross_section(ION_H_n, 0);
 	 // photon.set_opacity(3240.);
-	  photon.set_weight(1./ 5000.);
+	  photon.set_weight(_photonweight);
+	 // std::cout << photon.get_weight() << std::endl;
       double tau = -std::log(_random_generator.get_uniform_random_double());
       DensityGrid::iterator it = _density_grid.interact(photon, tau);
 	  double P = _random_generator.get_uniform_random_double();
+	 
 	  while (it != _density_grid.end() && P<it.get_dust_variables().get_albedo()) {
 	//	  
 		  double gval = it.get_dust_variables().get_gval();
@@ -128,9 +134,9 @@ public:
 		
        tau = -std::log(_random_generator.get_uniform_random_double());
        it = _density_grid.interact(photon, tau);
-	   //std::cout << it.get_dust_variables().get_force().x() << std::endl;
+	  //std::cout << "scatter"<< scn << std::endl;
       }
-	  std::cout << it.get_dust_variables().get_force().norm() << std::endl;
+	 // std::cout << it.get_dust_variables().get_force().norm() << std::endl;
 
 	
   }

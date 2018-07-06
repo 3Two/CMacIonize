@@ -118,7 +118,7 @@ protected:
                 ionization_variables.get_ionic_fraction(ION_H_n) +
             photon.get_cross_section_He_corr() *
                 ionization_variables.get_ionic_fraction(ION_He_n))+
-		   ds * dustvar.get_opacity()* dustvar.get_opacity();
+		   ds * dustvar.get_opacity()* dustvar.get_dust_density();
   }
 
   /**

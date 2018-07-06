@@ -51,6 +51,9 @@ private:
   /*! @brief Total number of photons to propagate through the grid. */
   uint_fast64_t _numphoton;
 
+  /*! @brief the weight of each photon. */
+  double _photonweight;
+
   /*! @brief Number of photons to shoot during a single DustPhotonShootJob. */
   const uint_fast64_t _jobsize;
 
@@ -79,6 +82,7 @@ public:
                                   int_fast32_t random_seed,
                                   DensityGrid &density_grid,
                                   uint_fast64_t numphoton,
+	                              double _photonweight,
                                   uint_fast64_t jobsize,
                                   int_fast32_t worksize)
       : _worksize(worksize), _numphoton(numphoton), _jobsize(jobsize) {
@@ -120,6 +124,7 @@ public:
    */
   inline void set_numphoton(uint_fast64_t numphoton) { _numphoton = numphoton; }
 
+  inline void set_photonweight(double photonweight) { _photonweight = photonweight; }
 
   /**
    * @brief Get a DustPhotonShootJob.
@@ -134,10 +139,12 @@ public:
     if (jobsize >= _numphoton) {
       jobsize = _numphoton;
     }
+
     _numphoton -= jobsize;
     _lock.unlock();
     if (jobsize > 0) {
       _jobs[thread_id]->set_numphoton(jobsize);
+	  _jobs[thread_id]->set_photonweight(_photonweight);
       return _jobs[thread_id];
     } else {
       return nullptr;
