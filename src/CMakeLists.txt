@@ -140,9 +140,9 @@ set(CMACIONIZE_SOURCES
     CompilerInfo.cpp.in
     ConfigurationInfo.cpp.in
     DustScattering.cpp
-    DustSimulation.cpp
+    DustSimulation1.cpp
     EmissivityCalculator.cpp
-    RadiationHydrodynamicsSimulation.cpp
+    RadiationHydrodynamicsSimulation1.cpp
 
     Abundances.hpp
     AMRRefinementScheme.hpp
@@ -175,8 +175,8 @@ set(CMACIONIZE_SOURCES
     DensityMaskFactory.hpp
     DensityValues.hpp
     DiscICDensityFunction.hpp
-    DustPhotonShootJob.hpp
-    DustPhotonShootJobMarket.hpp
+    DustPhotonShootJob1.hpp
+    DustPhotonShootJobMarket1.hpp
     EmissivityCalculator.hpp
     EmissivityValues.hpp
     Error.hpp
@@ -206,7 +206,7 @@ set(CMACIONIZE_SOURCES
     PhotonSourceSpectrumFactory.hpp
     PhysicalConstants.hpp
     PlanckPhotonSourceSpectrum.hpp
-    RadiationHydrodynamicsSimulation.hpp
+    RadiationHydrodynamicsSimulation1.hpp
     RecombinationRates.hpp
     RecombinationRatesFactory.hpp
     Signals.hpp

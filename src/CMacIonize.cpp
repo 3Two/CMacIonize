@@ -27,11 +27,11 @@
 #include "CommandLineParser.hpp"
 #include "CompilerInfo.hpp"
 #include "ConfigurationInfo.hpp"
-#include "DustSimulation.hpp"
+#include "DustSimulation1.hpp"
 #include "FileLog.hpp"
 #include "IonizationSimulation.hpp"
 #include "MPICommunicator.hpp"
-#include "RadiationHydrodynamicsSimulation.hpp"
+#include "RadiationHydrodynamicsSimulation1.hpp"
 #include "TerminalLog.hpp"
 #include "Timer.hpp"
 

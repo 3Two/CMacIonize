@@ -72,6 +72,10 @@ private:
   /*! @brief Flag indicating whether we want radiative cooling or not. */
   const bool _do_radiative_cooling;
 
+  /*! @brief Flag indicating whether we want radiation pressure or not. */
+  const bool _do_radiation_pressure;
+
+
   /*! @brief Courant-Friedrichs-Lewy time stepping constant. */
   const double _CFL_constant;
 
@@ -415,7 +419,7 @@ public:
    * conditions.
    */
   inline HydroIntegrator(double gamma, bool do_radiative_heating,
-                         bool do_radiative_cooling, double CFL_constant,
+                         bool do_radiative_cooling, bool do_radiation_pressure, double CFL_constant,
                          double neutral_temperature = 100.,
                          double ionised_temperature = 1.e4,
                          std::string boundary_xlow = "reflective",
@@ -430,6 +434,7 @@ public:
       : _gamma(gamma), _gm1(_gamma - 1.), _gm1_inv(1. / _gm1),
         _do_radiative_heating(do_radiative_heating),
         _do_radiative_cooling(do_radiative_cooling),
+	    _do_radiation_pressure(do_radiation_pressure),
         _CFL_constant(CFL_constant), _neutral_temperature(neutral_temperature),
         _ionised_temperature(ionised_temperature), _solver(gamma),
         _boundaries{get_boundary_type(boundary_xlow),
@@ -515,7 +520,9 @@ public:
             params.get_value< bool >("HydroIntegrator:radiative heating", true),
             params.get_value< bool >("HydroIntegrator:radiative cooling",
                                      false),
-            params.get_value< double >("HydroIntegerator:CFL constant", 0.2),
+		    params.get_value< bool >("HydroIntegrator:radiation pressure",
+				true),
+		    params.get_value< double >("HydroIntegerator:CFL constant", 0.2),
             params.get_physical_value< QUANTITY_TEMPERATURE >(
                 "HydroIntegrator:neutral temperature", "100. K"),
             params.get_physical_value< QUANTITY_TEMPERATURE >(
@@ -753,7 +760,17 @@ public:
         }
       }
     }
+	if (_do_radiation_pressure) {
+		for (auto it = grid.begin(); it != grid.end(); ++it) {
+			const DustVariables &dust_variables = it.get_dust_variables();
+			it.get_hydro_variables().conserved(1) -= dust_variables.get_force().x();
+			it.get_hydro_variables().conserved(2) -= dust_variables.get_force().y();
+			it.get_hydro_variables().conserved(3) -= dust_variables.get_force().z();
 
+			it.get_hydro_variables().conserved(4) -= 0.5*(dust_variables.get_force().norm() / it.get_hydro_variables().get_conserved_mass()) *
+				timestep*timestep*dust_variables.get_force().norm();
+		}
+	}
     // update conserved variables
     for (auto it = grid.begin(); it != grid.end(); ++it) {
 
