@@ -76,7 +76,7 @@ void AsciiFileDensityGridWriter::write(DensityGrid &grid,
       Utilities::compose_filename(_output_folder, _prefix, "txt", iteration, 3);
   std::ofstream file(filename);
 
-  file << "#x (m)\ty (m)\tz (m)\tn (m^-3)\tvolume (m^3)\tneutral H fraction\n";
+  file << "#x (m)\ty (m)\tz (m)\tdensity\tforcex\tforcey\tforcez\ttime\n";
 
   for (auto it = grid.begin(); it != grid.end(); ++it) {
     CoordinateVector<> x = it.get_cell_midpoint();
@@ -84,7 +84,9 @@ void AsciiFileDensityGridWriter::write(DensityGrid &grid,
     IonName ion = ION_H_n;
     double frac = it.get_ionization_variables().get_ionic_fraction(ion);
     double volume = it.get_volume();
-    file << x.x() << "\t" << x.y() << "\t" << x.z() << "\t" << n << "\t"
-         << volume << "\t" << frac << "\n";
+    file << x.x() << "\t" << x.y() << "\t" << x.z() << "\t" << it.get_dust_variables().get_dust_density() << "\t"
+         << it.get_dust_variables().get_force().x() << "\t" << it.get_dust_variables().get_force().y() << "\t" << it.get_dust_variables().get_force().z()<<
+		"\t"<< time <<
+		"\n";
   }
 }

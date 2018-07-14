@@ -571,7 +571,9 @@ public:
       const double temperature =
           it.get_ionization_variables().get_temperature();
 
-      const double density = number_density * hydrogen_mass;
+      //const double density = number_density * hydrogen_mass;
+	  //use dust density
+	  const double density = it.get_dust_variables().get_dust_density();
       const CoordinateVector<> velocity =
           it.get_hydro_variables().get_primitives_velocity();
       // we assume a completely neutral or completely ionized gas
@@ -580,7 +582,7 @@ public:
         // ionized gas has a lower mean molecular mass
         pressure *= 2.;
       }
-
+	  
       // set the density and pressure (the velocity has been set by
       // DensityGrid::initialize)
       it.get_hydro_variables().set_primitives_density(density);
@@ -822,7 +824,7 @@ public:
           it.get_hydro_variables().get_conserved_total_energy();
 
       IonizationVariables &ionization_variables = it.get_ionization_variables();
-
+	  DustVariables &dust_variables = it.get_dust_variables();
       const double mean_molecular_mass =
           ionization_variables.get_ionic_fraction(ION_H_n) * hydrogen_mass +
           0.5 * (1. - ionization_variables.get_ionic_fraction(ION_H_n)) *
@@ -860,13 +862,22 @@ public:
 
       cmac_assert(density >= 0.);
       cmac_assert(pressure >= 0.);
-
+	  
       it.get_hydro_variables().set_primitives_density(density);
       it.get_hydro_variables().set_primitives_velocity(velocity);
       it.get_hydro_variables().set_primitives_pressure(pressure);
 
       ionization_variables.set_number_density(density / hydrogen_mass);
-
+	  dust_variables.set_dust_density(density);
+	  //threshold density rho0
+	  double rho0 = 1.67e-31;
+	  if (density > rho0) {
+		  dust_variables.set_albedo(0.);
+		  dust_variables.set_opacity(1e50);
+	  }
+	  else {
+		  dust_variables.set_opacity(0.1);
+	  }
       cmac_assert(ionization_variables.get_number_density() >= 0.);
       cmac_assert(ionization_variables.get_temperature() >= 0.);
     }
