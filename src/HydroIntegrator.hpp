@@ -765,12 +765,11 @@ public:
 	if (_do_radiation_pressure) {
 		for (auto it = grid.begin(); it != grid.end(); ++it) {
 			const DustVariables &dust_variables = it.get_dust_variables();
-			it.get_hydro_variables().conserved(1) -= dust_variables.get_force().x();
-			it.get_hydro_variables().conserved(2) -= dust_variables.get_force().y();
-			it.get_hydro_variables().conserved(3) -= dust_variables.get_force().z();
-
-			it.get_hydro_variables().conserved(4) -= 0.5*(dust_variables.get_force().norm() / it.get_hydro_variables().get_conserved_mass()) *
-				timestep*timestep*dust_variables.get_force().norm();
+			it.get_hydro_variables().conserved(4) -= timestep * CoordinateVector<>::dot_product(it.get_hydro_variables().get_conserved_momentum(), dust_variables.get_force()) / it.get_hydro_variables().get_conserved_mass();
+			it.get_hydro_variables().conserved(1) -= timestep* dust_variables.get_force().x();
+			it.get_hydro_variables().conserved(2) -= timestep* dust_variables.get_force().y();
+			it.get_hydro_variables().conserved(3) -= timestep* dust_variables.get_force().z();
+			
 		}
 	}
     // update conserved variables
@@ -870,13 +869,13 @@ public:
       ionization_variables.set_number_density(density / hydrogen_mass);
 	  dust_variables.set_dust_density(density);
 	  //threshold density rho0
-	  double rho0 = 1.67e-31;
+	  double rho0 = 1.67e-34;
 	  if (density > rho0) {
 		  dust_variables.set_albedo(0.);
 		  dust_variables.set_opacity(1e50);
 	  }
 	  else {
-		  dust_variables.set_opacity(0.1);
+		  dust_variables.set_opacity(0.);
 	  }
       cmac_assert(ionization_variables.get_number_density() >= 0.);
       cmac_assert(ionization_variables.get_temperature() >= 0.);
