@@ -571,7 +571,7 @@ public:
       const double temperature =
           it.get_ionization_variables().get_temperature();
 
-      //const double density = number_density * hydrogen_mass;
+     // const double density = number_density * hydrogen_mass;
 	  //use dust density
 	  const double density = it.get_dust_variables().get_dust_density();
       const CoordinateVector<> velocity =
@@ -731,41 +731,42 @@ public:
     hydro_stop_parallel_timing_block();
 
     // do radiation (if enabled)
-    if (_do_radiative_heating || _do_radiative_cooling) {
-      const double boltzmann_k =
-          PhysicalConstants::get_physical_constant(PHYSICALCONSTANT_BOLTZMANN);
-      const double mH = PhysicalConstants::get_physical_constant(
-          PHYSICALCONSTANT_PROTON_MASS);
+    //if (_do_radiative_heating || _do_radiative_cooling) {
+    //  const double boltzmann_k =
+    //      PhysicalConstants::get_physical_constant(PHYSICALCONSTANT_BOLTZMANN);
+    //  const double mH = PhysicalConstants::get_physical_constant(
+    //      PHYSICALCONSTANT_PROTON_MASS);
 
-      for (auto it = grid.begin(); it != grid.end(); ++it) {
-        const IonizationVariables &ionization_variables =
-            it.get_ionization_variables();
+    //  for (auto it = grid.begin(); it != grid.end(); ++it) {
+    //    const IonizationVariables &ionization_variables =
+    //        it.get_ionization_variables();
 
-        const double xH = ionization_variables.get_ionic_fraction(ION_H_n);
-        const double mpart = xH * mH + 0.5 * (1. - xH) * mH;
-        const double Tgas =
-            _ionised_temperature * (1. - xH) + _neutral_temperature * xH;
-        it.get_ionization_variables().set_temperature(Tgas);
-        if (_gamma > 1.) {
-          const double ugas = boltzmann_k * Tgas / _gm1 / mpart;
-          const double uold =
-              it.get_hydro_variables().get_primitives_pressure() / _gm1 /
-              it.get_hydro_variables().get_primitives_density();
-          const double du = ugas - uold;
-          const double dE = it.get_hydro_variables().get_conserved_mass() * du;
-          if (_do_radiative_heating && dE > 0.) {
-            it.get_hydro_variables().delta_conserved(4) -= dE;
-          }
-          if (_do_radiative_cooling && dE < 0.) {
-            it.get_hydro_variables().delta_conserved(4) -= dE;
-          }
-        }
-      }
-    }
+    //    const double xH = ionization_variables.get_ionic_fraction(ION_H_n);
+    //    const double mpart = xH * mH + 0.5 * (1. - xH) * mH;
+    //    const double Tgas =
+    //        _ionised_temperature * (1. - xH) + _neutral_temperature * xH;
+    //    it.get_ionization_variables().set_temperature(Tgas);
+    //    if (_gamma > 1.) {
+    //      const double ugas = boltzmann_k * Tgas / _gm1 / mpart;
+    //      const double uold =
+    //          it.get_hydro_variables().get_primitives_pressure() / _gm1 /
+    //          it.get_hydro_variables().get_primitives_density();
+    //      const double du = ugas - uold;
+    //      const double dE = it.get_hydro_variables().get_conserved_mass() * du;
+    //      if (_do_radiative_heating && dE > 0.) {
+    //        it.get_hydro_variables().delta_conserved(4) -= dE;
+    //      }
+    //      if (_do_radiative_cooling && dE < 0.) {
+    //        it.get_hydro_variables().delta_conserved(4) -= dE;
+    //      }
+    //    }
+    //  }
+    //}
+	
 	if (_do_radiation_pressure) {
 		for (auto it = grid.begin(); it != grid.end(); ++it) {
 			const DustVariables &dust_variables = it.get_dust_variables();
-			it.get_hydro_variables().conserved(4) -= timestep * CoordinateVector<>::dot_product(it.get_hydro_variables().get_conserved_momentum(), dust_variables.get_force()) / it.get_hydro_variables().get_conserved_mass();
+			it.get_hydro_variables().conserved(4) += timestep * CoordinateVector<>::dot_product(it.get_hydro_variables().get_conserved_momentum(), dust_variables.get_force()) / it.get_hydro_variables().get_conserved_mass();
 			it.get_hydro_variables().conserved(1) -= timestep* dust_variables.get_force().x();
 			it.get_hydro_variables().conserved(2) -= timestep* dust_variables.get_force().y();
 			it.get_hydro_variables().conserved(3) -= timestep* dust_variables.get_force().z();
@@ -789,9 +790,9 @@ public:
       // add gravity
       const CoordinateVector<> a =
           it.get_hydro_variables().get_gravitational_acceleration();
-      const double m = it.get_hydro_variables().get_conserved_mass();
-      const CoordinateVector<> p =
-          it.get_hydro_variables().get_conserved_momentum();
+	  const double m = it.get_hydro_variables().get_conserved_mass();
+	  const CoordinateVector<> p =
+		  it.get_hydro_variables().get_conserved_momentum();
       it.get_hydro_variables().conserved(1) += timestep * m * a.x();
       it.get_hydro_variables().conserved(2) += timestep * m * a.y();
       it.get_hydro_variables().conserved(3) += timestep * m * a.z();
@@ -841,8 +842,9 @@ public:
         pressure = 0.;
         ionization_variables.set_temperature(0.);
       } else {
-        density = mass / volume;
+        
         velocity = momentum / mass;
+		density = mass / volume;
         if (_gamma > 1.) {
           // E = V*(rho*u + 0.5*rho*v^2) = (V*P/(gamma-1) + 0.5*m*v^2)
           // P = (E - 0.5*m*v^2)*(gamma-1)/V
@@ -869,10 +871,10 @@ public:
       ionization_variables.set_number_density(density / hydrogen_mass);
 	  dust_variables.set_dust_density(density);
 	  //threshold density rho0
-	  double rho0 = 1.67e-34;
+	  double rho0 = 1.67e-20;
 	  if (density > rho0) {
 		  dust_variables.set_albedo(0.);
-		  dust_variables.set_opacity(1e50);
+		  dust_variables.set_opacity(1e6);
 	  }
 	  else {
 		  dust_variables.set_opacity(0.);

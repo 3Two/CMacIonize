@@ -133,7 +133,9 @@ public:
 		 _photon_source.scatter(photon, gval, _random_generator);
 		
        tau = -std::log(_random_generator.get_uniform_random_double());
+
        it = _density_grid.interact(photon, tau);
+	   P = _random_generator.get_uniform_random_double();
 	  //std::cout << "scatter"<< scn << std::endl;
       }
 	 // std::cout << it.get_dust_variables().get_force().norm() << std::endl;

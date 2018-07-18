@@ -137,11 +137,11 @@ protected:
 	if (dust_variables.get_dust_density() > 0.) {
 		
 		double dforcex=((dust_variables.get_dust_density()*ds*dust_variables.get_opacity()
-			*(1 / cell.get_volume())*(2.82e16)*(photon.get_weight())*(1. / 3e8)*(photon.get_direction().x()/photon.get_direction().norm())));
+			*(3.828e26)*(photon.get_weight())*(1. / 3e8)*(photon.get_direction().x()/photon.get_direction().norm())));
 		double dforcey = ((dust_variables.get_dust_density()*ds*dust_variables.get_opacity()
-			*(1 / cell.get_volume())*(2.82e16)*(photon.get_weight())*(1. / 3e8)*(photon.get_direction().y() / photon.get_direction().norm())));
+			*(3.828e26)*(photon.get_weight())*(1. / 3e8)*(photon.get_direction().y() / photon.get_direction().norm())));
 		double dforcez = ((dust_variables.get_dust_density()*ds*dust_variables.get_opacity()
-			*(1 / cell.get_volume())*(2.82e16)*(photon.get_weight())*(1. / 3e8)*(photon.get_direction().z() / photon.get_direction().norm())));
+			*(3.828e26)*(photon.get_weight())*(1. / 3e8)*(photon.get_direction().z() / photon.get_direction().norm())));
 		CoordinateVector <>dforce(dforcex, dforcey, dforcez);
 		
 

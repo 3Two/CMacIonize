@@ -80,13 +80,13 @@ void AsciiFileDensityGridWriter::write(DensityGrid &grid,
 
   for (auto it = grid.begin(); it != grid.end(); ++it) {
     CoordinateVector<> x = it.get_cell_midpoint();
-    double n = it.get_ionization_variables().get_number_density();
-    IonName ion = ION_H_n;
-    double frac = it.get_ionization_variables().get_ionic_fraction(ion);
-    double volume = it.get_volume();
+   // double n = it.get_ionization_variables().get_number_density();
+   // IonName ion = ION_H_n;
+   // double frac = it.get_ionization_variables().get_ionic_fraction(ion);
+   // double volume = it.get_volume();
     file << x.x() << "\t" << x.y() << "\t" << x.z() << "\t" << it.get_dust_variables().get_dust_density() << "\t"
          << it.get_dust_variables().get_force().x() << "\t" << it.get_dust_variables().get_force().y() << "\t" << it.get_dust_variables().get_force().z()<<
-		"\t"<< time <<
+		"\t"<< time << "\t"<< it.get_hydro_variables().get_primitives_velocity().norm() << "\t"<< it.get_hydro_variables().get_primitives_pressure() <<
 		"\n";
   }
 }
