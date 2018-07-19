@@ -136,13 +136,26 @@ protected:
 	
 	if (dust_variables.get_dust_density() > 0.) {
 		
-		double dforcex=((dust_variables.get_dust_density()*ds*dust_variables.get_opacity()
+		/*double dforcex=((dust_variables.get_dust_density()*ds*dust_variables.get_opacity()
 			*(3.828e26)*(photon.get_weight())*(1. / 3e8)*(photon.get_direction().x()/photon.get_direction().norm())));
 		double dforcey = ((dust_variables.get_dust_density()*ds*dust_variables.get_opacity()
 			*(3.828e26)*(photon.get_weight())*(1. / 3e8)*(photon.get_direction().y() / photon.get_direction().norm())));
 		double dforcez = ((dust_variables.get_dust_density()*ds*dust_variables.get_opacity()
-			*(3.828e26)*(photon.get_weight())*(1. / 3e8)*(photon.get_direction().z() / photon.get_direction().norm())));
+			*(3.828e26)*(photon.get_weight())*(1. / 3e8)*(photon.get_direction().z() / photon.get_direction().norm())));*/
+
+		
+		double dforcex = (((3.828e26)*(photon.get_weight())*(1. / 3e8)*(photon.get_direction().x() / photon.get_direction().norm())));
+		double dforcey = (((3.828e26)*(photon.get_weight())*(1. / 3e8)*(photon.get_direction().y() / photon.get_direction().norm())));
+		double dforcez = (((3.828e26)*(photon.get_weight())*(1. / 3e8)*(photon.get_direction().z() / photon.get_direction().norm())));
 		CoordinateVector <>dforce(dforcex, dforcey, dforcez);
+		if (dust_variables.get_opacity() == 0.) {
+			double dforcex = 0.;
+			double dforcey = 0.;
+			double dforcez = 0.;
+			CoordinateVector <>dforce(dforcex, dforcey, dforcez);
+		}
+		
+		
 		
 
 		

@@ -834,7 +834,7 @@ public:
       CoordinateVector<> velocity;
       if (mass <= 0.) {
         if (mass < 0.) {
-          cmac_error("Negative mass for cell!");
+         cmac_error("Negative mass for cell!");
         }
         // vacuum
         density = 0.;
@@ -842,7 +842,7 @@ public:
         pressure = 0.;
         ionization_variables.set_temperature(0.);
       } else {
-        
+
         velocity = momentum / mass;
 		density = mass / volume;
         if (_gamma > 1.) {
@@ -861,8 +861,8 @@ public:
         }
       }
 
-      cmac_assert(density >= 0.);
-      cmac_assert(pressure >= 0.);
+      //cmac_assert(density >= 0.);
+     // cmac_assert(pressure >= 0.);
 	  
       it.get_hydro_variables().set_primitives_density(density);
       it.get_hydro_variables().set_primitives_velocity(velocity);
@@ -871,16 +871,16 @@ public:
       ionization_variables.set_number_density(density / hydrogen_mass);
 	  dust_variables.set_dust_density(density);
 	  //threshold density rho0
-	  double rho0 = 1.67e-20;
+	  double rho0 = 1.67e-22;
 	  if (density > rho0) {
 		  dust_variables.set_albedo(0.);
-		  dust_variables.set_opacity(1e6);
+		  dust_variables.set_opacity(1e20);
 	  }
 	  else {
 		  dust_variables.set_opacity(0.);
 	  }
-      cmac_assert(ionization_variables.get_number_density() >= 0.);
-      cmac_assert(ionization_variables.get_temperature() >= 0.);
+     //cmac_assert(ionization_variables.get_number_density() >= 0.);
+     // cmac_assert(ionization_variables.get_temperature() >= 0.);
     }
 
     grid.set_grid_velocity(_gamma);
