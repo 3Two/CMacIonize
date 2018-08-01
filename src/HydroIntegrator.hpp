@@ -788,7 +788,7 @@ public:
           it.get_hydro_variables().delta_conserved(4);
 
       // add gravity
-      const CoordinateVector<> a =
+     /* const CoordinateVector<> a =
           it.get_hydro_variables().get_gravitational_acceleration();
 	  const double m = it.get_hydro_variables().get_conserved_mass();
 	  const CoordinateVector<> p =
@@ -797,7 +797,7 @@ public:
       it.get_hydro_variables().conserved(2) += timestep * m * a.y();
       it.get_hydro_variables().conserved(3) += timestep * m * a.z();
       it.get_hydro_variables().conserved(4) +=
-          timestep * CoordinateVector<>::dot_product(p, a);
+          timestep * CoordinateVector<>::dot_product(p, a);*/
 
       // reset time differences
       it.get_hydro_variables().delta_conserved(0) = 0.;
@@ -861,7 +861,7 @@ public:
         }
       }
 
-      //cmac_assert(density >= 0.);
+     // cmac_assert(density >= 0.);
      // cmac_assert(pressure >= 0.);
 	  
       it.get_hydro_variables().set_primitives_density(density);
@@ -871,15 +871,16 @@ public:
       ionization_variables.set_number_density(density / hydrogen_mass);
 	  dust_variables.set_dust_density(density);
 	  //threshold density rho0
-	  double rho0 = 1.67e-22;
+	  double rho0 = 5e-20;
 	  if (density > rho0) {
 		  dust_variables.set_albedo(0.);
 		  dust_variables.set_opacity(1e20);
 	  }
 	  else {
 		  dust_variables.set_opacity(0.);
+		  
 	  }
-     //cmac_assert(ionization_variables.get_number_density() >= 0.);
+    // cmac_assert(ionization_variables.get_number_density() >= 0.);
      // cmac_assert(ionization_variables.get_temperature() >= 0.);
     }
 
