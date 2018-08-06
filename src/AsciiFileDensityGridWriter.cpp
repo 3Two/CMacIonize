@@ -86,7 +86,7 @@ void AsciiFileDensityGridWriter::write(DensityGrid &grid,
    // double volume = it.get_volume();
     file << x.x() << "\t" << x.y() << "\t" << x.z() << "\t" << it.get_dust_variables().get_dust_density() << "\t"
          << it.get_dust_variables().get_force().x() << "\t" << it.get_dust_variables().get_force().y() << "\t" << it.get_dust_variables().get_force().z()<<
-		"\t"<< time << "\t"<< it.get_hydro_variables().get_primitives_velocity().norm() << "\t"<< it.get_hydro_variables().get_primitives_pressure() <<
+		"\t"<< time << "\t"<< it.get_hydro_variables().get_conserved_mass() << "\t"<< it.get_hydro_variables().get_conserved_momentum().norm()<< "\t" << it.get_dust_variables().get_opacity()<< "\t" <<
 		"\n";
   }
 }

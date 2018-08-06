@@ -767,9 +767,9 @@ public:
 		for (auto it = grid.begin(); it != grid.end(); ++it) {
 			const DustVariables &dust_variables = it.get_dust_variables();
 			it.get_hydro_variables().conserved(4) += timestep * CoordinateVector<>::dot_product(it.get_hydro_variables().get_conserved_momentum(), dust_variables.get_force()) / it.get_hydro_variables().get_conserved_mass();
-			it.get_hydro_variables().conserved(1) -= timestep* dust_variables.get_force().x();
-			it.get_hydro_variables().conserved(2) -= timestep* dust_variables.get_force().y();
-			it.get_hydro_variables().conserved(3) -= timestep* dust_variables.get_force().z();
+			it.get_hydro_variables().conserved(1) += timestep* dust_variables.get_force().x();
+			it.get_hydro_variables().conserved(2) += timestep* dust_variables.get_force().y();
+			it.get_hydro_variables().conserved(3) += timestep* dust_variables.get_force().z();
 			
 		}
 	}
@@ -861,8 +861,8 @@ public:
         }
       }
 
-     // cmac_assert(density >= 0.);
-     // cmac_assert(pressure >= 0.);
+    cmac_assert(density >= 0.);
+    cmac_assert(pressure >= 0.);
 	  
       it.get_hydro_variables().set_primitives_density(density);
       it.get_hydro_variables().set_primitives_velocity(velocity);
@@ -871,7 +871,7 @@ public:
       ionization_variables.set_number_density(density / hydrogen_mass);
 	  dust_variables.set_dust_density(density);
 	  //threshold density rho0
-	  double rho0 = 5e-20;
+	  double rho0 = 1e-19;
 	  if (density > rho0) {
 		  dust_variables.set_albedo(0.);
 		  dust_variables.set_opacity(1e20);
@@ -880,8 +880,8 @@ public:
 		  dust_variables.set_opacity(0.);
 		  
 	  }
-    // cmac_assert(ionization_variables.get_number_density() >= 0.);
-     // cmac_assert(ionization_variables.get_temperature() >= 0.);
+    cmac_assert(ionization_variables.get_number_density() >= 0.);
+    cmac_assert(ionization_variables.get_temperature() >= 0.);
     }
 
     grid.set_grid_velocity(_gamma);
