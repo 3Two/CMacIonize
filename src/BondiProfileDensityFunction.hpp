@@ -126,9 +126,9 @@ public:
     DensityValues values;
     values.set_number_density(number_density);
 	values.set_dustdensity(density);
-	values.set_albedo(_albedo);
-	values.set_gval(_gval);
-	values.set_opacity(_opacity);
+	values.set_albedo(0.6);
+	values.set_gval(0.5);
+	values.set_opacity(22.0);
     values.set_temperature(temperature);
     values.set_ionic_fraction(ION_H_n, _neutral_fraction);
     values.set_ionic_fraction(ION_He_n, 1.e-6);
