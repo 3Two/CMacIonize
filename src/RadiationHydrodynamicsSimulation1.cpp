@@ -253,14 +253,14 @@ int RadiationHydrodynamicsSimulation::do_simulation(CommandLineParser &parser,
   DensityGridWriter *writer =
       DensityGridWriterFactory::generate(output_folder, params, log);
 
-  uint_fast32_t nloop = params.get_value< uint_fast32_t >(
-      "RadiationHydrodynamicsSimulation:number of iterations", 10);
+  //uint_fast32_t nloop = params.get_value< uint_fast32_t >(
+    //  "RadiationHydrodynamicsSimulation:number of iterations", 10);
 
   uint_fast64_t numphoton = params.get_value< uint_fast64_t >(
       "RadiationHydrodynamicsSimulation:number of photons", 1e5);
-  uint_fast64_t numphoton1 = params.get_value< uint_fast64_t >(
-      "RadiationHydrodynamicsSimulation:number of photons first loop",
-      numphoton);
+  //uint_fast64_t numphoton1 = params.get_value< uint_fast64_t >(
+    //  "RadiationHydrodynamicsSimulation:number of photons first loop",
+      //numphoton);
   double Q = source.get_total_luminosity();
 
   ChargeTransferRates charge_transfer_rates;
@@ -402,23 +402,23 @@ int RadiationHydrodynamicsSimulation::do_simulation(CommandLineParser &parser,
         log->write_status("Loop ", loop, " of ", nloop_step, ".");
       }
 
-      uint_fast64_t lnumphoton = numphoton;
+      //uint_fast64_t lnumphoton = numphoton;
 
       if (loop == 0) {
         // overwrite the number of photons for the first loop (might be useful
         // if more than 1 boundary is periodic, since the initial neutral
         // fractions are very low)
-        lnumphoton = numphoton1;
+        //lnumphoton = numphoton1;
       }
 
       grid->reset_grid(*density_function);
       DiffuseReemissionHandler::set_reemission_probabilities(*grid);
 
-      double typecount[PHOTONTYPE_NUMBER] = {0};
+      //double typecount[PHOTONTYPE_NUMBER] = {0};
 
       double totweight = 0.;
 
-      uint_fast64_t local_numphoton = lnumphoton;
+      //uint_fast64_t local_numphoton = lnumphoton;
 	  photonshootjobs.set_photonweight(1. / numphoton);
       photonshootjobs.set_numphoton(numphoton);
       worktimer.start();

@@ -566,8 +566,8 @@ public:
 
     for (auto it = grid.begin(); it != grid.end(); ++it) {
       const double volume = it.get_volume();
-      const double number_density =
-          it.get_ionization_variables().get_number_density();
+      //const double number_density =
+        //  it.get_ionization_variables().get_number_density();
       const double temperature =
           it.get_ionization_variables().get_temperature();
 
