@@ -871,7 +871,7 @@ public:
       ionization_variables.set_number_density(density / hydrogen_mass);
 	  dust_variables.set_dust_density(density);
 	  //threshold density rho0
-	  double rho0 = 1e-19;
+	  /*double rho0 = 1e-19;
 	  if (density > rho0) {
 		  dust_variables.set_albedo(0.);
 		  dust_variables.set_opacity(1e20);
@@ -879,7 +879,7 @@ public:
 	  else {
 		  dust_variables.set_opacity(0.);
 		  
-	  }
+	  }*/
     cmac_assert(ionization_variables.get_number_density() >= 0.);
     cmac_assert(ionization_variables.get_temperature() >= 0.);
     }
