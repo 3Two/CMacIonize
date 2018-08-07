@@ -42,6 +42,15 @@ private:
   /*! @brief Initial neutral fraction of hydrogen. */
   const double _neutral_fraction;
 
+  /*! @brief Albedo for dust scattering */
+  double _albedo;
+
+  /*! @brief h-g parameter for dust scattering*/
+  double _gval;
+
+  /*! @brief opacity for dust scattering*/
+  double _opacity;
+
 public:
   /**
    * @brief ParameterFile constructor.
@@ -77,6 +86,12 @@ public:
                            "DensityFunction:center", "[0. m, 0. m, 0. m]"),
                        params.get_physical_value< QUANTITY_LENGTH >(
                            "DensityFunction:vprof radius", "0. m"),
+					   params.get_value< double >(
+						   "DensityFunction:albedo", 0.),
+					   params.get_value< double >(
+						   "DensityFunction:gval", 0.9),
+					   params.get_value< double >(
+						   "DensityFunction:opacity", 3.24),
                        params.get_physical_value< QUANTITY_VELOCITY >(
                            "DensityFunction:vprof velocity", "0. m s^-1")),
         _neutral_fraction(params.get_value< double >(
@@ -110,6 +125,10 @@ public:
 
     DensityValues values;
     values.set_number_density(number_density);
+	values.set_dustdensity(density);
+	values.set_albedo(_albedo);
+	values.set_gval(_gval);
+	values.set_opacity(_opacity);
     values.set_temperature(temperature);
     values.set_ionic_fraction(ION_H_n, _neutral_fraction);
     values.set_ionic_fraction(ION_He_n, 1.e-6);

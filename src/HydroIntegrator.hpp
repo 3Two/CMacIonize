@@ -788,7 +788,7 @@ public:
           it.get_hydro_variables().delta_conserved(4);
 
       // add gravity
-     /* const CoordinateVector<> a =
+      const CoordinateVector<> a =
           it.get_hydro_variables().get_gravitational_acceleration();
 	  const double m = it.get_hydro_variables().get_conserved_mass();
 	  const CoordinateVector<> p =
@@ -797,7 +797,7 @@ public:
       it.get_hydro_variables().conserved(2) += timestep * m * a.y();
       it.get_hydro_variables().conserved(3) += timestep * m * a.z();
       it.get_hydro_variables().conserved(4) +=
-          timestep * CoordinateVector<>::dot_product(p, a);*/
+          timestep * CoordinateVector<>::dot_product(p, a);
 
       // reset time differences
       it.get_hydro_variables().delta_conserved(0) = 0.;

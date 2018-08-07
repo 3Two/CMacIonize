@@ -117,7 +117,7 @@ public:
         const double volume = it.get_volume();
         const double number_density = values.get_number_density();
         const double temperature = values.get_temperature();
-
+		it.get_dust_variables().set_opacity(0.);
         const double density = number_density * hydrogen_mass;
         CoordinateVector<> velocity = values.get_velocity();
         // we assume a completely neutral or completely ionized gas

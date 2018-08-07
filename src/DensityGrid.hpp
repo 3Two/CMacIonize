@@ -757,7 +757,7 @@ public:
 	  DustVariables &dust_variables = it.get_dust_variables();
 	  dust_variables.set_albedo(vals.get_albedo());
 	  dust_variables.set_gval(vals.get_gval());
-	  dust_variables.set_opacity(vals.get_opacity());
+	  dust_variables.set_opacity((1-vals.get_albedo())*vals.get_opacity()+vals.get_albedo()*(1-vals.get_gval())*vals.get_opacity());
 	  dust_variables.set_dust_density(vals.get_dustdensity());
 
 

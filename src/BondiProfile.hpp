@@ -143,6 +143,15 @@ private:
    *  (in m). */
   const double _vprof_radius;
 
+  /*! @brief Albedo for dust scattering */
+  double _albedo;
+
+  /*! @brief h-g parameter for dust scattering*/
+  double _gval;
+
+  /*! @brief opacity for dust scattering*/
+  double _opacity;
+
   /*! @brief Characteristic velocity of the superimposed velocity profile
    *  (in m s^-1). */
   const double _vprof_velocity;
@@ -168,7 +177,7 @@ public:
                       const double ionisation_radius = 0.,
                       const double pressure_contrast = 0.,
                       const CoordinateVector<> center = CoordinateVector<>(0.),
-                      const double vprof_radius = 0.,
+                      const double vprof_radius = 0., double albedo = 0., double gval = 0.9, double opacity = 3.24,
                       const double vprof_velocity = 0.)
       : _bondi_radius(0.5 * PhysicalConstants::get_physical_constant(
                                 PHYSICALCONSTANT_NEWTON_CONSTANT) *

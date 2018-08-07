@@ -116,6 +116,7 @@ public:
 	 // photon.set_opacity(3240.);
 	  photon.set_weight(_photonweight);
 	 // std::cout << photon.get_weight() << std::endl;
+	  
       double tau = -std::log(_random_generator.get_uniform_random_double());
       DensityGrid::iterator it = _density_grid.interact(photon, tau);
 	  double P = _random_generator.get_uniform_random_double();
